@@ -17,7 +17,6 @@ class Header extends Component {
 				<div className="absolute">
 					<div className="title-container">
 						<p className="header-title large">SKEM</p>
-						<p className="header-title medium">presents...</p>
 						<p className="header-title medium">Record_087</p>
 					</div>
 				</div>
