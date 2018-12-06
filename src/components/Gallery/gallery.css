@@ -1,0 +1,23 @@
+.gallery-container {
+	margin-top: 50em;
+}
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-image {
+	width: 25%;
+	height: 25%;
+	margin: 2em;
+	padding: 1em;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
+	box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
+}
+
+.heading {
+	color: #e3e8ef;
+	margin: 1em 0 0 1em;
+}
