@@ -15,3 +15,8 @@ code {
 	font-family: "FUTURFW";
 	src: url("./fonts/FUTRFW.TTF") format("truetype");
 }
+
+.app {
+	display: flex;
+	flex-direction: column;
+}

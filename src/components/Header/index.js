@@ -5,7 +5,7 @@ class Header extends Component {
 	render() {
 		return (
 			<div className="video-container">
-				<video loop autoPlay muted>
+				<video className="video" loop autoPlay muted>
 					<source
 						src="https://s3.amazonaws.com/roseredbucket/steady.mp4"
 						type="video/mp4"

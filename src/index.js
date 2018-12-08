@@ -4,10 +4,11 @@ import "./index.css";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 
-ReactDOM.render(
-	<div>
+const Fullpage = () => (
+	<div className="app">
 		<Header />
 		<Gallery />
-	</div>,
-	document.getElementById("root")
+	</div>
 );
+
+ReactDOM.render(<Fullpage />, document.getElementById("root"));
