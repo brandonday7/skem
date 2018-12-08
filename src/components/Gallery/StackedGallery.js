@@ -8,7 +8,13 @@ class StackedGallery extends Component {
 		return (
 			<div className="stack-container">
 				{polaroids.map((polaroid, index) => (
-					<Polaroid src={polaroid} key={index} view={view} />
+					<Polaroid
+						unviewed={true}
+						src={polaroid.name}
+						angle={polaroid.angle}
+						key={index}
+						view={view}
+					/>
 				))}
 			</div>
 		);

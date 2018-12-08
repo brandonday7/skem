@@ -8,7 +8,7 @@ class ViewedGallery extends Component {
 		return (
 			<div className="image-container">
 				{polaroids.map((polaroid, index) => (
-					<Polaroid key={index} src={polaroid} />
+					<Polaroid key={index} src={polaroid.name} />
 				))}
 			</div>
 		);

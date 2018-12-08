@@ -3,18 +3,19 @@ import ViewedGallery from "./ViewedGallery";
 import StackedGallery from "./StackedGallery";
 import "./gallery.css";
 import _ from "lodash";
+import { randomAngle } from "../../utils";
 
 class Gallery extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			stackedPolaroids: [
-				"albumArt.jpg",
-				"ethan_2.jpg",
-				"horn.jpg",
-				"living_room_1.jpg",
-				"vocals.jpg",
-				"danny_ethan.jpg"
+				{ name: "albumArt.jpg", angle: randomAngle() },
+				{ name: "ethan_2.jpg", angle: randomAngle() },
+				{ name: "horn.jpg", angle: randomAngle() },
+				{ name: "living_room_1.jpg", angle: randomAngle() },
+				{ name: "vocals.jpg", angle: randomAngle() },
+				{ name: "danny_ethan.jpg", angle: randomAngle() }
 			],
 			viewedPolaroids: []
 		};
@@ -22,7 +23,7 @@ class Gallery extends Component {
 
 	viewPolaroid = name => {
 		const { stackedPolaroids, viewedPolaroids } = this.state;
-		const index = _.findIndex(stackedPolaroids, pName => pName === name);
+		const index = _.findIndex(stackedPolaroids, p => p.name === name);
 		const image = stackedPolaroids[index];
 		stackedPolaroids.splice(index, 1);
 		this.setState({

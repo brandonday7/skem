@@ -11,6 +11,10 @@
 	flex-wrap: wrap;
 }
 
+.unviewed {
+	position: absolute;
+}
+
 .polaroid {
 	background-color: white;
 	max-height: 40vh;
