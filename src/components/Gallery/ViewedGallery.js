@@ -6,7 +6,7 @@ class ViewedGallery extends Component {
 	render() {
 		const { polaroids } = this.props;
 		return (
-			<div className="image-container">
+			<div className="viewed-container">
 				{polaroids.map((polaroid, index) => (
 					<Polaroid key={index} src={polaroid.name} />
 				))}

@@ -1,9 +1,9 @@
 const randomAngle = () => {
-	const positive = Math.random() > 0.5 ? true : false;
+	const positive = Math.random() > 0.6 ? true : false;
 	if (positive) {
-		return Math.floor(Math.random() * 15 + 1);
+		return Math.floor(Math.random() * 10 + 1);
 	} else {
-		return Math.floor(Math.random() * 15 - 10);
+		return Math.floor(Math.random() * 10 - 10);
 	}
 };
 
