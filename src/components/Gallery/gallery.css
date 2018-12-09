@@ -1,9 +1,10 @@
 .gallery-container {
 	margin-top: 100vh;
+	min-height: 100vh;
 	background-color: #e3e8ef;
 }
 
-.image-container {
+.viewed-container {
 	height: 60vh;
 	display: flex;
 	justify-content: space-around;
@@ -11,8 +12,16 @@
 	flex-wrap: wrap;
 }
 
+.stack-container {
+	margin-top: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
 .unviewed {
 	position: absolute;
+	cursor: pointer;
 }
 
 .polaroid {
@@ -20,12 +29,34 @@
 	max-height: 40vh;
 	margin: 1em;
 	padding: 1em 1em 4em 1em;
-	-webkit-box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
-	-moz-box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
-	box-shadow: 0px 0px 10px 1px rgba(211, 211, 211, 1);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 746px) {
+	.polaroid {
+		height: 35vh;
+	}
+}
+
+.polaroid-exit {
+	animation-duration: 1s;
+	animation-name: slideout;
+}
+
+@keyframes slideout {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: translate(100vw, -60vh) rotate(-180deg);
+	}
 }
 
 .heading {
+	font-size: 200%;
 	color: white;
 	margin: 1em 0 0 2em;
 }
