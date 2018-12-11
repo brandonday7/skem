@@ -11,7 +11,7 @@ class Polaroid extends Component {
 
 	animateAndView = () => {
 		const { src, view } = this.props;
-		setTimeout(() => view(src), 1000);
+		setTimeout(() => view(src), 300);
 	};
 	render() {
 		const { src, unviewed, angle } = this.props;
@@ -23,7 +23,7 @@ class Polaroid extends Component {
 						this.setState({ exiting: true }, () => this.animateAndView());
 					}
 				}}
-				className={`${unviewed ? "unviewed" : ""} polaroid ${
+				className={`${unviewed ? "unviewed" : "viewed"} polaroid ${
 					exiting ? "polaroid-exit" : ""
 				}`}
 				style={

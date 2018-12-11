@@ -1,5 +1,5 @@
 .gallery-container {
-	margin-top: 100vh;
+	/*margin-top: 100vh;*/
 	min-height: 100vh;
 	background-color: #e3e8ef;
 }
@@ -22,6 +22,22 @@
 .unviewed {
 	position: absolute;
 	cursor: pointer;
+}
+
+.viewed {
+	animation-duration: 0.5s;
+	animation-name: enter;
+}
+
+@keyframes enter {
+	from {
+		transform: translate(0, -10vh);
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .polaroid {
