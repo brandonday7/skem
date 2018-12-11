@@ -7,7 +7,7 @@ class Header extends Component {
 			<div className="video-container">
 				<video className="video" loop autoPlay muted>
 					<source
-						src="https://s3.amazonaws.com/roseredbucket/steady.mp4"
+						src={`${process.env.REACT_APP_BUCKET}steady.mp4`}
 						type="video/mp4"
 					/>
 				</video>

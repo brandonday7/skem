@@ -19,7 +19,9 @@ class Polaroid extends Component {
 		return (
 			<img
 				onClick={() => {
-					this.setState({ exiting: true }, () => this.animateAndView());
+					if (unviewed) {
+						this.setState({ exiting: true }, () => this.animateAndView());
+					}
 				}}
 				className={`${unviewed ? "unviewed" : ""} polaroid ${
 					exiting ? "polaroid-exit" : ""
@@ -29,7 +31,7 @@ class Polaroid extends Component {
 						? { transform: `rotate(${angle}deg)`, maxHeight: "50vh" }
 						: {}
 				}
-				src={`https://s3.amazonaws.com/roseredbucket/${src}`}
+				src={`${process.env.REACT_APP_BUCKET}${src}`}
 				alt="Not Available"
 			/>
 		);
