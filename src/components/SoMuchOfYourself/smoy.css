@@ -1,0 +1,9 @@
+.smoy-container {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: #ffcca5;
+}
+
+.smoy-heading {
+	margin: 1em 0 0 2em;
+}

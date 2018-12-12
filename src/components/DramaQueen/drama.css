@@ -1,0 +1,9 @@
+.drama-container {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: #f5ff9b;
+}
+
+.drama-heading {
+	margin: 1em 0 0 2em;
+}

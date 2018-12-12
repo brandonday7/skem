@@ -1,5 +1,16 @@
 .depends-container {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	background-color: #b4e5f4;
+}
+
+.depends-heading {
+	margin: 1em 0 0 2em;
+}
+
+.lyrics-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
