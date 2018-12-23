@@ -1,0 +1,5 @@
+li {
+	/*remove random css from carousel package*/
+	background: #fcd1d3 !important;
+	text-align: unset !important;
+}
