@@ -5,5 +5,27 @@
 }
 
 .drama-heading {
-	margin: 1em 0 0 2em;
+	margin: 1em 0 0 1em;
+}
+
+.dq-lyrics-container {
+	display: flex;
+	align-items: center;
+	margin: 0em 2em 0 2em;
+}
+
+.machine-image {
+	max-width: 20%;
+}
+
+.dq-left-lyrics {
+	max-width: 40%;
+}
+
+.dq-right-lyrics {
+	max-width: 40%;
+}
+
+.credits {
+	font-size: 70%;
 }

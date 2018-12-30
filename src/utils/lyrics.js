@@ -1,31 +1,31 @@
-const dramaLyrics = `
+const dqV1 = `
 This sky could be clean, no,
 Night's not what it needs to be,
-And echo.
+And echo.`;
 
-I'm sprawling in my sleep,
+const dqV2 = `I'm sprawling in my sleep,
 Dream's not what it seems to be,
-I'm alone!
+I'm alone!`;
 
-Still water blowing steam,
+const dqV3 = `Still water blowing steam,
 Being off, beyond belief, 
-Ur such a.. woah!
+Ur such a... woah!`;
 
-And if it's drama I'm the Queen,
+const dqV4 = `And if it's drama I'm the Queen,
 How it pays to be me,
-How I'm broke.
+How I'm broke.`;
 
-I talk to myself all the time,
+const dqC = `I talk to myself all the time,
 Oh sigh, here he goes, fighting foes in his mind,
 And what it's like, to have the air touch my arm, 
 "Oh dear, you won't be harmed",
-Oh maybe I don't care and maybe that's alright.
+Oh maybe I don't care and maybe that's alright.`;
 
-A hot head on the scene,
+const dqV5 = `A hot head on the scene,
 Stop and staring at me,
-Put on a show.
+Put on a show.`;
 
-This sky could be clean,
+const dqV6 = `This sky could be clean,
 How many sides to this leaf?
 Time to go.
 `;
@@ -84,4 +84,14 @@ You're biding time,
 While your killing mine,
 Do you mind? `;
 
-export { dramaLyrics, dependsLyrics, soMuchOfYourselfLyrics };
+export {
+	dqV1,
+	dqV2,
+	dqV3,
+	dqV4,
+	dqV5,
+	dqV6,
+	dqC,
+	dependsLyrics,
+	soMuchOfYourselfLyrics
+};

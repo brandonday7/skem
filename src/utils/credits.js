@@ -39,3 +39,5 @@ Nicholas Vereschak - Drums and piano.
 Ryan Garbett - Bass guitar.
 Recorded in my bedroom, my living room, Nick's apartment, and somewhere in Israel. Fall 2018.
 `;
+
+export { introCredits, dramaCredits, dependsCredits, soMuchOfYourselfCredits };

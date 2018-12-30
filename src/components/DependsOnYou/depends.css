@@ -8,7 +8,7 @@
 	margin: 1em 0 0 2em;
 }
 
-.lyrics-container {
+.depends-lyrics-container {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
