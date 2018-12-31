@@ -8,8 +8,8 @@ import Lyrics from "./components/Lyrics";
 const Fullpage = () => (
 	<div className="app">
 		<Header />
-		<Gallery />
 		<Lyrics />
+		<Gallery />
 	</div>
 );
 
