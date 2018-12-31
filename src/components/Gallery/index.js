@@ -10,12 +10,12 @@ class Gallery extends Component {
 		super(props);
 		this.state = {
 			stackedPolaroids: [
-				{ name: "albumArt.jpg", angle: randomAngle() },
-				{ name: "ethan_2.jpg", angle: randomAngle() },
-				{ name: "horn.jpg", angle: randomAngle() },
-				{ name: "living_room_1.jpg", angle: randomAngle() },
-				{ name: "vocals.jpg", angle: randomAngle() },
-				{ name: "danny_ethan.jpg", angle: randomAngle() }
+				{ name: "final_album_art.jpg", angle: randomAngle() },
+				{ name: "ethanTop.png", angle: randomAngle() },
+				{ name: "hornOld.png", angle: randomAngle() },
+				{ name: "runaway.png", angle: randomAngle() },
+				{ name: "vocals.png", angle: randomAngle() },
+				{ name: "shed2.png", angle: randomAngle() }
 			],
 			viewedPolaroids: []
 		};
