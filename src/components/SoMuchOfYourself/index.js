@@ -52,12 +52,12 @@ class SoMuchOfYourself extends Component {
 
 						<div>
 							<p className="credits">
-								Written and recorded by Brandon Day Ethan Gans Nicholas
-								Vereschak and Ryan Garbett Recording engineer Danny Paulson
-								Produced by Danny Paulson Brandon Day Guitar and vocals Ethan
-								Gans Guitar Nicholas Vereschak Drums and keys Ryan Garbett Bass
-								guitar Recorded in my bedroom my living room Nicks apartment and
-								somewhere in Israel Fall 2018
+								So Much of Yourself written and recorded by Brandon Day Ethan
+								Gans Nicholas Vereschak and Ryan Garbett Recording engineer
+								Danny Paulson Produced by Danny Paulson Brandon Day Guitar and
+								vocals Ethan Gans Guitar Nicholas Vereschak Drums and keys Ryan
+								Garbett Bass guitar Recorded in my bedroom my living room Nicks
+								apartment and somewhere in Israel Fall 2018
 							</p>
 						</div>
 					</div>

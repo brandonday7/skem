@@ -53,11 +53,11 @@ class DependsOnYou extends Component {
 						</div>
 						<div>
 							<p className="credits">
-								Written and recorded by Brandon Day Ethan Gans Nicholas
-								Vereschak and Ryan Garbett Recording engineer Danny Paulson
-								Produced by Danny Paulson Brandon Day Guitar and vocals Ethan
-								Gans Guitar Nicholas Vereschak Drums Ryan Garbett Bass guitar
-								Recorded in my bedroom and somewhere in Israel Fall 2018
+								Depends on You written and recorded by Brandon Day Ethan Gans
+								Nicholas Vereschak and Ryan Garbett Recording engineer Danny
+								Paulson Produced by Danny Paulson Brandon Day Guitar and vocals
+								Ethan Gans Guitar Nicholas Vereschak Drums Ryan Garbett Bass
+								guitar Recorded in my bedroom and somewhere in Israel Fall 2018
 							</p>
 						</div>
 					</div>
