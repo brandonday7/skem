@@ -13,7 +13,7 @@ class Header extends Component {
 				</video>
 				<div className="absolute">
 					<div className="title-container">
-						<p className="header-title large">Rose Red Youth</p>
+						<h1 className="header-title">Rose Red Youth</h1>
 					</div>
 				</div>
 			</div>

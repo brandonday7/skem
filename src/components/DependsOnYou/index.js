@@ -9,7 +9,7 @@ class DependsOnYou extends Component {
 			<div className="drama-container">
 				<h1 className="drama-heading">Depends On You</h1>
 				<div className="dq-lyrics-container">
-					<div className="dq-left-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">Youre all up in my head</p>
 							<p className="line">Youre a funny kind of meds</p>
@@ -36,7 +36,7 @@ class DependsOnYou extends Component {
 						</div>
 					</div>
 					<img src={machine} className="machine-image" alt="Arcade" />
-					<div className="dq-right-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">Since when do I depend on you</p>
 						</div>

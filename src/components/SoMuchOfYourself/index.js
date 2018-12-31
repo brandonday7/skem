@@ -9,7 +9,7 @@ class SoMuchOfYourself extends Component {
 			<div className="drama-container">
 				<h1 className="drama-heading">So Much of Yourself</h1>
 				<div className="dq-lyrics-container">
-					<div className="dq-left-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">Youre a liar</p>
 							<p className="line">I believe</p>
@@ -36,7 +36,7 @@ class SoMuchOfYourself extends Component {
 						</div>
 					</div>
 					<img src={machine} className="machine-image" alt="Arcade" />
-					<div className="dq-right-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">You think so much of yourself</p>
 							<p className="line">You think so much of yourself</p>

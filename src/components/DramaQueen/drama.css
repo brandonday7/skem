@@ -20,12 +20,7 @@
 	max-width: 20%;
 }
 
-.dq-left-lyrics {
-	max-width: 40%;
-	font-size: 150%;
-}
-
-.dq-right-lyrics {
+.dq-lyrics {
 	max-width: 30%;
 	font-size: 150%;
 }
@@ -40,4 +35,18 @@
 
 .verse {
 	margin-top: 1em;
+}
+
+@media (max-width: 762px) {
+	.dq-lyrics-container {
+		flex-direction: column;
+	}
+
+	.machine-image {
+		max-width: 50%;
+	}
+
+	.dq-lyrics {
+		max-width: 90%;
+	}
 }

@@ -9,7 +9,7 @@ class Intro extends Component {
 			<div className="drama-container">
 				<h1 className="drama-heading">Intro</h1>
 				<div className="dq-lyrics-container">
-					<div className="dq-left-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">
 								Thank you to all our friends and family for putting up with

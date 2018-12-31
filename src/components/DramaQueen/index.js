@@ -8,7 +8,7 @@ class DramaQueen extends Component {
 			<div className="drama-container">
 				<h1 className="drama-heading">Drama Queen</h1>
 				<div className="dq-lyrics-container">
-					<div className="dq-left-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">The sky could be clean no</p>
 							<p className="line">Nights not what it needs to be</p>
@@ -44,7 +44,7 @@ class DramaQueen extends Component {
 						</div>
 					</div>
 					<img src={machine} className="machine-image" alt="Arcade" />
-					<div className="dq-right-lyrics">
+					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">A hot head on the scene</p>
 							<p className="line">Stop and staring at me</p>
