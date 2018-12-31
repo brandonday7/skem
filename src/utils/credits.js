@@ -9,21 +9,21 @@ Danny Paulson - Slide guitar.
 Recorded in The Bedroom and The Living Room, St. Clair Avenue West. Fall 2018. `;
 
 const dramaCredits = `
-Written and recorded by Brandon Day, Ethan Gans, Nicholas Vereschak, and Ryan Garbett.
-Recording engineer Danny Paulson.
-Produced by Danny Paulson.
-Brandon Day - Guitar and vocals.
-Ethan Gans - Guitar.
-Nicholas Vereschak - Drums.
-Ryan Garbett - Bass guitar.
-Danny Paulson - Organ.
-Recorded in The Shed, Runnymede Street. Summer 2018.`;
+Written and recorded by Brandon Day Ethan Gans Nicholas Vereschak and Ryan Garbett
+Recording engineer Danny Paulson
+Produced by Danny Paulson
+Brandon Day  Guitar and vocals
+Ethan Gans  Guitar
+Nicholas Vereschak  Drums
+Ryan Garbett  Bass guitar
+Danny Paulson  Organ
+Recorded in The Shed Runnymede Street Summer 2018`;
 
 const dependsCredits = `
-Written and recorded by Brandon Day, Ethan Gans, Nicholas Vereschak, and Ryan Garbett.
+Written and recorded by Brandon Day Ethan Gans Nicholas Vereschak and Ryan Garbett.
 Recording engineer Danny Paulson.
 Produced by Danny Paulson.
-Brandon Day - Guitar and vocals.
+Brandon Day  Guitar and vocals.
 Ethan Gans - Guitar.
 Nicholas Vereschak - Drums.
 Ryan Garbett - Bass guitar.

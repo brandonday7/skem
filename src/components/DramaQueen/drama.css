@@ -5,12 +5,14 @@
 }
 
 .drama-heading {
-	margin: 1em 0 0 1em;
+	margin: 0.5em 0 0 1em;
+	font-size: 400%;
 }
 
 .dq-lyrics-container {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	margin: 0em 2em 0 2em;
 }
 
@@ -18,14 +20,33 @@
 	max-width: 20%;
 }
 
-.dq-left-lyrics {
-	max-width: 40%;
-}
-
-.dq-right-lyrics {
-	max-width: 40%;
+.dq-lyrics {
+	max-width: 30%;
+	font-size: 150%;
 }
 
 .credits {
 	font-size: 70%;
+}
+
+.line {
+	margin: 0;
+}
+
+.verse {
+	margin-top: 1em;
+}
+
+@media (max-width: 762px) {
+	.dq-lyrics-container {
+		flex-direction: column;
+	}
+
+	.machine-image {
+		max-width: 50%;
+	}
+
+	.dq-lyrics {
+		max-width: 90%;
+	}
 }

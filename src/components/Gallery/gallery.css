@@ -1,6 +1,6 @@
 .gallery-container {
 	min-height: 100vh;
-	background-color: #e3e8ef;
+	background-color: #22a1e2;
 }
 
 .viewed-container {
@@ -71,7 +71,7 @@
 }
 
 .heading {
-	font-size: 200%;
+	font-size: 400%;
 	color: white;
-	margin: 1em 0 0 2em;
+	margin: 0.5em 0 0 1em;
 }
