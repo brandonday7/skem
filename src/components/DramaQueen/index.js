@@ -10,7 +10,7 @@ class DramaQueen extends Component {
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">
 						<div className="verse">
-							<p className="line">The sky could be clean no</p>
+							<p className="line">This sky could be clean no</p>
 							<p className="line">Nights not what it needs to be</p>
 							<p className="line">And echo</p>
 						</div>
