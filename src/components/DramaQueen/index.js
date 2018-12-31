@@ -11,44 +11,51 @@ class DramaQueen extends Component {
 				<h1 className="drama-heading">Drama Queen</h1>
 				<div className="dq-lyrics-container">
 					<div className="dq-left-lyrics">
-						<p>The sky could be clean, no,</p>
-						<p>Night's not what it needs to be,</p>
-						<p>And echo!</p>
+						<p>The sky could be clean no</p>
+						<p>Nights not what it needs to be</p>
+						<p>And echo</p>
 						<p />
-						<p>I'm sprawling in my sleep</p>
-						<p>Dream's not what it seems to be,</p>
-						<p>I'm alone!</p>
+						<p>Im sprawling in my sleep</p>
+						<p>Dreams not what it seems to be</p>
+						<p>Im alone</p>
 						<p />
-						<p>Still water blowing steam,</p>
-						<p>Being off, beyond belief,</p>
-						<p>Ur such a... woah!</p>
+						<p>Still water blowing steam</p>
+						<p>Being off beyond belief</p>
+						<p>Ur such a woah</p>
 						<p />
-						<p>And if it's drama I'm the Queen,</p>
-						<p>How it pays to be me,</p>
-						<p>How I'm broke!</p>
+						<p>And if its drama Im the Queen</p>
+						<p>How it pays to be me</p>
+						<p>How Im broke</p>
 						<p />
-						<p>I talk to myself all the time,</p>
-						<p>Oh sigh, here he goes, fighting foes in his mind,</p>
-						<p>And what it's like, to have the air touch my arm, </p>
-						<p>"Oh dear, you won't be harmed",</p>
-						<p>Oh maybe I don't care and maybe that's alright.</p>
+						<p>I talk to myself all the time</p>
+						<p>Oh sigh here he goes fighting foes in his mind</p>
+						<p>And what its like to have the air touch my arm </p>
+						<p>Oh dear you wont be harmed</p>
+						<p>Oh maybe I dont care and maybe thats alright</p>
 					</div>
 					<img src={machine} className="machine-image" />
 					<div className="dq-right-lyrics">
-						<p>A hot head on the scene,</p>
-						<p>Stop and staring at me,</p>
-						<p>Put on a show.</p>
+						<p>A hot head on the scene</p>
+						<p>Stop and staring at me</p>
+						<p>Put on a show</p>
 						<p />
-						<p>This sky could be clean,</p>
-						<p>How many sides to this leaf?</p>
-						<p>Time to go.</p>
+						<p>This sky could be clean</p>
+						<p>How many sides to this leaf</p>
+						<p>Time to go</p>
 						<p />
-						<p>I talk to myself all the time,</p>
-						<p>Oh sigh, here he goes, fighting foes in his mind,</p>
-						<p>And what it's like, to have the air touch my arm, </p>
-						<p>"Oh dear, you won't be harmed",</p>
-						<p>Oh maybe I don't care and maybe that's alright.</p>
-						<p className="credits">{dramaCredits}</p>
+						<p>I talk to myself all the time</p>
+						<p>Oh sigh here he goes fighting foes in his mind</p>
+						<p>And what its like to have the air touch my arm </p>
+						<p>Oh dear you wont be harmed</p>
+						<p>Oh maybe I dont care and maybe thats alright</p>
+						<p />
+						<p className="credits">
+							Written and recorded by Brandon Day Ethan Gans Nicholas Vereschak
+							and Ryan Garbett Recording engineer Danny Paulson Produced by
+							Danny Paulson Brandon Day Guitar and vocals Ethan Gans Guitar
+							Nicholas Vereschak Drums Ryan Garbett Bass guitar Danny Paulson
+							Organ Recorded in The Shed Runnymede Street Summer 2018
+						</p>
 					</div>
 				</div>
 			</div>
