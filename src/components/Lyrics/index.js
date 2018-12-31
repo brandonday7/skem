@@ -14,6 +14,7 @@ class Lyrics extends Component {
 				showThumbs={false}
 				showStatus={false}
 				showIndicators={false}
+				// swipeable={false}
 				infiniteLoop={true}
 			>
 				<div>
