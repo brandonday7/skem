@@ -6,7 +6,7 @@
 
 .drama-heading {
 	margin: 1em 0 0 1em;
-	font-size: 200%;
+	font-size: 400%;
 }
 
 .dq-lyrics-container {
@@ -26,10 +26,18 @@
 }
 
 .dq-right-lyrics {
-	max-width: 40%;
+	max-width: 30%;
 	font-size: 150%;
 }
 
 .credits {
 	font-size: 70%;
+}
+
+.line {
+	margin: 0;
+}
+
+.verse {
+	margin-top: 1em;
 }
