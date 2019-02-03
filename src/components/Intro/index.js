@@ -21,7 +21,7 @@ class Intro extends Component {
 							<p className="line">Art direction by Brandon Day</p>
 							<p className="line">Drama Queen session video by Ethan Gans</p>
 							<p className="line">
-								Album art and photo editing by Ajay Rakrhaj
+								Album art and photo editing by Ajay Rakrhaj ajayemailhere
 							</p>
 							<p className="line">Arcade machines by Hailey Uens</p>
 							<p className="line">CD cover animation by Kevin Lee</p>
