@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "MyHandwriting", monospace;
+	font-family: "BeyondInfinity", monospace;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -12,8 +12,8 @@ code {
 }
 
 @font-face {
-	font-family: "MyHandwriting";
-	src: url("./fonts/MyHandwriting.ttf") format("truetype"),
+	font-family: "BeyondInfinity";
+	src: url("./fonts/BeyondInfinity.ttf") format("truetype"),
 		url("./fonts/FUTRFW.TTF") format("truetype");
 }
 
