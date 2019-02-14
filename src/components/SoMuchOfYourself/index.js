@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./smoy.css";
-import machine from "../../images/machine.png";
+import smoy from "../../images/smoy.png";
 import "../DramaQueen/drama.css";
 
 class SoMuchOfYourself extends Component {
@@ -35,7 +35,7 @@ class SoMuchOfYourself extends Component {
 							<p className="line">And they wont make a scene</p>
 						</div>
 					</div>
-					<img src={machine} className="machine-image" alt="Arcade" />
+					<img src={smoy} className="machine-image" alt="Arcade" />
 					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">You think so much of yourself</p>

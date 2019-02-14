@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./depends.css";
 import "../DramaQueen/drama.css";
-import machine from "../../images/machine.png";
+import dpoy from "../../images/dpoy.png";
 
 class DependsOnYou extends Component {
 	render() {
@@ -35,7 +35,7 @@ class DependsOnYou extends Component {
 							<p className="line">Now you got me on the ground</p>
 						</div>
 					</div>
-					<img src={machine} className="machine-image" alt="Arcade" />
+					<img src={dpoy} className="machine-image" alt="Arcade" />
 					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">Since when do I depend on you</p>
