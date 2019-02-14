@@ -19,8 +19,12 @@ class ArcadeMachine extends Component {
 					name: "play", 
 					shape: "poly", 
 					coords: [303, 559, 303, 586, 342, 574]
+				},
+				{
+					name: "pause", 
+					shape: "poly", 
+					coords: [255, 563, 276, 563, 276, 585, 255, 585]
 				}
-				// {name: "pause", shape: "circle", coords: [406, 612, 100]}
 			]
 		}
 
