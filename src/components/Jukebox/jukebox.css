@@ -13,3 +13,18 @@
 .front-view-image {
 	max-height: 100vh;
 }
+
+.button-hover {
+	position: absolute;
+	width: 30px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.none {
+	display: none;
+}
+
+.pause {
+	transform: translate(15.6em, -5.9em);
+}
