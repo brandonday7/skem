@@ -18,15 +18,16 @@ class ArcadeMachine extends Component {
 				{
 					name: "play", 
 					shape: "poly", 
-					coords: [0, 0, 0, 100, 100, 0]
+					coords: [303, 559, 303, 586, 342, 574]
 				}
+				// {name: "pause", shape: "circle", coords: [406, 612, 100]}
 			]
 		}
 
 		return (
-    <ImageMapper src={frontView} map={MAP_AREA} height={height}
-    	onMouseMove={(x) => console.log(x)}
-    	onClick={x => console.log(x)}
+    <ImageMapper src={frontView} map={MAP_AREA} height={0.95*height}
+    	onMouseMove={x => null}
+    	onImageMouseMove={evt => console.log(evt.clientX, evt.clientY)}
     />
 		);
 	}
