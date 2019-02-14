@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import ArcadeMachine from "./ArcadeMachine";
+
 import "./jukebox.css";
 import "../DramaQueen/drama.css";
-import frontView from "../../images/frontView.png";
 
 class Jukebox extends Component {
 	render() {
 		return (
 			<div className="intro-container">
 				<div className="dq-lyrics-container">
-					<img src={frontView} className="front-view-image" alt="Arcade" />
+					<ArcadeMachine />
 					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">
