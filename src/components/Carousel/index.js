@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled, { keyframes } from 'styled-components'
-
-import next from "../../images/next.png"
+import Arrow from "./Arrow"
 
 const right = keyframes`
 	from {
@@ -37,28 +36,6 @@ const StyledAnimation = styled.div`
 		if (movement === "right") return right
 		else if (movement === "left") return left
 	}} 0.5s;
-`
-
-const Left = styled.img`
-	position: absolute;
-	width: 50px;
-	transform: translateX(-47.5vw) scaleX(-1);
-	cursor: pointer;
-	z-index: 2;
-	&:hover {
-		width: 55px;
-	}
-`
-
-const Right = styled.img`
-	position: absolute;
-	width: 50px;
-	transform: translateX(47.5vw);
-	cursor: pointer;
-	z-index: 2;
-	&:hover {
-		width: 55px;
-	}
 `
 
 class Carousel extends Component {
@@ -101,13 +78,13 @@ class Carousel extends Component {
 		const { childIndex, movement } = this.state
 		return (
 			<StyledCarousel>
-				<Left src={next} onClick={() => this.move("left")} />
+				<Arrow move={this.move} type="left" scale={-1}/>
 					<StyledAnimation movement={movement}>
 						{children[this.prevChildIndex()]}
 						{children[childIndex]}
 						{children[this.nextChildIndex()]}
 					</StyledAnimation>
-				<Right src={next} onClick={() => this.move("right")} />
+				<Arrow move={this.move} type="right" scale={1}/>
 			</StyledCarousel>
 		);
 	}
