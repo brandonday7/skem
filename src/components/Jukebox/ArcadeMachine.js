@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
 import Button from "./Button"
+import Player from "./Player"
 
 import { buttonCoords } from "./jukeboxHelpers.js"
 import frontView from "../../images/frontView.png";
@@ -43,7 +44,7 @@ class ArcadeMachine extends Component {
 	}
 
 	render() {
-		const { imgHeight } = this.state
+		const { imgHeight, trackIndex, playing } = this.state
 		const imgWidth = 0.678064516129032 * imgHeight
 		return (
 			<div>
@@ -76,6 +77,7 @@ class ArcadeMachine extends Component {
 	    		myTurn={this.myTurn} 
 	    		onClick={this.nextTrack}
 	    	/>
+	    	<Player trackIndex={trackIndex} playing={playing}/>
 	    </div>
 		);
 	}
