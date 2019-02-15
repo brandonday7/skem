@@ -5,7 +5,7 @@ class Header extends Component {
 	render() {
 		return (
 			<div className="video-container">
-				<video className="video" loop autoPlay muted playsinline>
+				<video className="video" loop autoPlay muted playsInline>
 					<source
 						src={`${process.env.REACT_APP_BUCKET}steady.mp4`}
 						type="video/mp4"

@@ -13,3 +13,13 @@
 .front-view-image {
 	max-height: 100vh;
 }
+
+.button-hover {
+	position: absolute;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.none {
+	display: none;
+}
