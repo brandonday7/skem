@@ -12,6 +12,7 @@
 
 .dq-lyrics-container {
 	display: flex;
+	max-width: 100vw;
 	align-items: center;
 	justify-content: space-around;
 	margin: 0em 2em 0 2em;
@@ -41,6 +42,7 @@
 @media (max-width: 762px) {
 	.dq-lyrics-container {
 		flex-direction: column;
+		margin: 0;
 	}
 
 	.machine-image {
