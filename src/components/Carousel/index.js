@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 import next from "../../images/next.png"
 
@@ -16,6 +16,9 @@ const Left = styled.img`
 	width: 60px;
 	transform: translateX(-47.5vw) scaleX(-1);
 	cursor: pointer;
+	&:hover {
+		width: 70px;
+	}
 `
 
 const Right = styled.img`
@@ -23,18 +26,10 @@ const Right = styled.img`
 	width: 60px;
 	transform: translateX(47.5vw);
 	cursor: pointer;
-`
-
-const enter = keyframes`
-	from {
-		transform: translateX(100vw);
-	}
-
-	to {
-		transform: translateX(0);
+	&:hover {
+		width: 70px;
 	}
 `
-
 
 class Carousel extends Component {
 	constructor(props) {
