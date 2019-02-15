@@ -4,6 +4,7 @@
 	background-color: #e8a5a5;
 	display: flex;
 	justify-content: center;
+	padding: 1em 0;
 }
 
 .intro-heading {

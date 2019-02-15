@@ -32,6 +32,7 @@ const StyledCarousel = styled.div`
 `
 
 const StyledAnimation = styled.div`
+	display: flex;
 	animation: ${({ movement }) => {
 		if (movement === "right") return right
 		else if (movement === "left") return left
@@ -40,21 +41,23 @@ const StyledAnimation = styled.div`
 
 const Left = styled.img`
 	position: absolute;
-	width: 60px;
+	width: 50px;
 	transform: translateX(-47.5vw) scaleX(-1);
 	cursor: pointer;
+	z-index: 2;
 	&:hover {
-		width: 70px;
+		width: 55px;
 	}
 `
 
 const Right = styled.img`
 	position: absolute;
-	width: 60px;
+	width: 50px;
 	transform: translateX(47.5vw);
 	cursor: pointer;
+	z-index: 2;
 	&:hover {
-		width: 70px;
+		width: 55px;
 	}
 `
 
@@ -71,26 +74,27 @@ class Carousel extends Component {
 	reset = () => this.setState({ movement: "none" })
 	wait = () => setTimeout(this.reset, 500)
 
-	toTheRight = () => {
+	nextChildIndex = () => {
 		const { childIndex, lastChildIndex } = this.state
-		let newChildIndex
-		if (childIndex !== lastChildIndex) {
-			newChildIndex = childIndex + 1
-		} else {
-			newChildIndex = 0
-		}
-		this.setState({ childIndex: newChildIndex, movement: "right" }, this.wait)
+		if (childIndex !== lastChildIndex) return childIndex + 1
+		return 0		
 	}
 
-	toTheLeft = () => {
+	prevChildIndex = () => {
+		const { childIndex, lastChildIndex } = this.state 
+		if (childIndex) return childIndex - 1
+		return lastChildIndex
+	}
+
+	move = direction => {
 		const { childIndex, lastChildIndex } = this.state
 		let newChildIndex
-		if (childIndex !== 0) {
-			newChildIndex = childIndex - 1
+		if (direction === "right") {
+			newChildIndex = this.nextChildIndex()
 		} else {
-			newChildIndex = lastChildIndex
+			newChildIndex = this.prevChildIndex()
 		}
-		this.setState({ childIndex: newChildIndex, movement: "left" }, this.wait)
+		this.setState({ childIndex: newChildIndex, movement: direction }, this.wait)
 	}
 
 	render() {
@@ -98,11 +102,13 @@ class Carousel extends Component {
 		const { childIndex, movement } = this.state
 		return (
 			<StyledCarousel>
-				<Left src={next} onClick={this.toTheLeft} />
+				<Left src={next} onClick={() => this.move("left")} />
 					<StyledAnimation movement={movement}>
+						{children[this.prevChildIndex()]}
 						{children[childIndex]}
+						{children[this.nextChildIndex()]}
 					</StyledAnimation>
-				<Right src={next} onClick={this.toTheRight} />
+				<Right src={next} onClick={() => this.move("right")} />
 			</StyledCarousel>
 		);
 	}
