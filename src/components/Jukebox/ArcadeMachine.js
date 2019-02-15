@@ -77,7 +77,11 @@ class ArcadeMachine extends Component {
 	    		myTurn={this.myTurn} 
 	    		onClick={this.nextTrack}
 	    	/>
-	    	<Player trackIndex={trackIndex} playing={playing}/>
+	    	<Player 
+	    		trackIndex={trackIndex} 
+	    		playing={playing} 
+	    		nextTrack={this.nextTrack}
+	    	/>
 	    </div>
 		);
 	}

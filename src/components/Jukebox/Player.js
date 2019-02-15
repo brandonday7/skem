@@ -32,7 +32,7 @@ class Player extends Component {
 	}
 
 	render() {
-		const { playing, trackIndex } = this.props
+		const { playing, trackIndex, nextTrack } = this.props
 		const { tracks } = this.state
 		return (
       <ReactPlayer
@@ -41,6 +41,7 @@ class Player extends Component {
         width={'0px'}
         config={{ file: { forceAudio: true } }}
         url={tracks[trackIndex].src} 
+        onEnded={nextTrack}
       />
 		);
 	}
