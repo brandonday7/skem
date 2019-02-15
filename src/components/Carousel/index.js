@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import next from "../../images/next.png"
 
 const StyledCarousel = styled.div`
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -45,7 +45,7 @@ class Carousel extends Component {
 		}
 	}
 
-	toTheLeft = () => {
+	toTheRight = () => {
 		const { childIndex, lastChildIndex } = this.state
 		if (childIndex !== lastChildIndex) {
 			this.setState({ childIndex: childIndex + 1 })
@@ -54,7 +54,7 @@ class Carousel extends Component {
 		}
 	}
 
-	toTheRight = () => {
+	toTheLeft = () => {
 		const { childIndex, lastChildIndex } = this.state
 		if (childIndex !== 0) {
 			this.setState({ childIndex: childIndex - 1 })

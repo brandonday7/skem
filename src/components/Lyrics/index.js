@@ -20,12 +20,9 @@ class Lyrics extends Component {
 	render() {
 		return (
 			<Carousel>
-				<StyledDiv color="#00b300">
-					<p>HEY</p>
-				</StyledDiv>
-				<StyledDiv color="purple">
-					<p>YO</p>
-				</StyledDiv>
+				<DramaQueen />
+				<DependsOnYou />
+				<SoMuchOfYourself />
 			</Carousel>
 		);
 	}
