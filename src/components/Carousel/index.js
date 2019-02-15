@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import next from "../../images/next.png"
 
@@ -23,6 +23,16 @@ const Right = styled.img`
 	width: 60px;
 	transform: translateX(47.5vw);
 	cursor: pointer;
+`
+
+const enter = keyframes`
+	from {
+		transform: translateX(100vw);
+	}
+
+	to {
+		transform: translateX(0);
+	}
 `
 
 
@@ -59,7 +69,7 @@ class Carousel extends Component {
 		return (
 			<StyledCarousel>
 				<Left src={next} onClick={this.toTheLeft} />
-				{children[childIndex]}
+					{children[childIndex]}
 				<Right src={next} onClick={this.toTheRight} />
 			</StyledCarousel>
 		);
