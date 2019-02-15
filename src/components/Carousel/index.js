@@ -87,7 +87,6 @@ class Carousel extends Component {
 	}
 
 	move = direction => {
-		const { childIndex, lastChildIndex } = this.state
 		let newChildIndex
 		if (direction === "right") {
 			newChildIndex = this.nextChildIndex()
