@@ -1,7 +1,27 @@
 import React, { Component } from "react";
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import next from "../../images/next.png"
+
+const right = keyframes`
+	from {
+		transform: translateX(100vw);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+`
+
+const left = keyframes`
+	from {
+		transform: translateX(-100vw);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+`
 
 const StyledCarousel = styled.div`
 	min-height: 100vh;
@@ -9,6 +29,13 @@ const StyledCarousel = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+`
+
+const StyledAnimation = styled.div`
+	animation: ${({ movement }) => {
+		if (movement === "right") return right
+		else if (movement === "left") return left
+	}} 0.5s;
 `
 
 const Left = styled.img`
@@ -36,35 +63,45 @@ class Carousel extends Component {
 		super(props)
 		this.state = {
 			childIndex: 0,
-			lastChildIndex: this.props.children.length - 1
+			lastChildIndex: this.props.children.length - 1,
+			movement: "none"
 		}
 	}
 
+	reset = () => this.setState({ movement: "none" })
+	wait = () => setTimeout(this.reset, 500)
+
 	toTheRight = () => {
 		const { childIndex, lastChildIndex } = this.state
+		let newChildIndex
 		if (childIndex !== lastChildIndex) {
-			this.setState({ childIndex: childIndex + 1 })
+			newChildIndex = childIndex + 1
 		} else {
-			this.setState({ childIndex: 0 })
+			newChildIndex = 0
 		}
+		this.setState({ childIndex: newChildIndex, movement: "right" }, this.wait)
 	}
 
 	toTheLeft = () => {
 		const { childIndex, lastChildIndex } = this.state
+		let newChildIndex
 		if (childIndex !== 0) {
-			this.setState({ childIndex: childIndex - 1 })
+			newChildIndex = childIndex - 1
 		} else {
-			this.setState({ childIndex: lastChildIndex })
+			newChildIndex = lastChildIndex
 		}
+		this.setState({ childIndex: newChildIndex, movement: "left" }, this.wait)
 	}
 
 	render() {
 		const { children } = this.props
-		const { childIndex } = this.state
+		const { childIndex, movement } = this.state
 		return (
 			<StyledCarousel>
 				<Left src={next} onClick={this.toTheLeft} />
-					{children[childIndex]}
+					<StyledAnimation movement={movement}>
+						{children[childIndex]}
+					</StyledAnimation>
 				<Right src={next} onClick={this.toTheRight} />
 			</StyledCarousel>
 		);
