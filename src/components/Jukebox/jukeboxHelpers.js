@@ -1,41 +1,56 @@
-const buttonCoords = {
+const buttonCoords = (width, height) => ({
 	name: "buttons",
 	areas: [
 		{
 			name: "pause", 
 			shape: "poly", 
-			coords: [255, 563, 276, 563, 276, 585, 255, 585]
+			coords: [
+				0.5782*width, 0.8648*height, 
+				0.6259*width, 0.8648*height, 
+				0.6259*width, 0.8986*height, 
+				0.5782*width, 0.8986*height
+			]
 		},
 		{
 			name: "play", 
 			shape: "poly", 
-			coords: [303, 559, 303, 586, 342, 574]
+			coords: [
+				0.6871*width, 0.8587*height, 
+				0.6871*width, 0.9001*height, 
+				0.7755*width, 0.8817*height
+			]
 		},
 		{
 			name: "next", 
 			shape: "poly", 
 			coords: [
-				348, 565,
-				362, 565,
-				363, 559,
-				385, 571,
-				364, 585,
-				363, 579,
-				348, 579
+				0.7891*width, 0.8679*height,
+				0.8209*width, 0.8679*height,
+				0.8231*width, 0.8587*height,
+				0.873*width, 0.8771*height,
+				0.8254*width, 0.8986*height,
+				0.8231*width, 0.9171*height,
+				0.7891*width, 0.9171*height
 			]
 		},
 		{
 			name: "none",
 			shape: "poly",
 			coords: [
-				100, 400,
-				500, 400,
-				500, 700,
-				100, 700
+				0.2268*width, 0.6144*height,
+				width, 0.6144*height,
+				width, height,
+				0.2268*width, height
 			]
 		}
 	]
+})
+
+const buttonTranslations = {
+	pause: {x: "36.6vh", y: "-13.7vh", w: "4.2vh"},
+	play: {x: "43.5vh", y: "-14.1vh", w: "7vh"},
+	next: {x: "49.8vh", y: "-14.1vh", w: "7vh"}
 }
 
 
-export { buttonCoords }
+export { buttonCoords, buttonTranslations }

@@ -15,7 +15,7 @@ class ArcadeMachine extends Component {
 		super(props);
 		this.state = {
 			trackIndex: 0,
-			height: window.innerHeight,
+			imgHeight: 0.95*window.innerHeight,
 			playing: false,
 			hovering: "none"
 		};
@@ -43,14 +43,15 @@ class ArcadeMachine extends Component {
 	}
 
 	render() {
-		const { height, hovering } = this.state
-
+		const { imgHeight } = this.state
+		const imgWidth = 0.678064516129032 * imgHeight
 		return (
 			<div>
 		    <ImageMapper 
 		    	src={frontView} 
-		    	map={buttonCoords} 
-		    	height={0.95*height}
+		    	map={buttonCoords(imgWidth, imgHeight)} 
+		    	height={imgHeight}
+		    	width={0.678064516129032 * imgHeight}
 		    	onMouseEnter={evt => this.changeHover(evt.name)}
 					fillColor="rgba(255, 255, 255, 0)"
 					strokeColor="rgba(255, 255, 255, 0)"
