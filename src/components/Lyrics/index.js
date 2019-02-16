@@ -7,12 +7,19 @@ import "./carousel.css";
 
 class Lyrics extends Component {
 	render() {
+		const { move, childIndex, movement, prevChildIndex, nextChildIndex } = this.props
 		return (
-			<Carousel>
-				<DramaQueen />
-				<DependsOnYou />
-				<SoMuchOfYourself />
-			</Carousel>
+				<Carousel 
+					move={move} 
+					movement={movement}
+					childIndex={childIndex}
+					prevChildIndex={prevChildIndex}
+					nextChildIndex={nextChildIndex}
+				>
+					<DramaQueen />
+					<DependsOnYou />
+					<SoMuchOfYourself />
+				</Carousel>
 		);
 	}
 }

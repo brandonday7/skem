@@ -4,7 +4,7 @@ import ControlButtons from "./ControlButtons"
 import Player from "./Player"
 import DisplayTrack from "./DisplayTrack"
 
-import { buttonCoords } from "./jukeboxHelpers.js"
+import { buttonCoords, getMeTo } from "./jukeboxHelpers.js"
 import frontView from "../../images/frontView.png";
 
 import "./jukebox.css"
@@ -17,7 +17,7 @@ class ArcadeMachine extends Component {
 			imgHeight: 0.95*window.innerHeight,
 			mobile: window.innerWidth < 500,
 			playing: false,
-			hovering: "none"
+			hovering: "none",
 		};
 	}
 
@@ -31,7 +31,22 @@ class ArcadeMachine extends Component {
 
 	play = () => this.setState({playing: true})
 	pause = () => this.setState({playing: false})
-	nextTrack = () => this.setState({ trackIndex: this.newIndex() })
+	nextTrack = () => {
+		const { move, childIndex } = this.props
+		let times
+		this.setState({ trackIndex: this.newIndex() }, () => {
+			const { trackIndex } = this.state
+			if (!trackIndex || trackIndex === 1) times = getMeTo("dq", childIndex)
+			else if (trackIndex === 2) times = getMeTo("dpoy", childIndex)
+			else times = getMeTo("smoy", childIndex)
+			if (times === 1) {
+				move("right")
+			} if (times === 2) {
+				move("right")
+				setTimeout(() => move("right"), 100)
+			}
+		})		
+	}
 
 	changeHover = name => {
 		if (name !== this.state.hovering) this.setState({ hovering: name })

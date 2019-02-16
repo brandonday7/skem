@@ -6,7 +6,7 @@ import dpoy from "../../images/dpoy.png";
 class DependsOnYou extends Component {
 	render() {
 		return (
-			<div className="drama-container">
+			<div className="carousel-child">
 				<h1 className="drama-heading">Depends On You</h1>
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">

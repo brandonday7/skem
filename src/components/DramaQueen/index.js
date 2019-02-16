@@ -5,7 +5,7 @@ import "./drama.css";
 class DramaQueen extends Component {
 	render() {
 		return (
-			<div className="drama-container">
+			<div className="carousel-child">
 				<h1 className="drama-heading">Drama Queen</h1>
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">

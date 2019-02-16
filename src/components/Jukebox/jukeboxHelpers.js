@@ -52,5 +52,22 @@ const buttonTranslations = {
 	next: {x: "49.8vh", y: "-14.1vh", w: "7vh"}
 }
 
+const getMeTo = (song, childIndex) => {
+	if (song === "dq") {
+		console.log(childIndex)
+		if (childIndex === 1) return 2
+		else if (childIndex === 2) return 1
+		else return 0
+	} else if (song === "dpoy") {
+		if (childIndex === 0) return 1
+		else if (childIndex === 2) return 2
+		else return 0
+	} else if (song === "smoy") {
+		if (childIndex === 0) return 2
+		else if (childIndex === 1) return 1
+		else return 0
+	}
+}
 
-export { buttonCoords, buttonTranslations }
+
+export { buttonCoords, buttonTranslations, getMeTo }

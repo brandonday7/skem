@@ -6,7 +6,7 @@ import "../DramaQueen/drama.css";
 class SoMuchOfYourself extends Component {
 	render() {
 		return (
-			<div className="drama-container">
+			<div className="carousel-child">
 				<h1 className="drama-heading">So Much of Yourself</h1>
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">
