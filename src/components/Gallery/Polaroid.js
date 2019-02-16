@@ -28,7 +28,7 @@ class Polaroid extends Component {
 				}`}
 				style={
 					unviewed
-						? { transform: `rotate(${angle}deg)`, maxHeight: "50vh" }
+						? { transform: `rotate(${angle}deg)` }
 						: {}
 				}
 				src={`${process.env.REACT_APP_BUCKET}${src}`}

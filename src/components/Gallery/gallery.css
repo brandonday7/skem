@@ -21,6 +21,7 @@
 .unviewed {
 	position: absolute;
 	cursor: pointer;
+	max-height: 50vh;
 }
 
 .viewed {
@@ -52,6 +53,10 @@
 @media (max-width: 746px) {
 	.polaroid {
 		height: 35vh;
+	}
+
+	.unviewed {
+		max-height: 60vw;
 	}
 }
 
