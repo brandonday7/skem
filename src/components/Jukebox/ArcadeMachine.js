@@ -31,6 +31,8 @@ class ArcadeMachine extends Component {
 
 	play = () => this.setState({playing: true})
 	pause = () => this.setState({playing: false})
+
+	// this solution is pretty insane...
 	nextTrack = () => {
 		const { move, childIndex } = this.props
 		let times
