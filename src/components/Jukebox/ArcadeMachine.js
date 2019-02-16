@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
-import Button from "./Button"
+import ControlButtons from "./ControlButtons"
 import Player from "./Player"
 import DisplayTrack from "./DisplayTrack"
 
@@ -19,7 +19,8 @@ class ArcadeMachine extends Component {
 			trackIndex: 0,
 			imgHeight: 0.95*window.innerHeight,
 			playing: false,
-			hovering: "none"
+			hovering: "none",
+			mobile: window.innerWidth < 500
 		};
 	}
 
@@ -44,8 +45,14 @@ class ArcadeMachine extends Component {
 			return "none"
 	}
 
+	mobileClick = area => {
+		if (area === "pause") this.pause()
+		else if (area === "play") this.play()
+		else if (area === "next") this.nextTrack()
+	}
+
 	render() {
-		const { imgHeight, trackIndex, playing } = this.state
+		const { imgHeight, trackIndex, playing, mobile } = this.state
 		const imgWidth = 0.678064516129032 * imgHeight
 		return (
 			<div>
@@ -57,27 +64,18 @@ class ArcadeMachine extends Component {
 		    	onMouseEnter={evt => this.changeHover(evt.name)}
 					fillColor="rgba(255, 255, 255, 0)"
 					strokeColor="rgba(255, 255, 255, 0)"
+					onClick={evt => {if (mobile) this.mobileClick(evt.name)}}
 		    	// everything breaks without this function below, blame react-image-mapper
 		    	onMouseMove={x => null}
 		    />
-	    	<Button 
-	    		name="pause" 
-	    		src={pause} 
-	    		myTurn={this.myTurn} 
-	    		onClick={this.pause}
-	    	/>
-	    	<Button 
-	    		name="play" 
-	    		src={play} 
-	    		myTurn={this.myTurn} 
-	    		onClick={this.play}
-	    	/>
-	    	<Button 
-	    		name="next" 
-	    		src={next} 
-	    		myTurn={this.myTurn} 
-	    		onClick={this.nextTrack}
-	    	/>
+	    	{!mobile && 
+	    		<ControlButtons 
+		    		pause={this.pause} 
+		    		play={this.play} 
+		    		nextTrack={this.nextTrack} 
+		    		myTurn={this.myTurn}
+	    		/>
+	    	}
 	    	<DisplayTrack trackIndex={trackIndex}/>
 	    	<Player 
 	    		trackIndex={trackIndex} 
