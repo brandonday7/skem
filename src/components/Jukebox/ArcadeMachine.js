@@ -6,9 +6,6 @@ import DisplayTrack from "./DisplayTrack"
 
 import { buttonCoords } from "./jukeboxHelpers.js"
 import frontView from "../../images/frontView.png";
-import pause from "../../images/pause.png";
-import play from "../../images/play.png";
-import next from "../../images/next.png";
 
 import "./jukebox.css"
 
@@ -18,9 +15,9 @@ class ArcadeMachine extends Component {
 		this.state = {
 			trackIndex: 0,
 			imgHeight: 0.95*window.innerHeight,
+			mobile: window.innerWidth < 500,
 			playing: false,
-			hovering: "none",
-			mobile: window.innerWidth < 500
+			hovering: "none"
 		};
 	}
 
