@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
 import Button from "./Button"
 import Player from "./Player"
+import DisplayTrack from "./DisplayTrack"
 
 import { buttonCoords } from "./jukeboxHelpers.js"
 import frontView from "../../images/frontView.png";
@@ -77,6 +78,7 @@ class ArcadeMachine extends Component {
 	    		myTurn={this.myTurn} 
 	    		onClick={this.nextTrack}
 	    	/>
+	    	<DisplayTrack trackIndex={trackIndex}/>
 	    	<Player 
 	    		trackIndex={trackIndex} 
 	    		playing={playing} 
