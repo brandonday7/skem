@@ -27,6 +27,7 @@
 .viewed {
 	animation-duration: 0.5s;
 	animation-name: enter;
+	max-height: 40vh;
 }
 
 @keyframes enter {
@@ -42,7 +43,6 @@
 
 .polaroid {
 	background-color: white;
-	max-height: 40vh;
 	margin: 1em;
 	padding: 1em 1em 4em 1em;
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);

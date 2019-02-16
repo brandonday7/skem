@@ -24,7 +24,7 @@ class Polaroid extends Component {
 					}
 				}}
 				className={`${unviewed ? "unviewed" : "viewed"} polaroid ${
-					exiting ? "polaroid-exit" : ""
+					exiting && "polaroid-exit"
 				}`}
 				style={
 					unviewed
