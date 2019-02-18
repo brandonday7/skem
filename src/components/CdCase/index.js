@@ -42,9 +42,15 @@ class CdCase extends Component {
 		}
 	}
 
-	reset = () => this.setState({ playing: false })
+	reset = () => {
+		this.setState({ playing: false }, this.props.setReverse)
+	}
 
-	play = () => this.setState({ playing: true }, this.wait)
+	play = () => { 
+		if (!this.state.playing) {
+			this.setState({ playing: true }, this.wait)
+		}
+	}
 	wait = () => setTimeout(this.fade, 5000)
 	fade = () => this.setState({ fadeOut: true }, this.redirect)
 	redirect = () => setTimeout(() => {
@@ -70,7 +76,7 @@ class CdCase extends Component {
 		        height='100%'
 		      />
 	      </StlyedDiv>
-	      {!playing && (
+	      {!playing && !reverse && (
 	      	<StyledInstruction onClick={this.play}>
   	      	<Instructions label="Click to enter" />
   	      </StyledInstruction>
