@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "BeyondInfinity", monospace;
+	font-family: "BeyondInfinity", "game_over", monospace;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-user-select: none; /* Chrome/Safari */
@@ -17,5 +17,5 @@ code {
 @font-face {
 	font-family: "BeyondInfinity";
 	src: url("./fonts/BeyondInfinity.ttf") format("truetype"),
-		url("./fonts/FUTRFW.TTF") format("truetype");
+		url("./fonts/game_over.ttf") format("truetype");
 }

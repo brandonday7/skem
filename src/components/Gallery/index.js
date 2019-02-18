@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom"
+import _ from "lodash";
 import ViewedGallery from "./ViewedGallery";
 import StackedGallery from "./StackedGallery";
+import Instructions from "../Instructions"
 import "./gallery.css";
-import _ from "lodash";
 import { randomAngle } from "../../utils";
 
 class Gallery extends Component {
@@ -47,6 +49,9 @@ class Gallery extends Component {
 				) : (
 					<ViewedGallery polaroids={viewedPolaroids} />
 				)}
+				<Link to="/">
+					<Instructions label="Return to reality"/>
+				</Link>
 			</div>
 		);
 	}
