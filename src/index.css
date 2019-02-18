@@ -19,9 +19,3 @@ code {
 	src: url("./fonts/BeyondInfinity.ttf") format("truetype"),
 		url("./fonts/FUTRFW.TTF") format("truetype");
 }
-
-.app {
-	display: flex;
-	flex-direction: column;
-	overflow-x: hidden;
-}
