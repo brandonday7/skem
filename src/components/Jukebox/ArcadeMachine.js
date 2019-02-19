@@ -6,7 +6,6 @@ import DisplayTrack from "./DisplayTrack"
 import PressPlay from "./PressPlay"
 
 import { buttonCoords, getMeTo } from "./jukeboxHelpers.js"
-import frontView from "../../images/frontView.png";
 
 import "./jukebox.css"
 
@@ -72,7 +71,7 @@ class ArcadeMachine extends Component {
 		return (
 			<div>
 		    <ImageMapper 
-		    	src={frontView} 
+		    	src={`${process.env.REACT_APP_BUCKET}frontView.png`} 
 		    	map={buttonCoords(imgWidth, imgHeight)} 
 		    	height={imgHeight}
 		    	width={0.678064516129032 * imgHeight}

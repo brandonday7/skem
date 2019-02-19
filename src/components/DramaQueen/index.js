@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import dq from "../../images/dq.png";
 import "./drama.css";
 
 class DramaQueen extends Component {
@@ -43,7 +42,7 @@ class DramaQueen extends Component {
 							</p>
 						</div>
 					</div>
-					<img src={dq} className="machine-image" alt="Arcade" />
+					<img src={`${process.env.REACT_APP_BUCKET}dq.png`} className="machine-image" alt="Arcade" />
 					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">A hot head on the scene</p>

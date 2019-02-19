@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import Instructions from "../Instructions"
-import next from "../../images/next.png"
 
 const StyledImage = styled.img`
 	width: 50px;
@@ -28,7 +27,7 @@ const ReturnFooter = () => (
 	<StyledFooter>
 		<Link to="/" className="return-link">
 			<StyledDiv>
-				<StyledImage src={next} />
+				<StyledImage src={`${process.env.REACT_APP_BUCKET}next.png`} />
 				<Instructions 
 					label="Return to the outside world" 
 					color="white" 

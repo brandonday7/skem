@@ -1,10 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-import dqTitle from "../../images/dqTitle.png";
-import dpoyTitle from "../../images/dpoyTitle.png";
-import smoyTitle from "../../images/smoyTitle.png";
-
 const fade = keyframes`
 	from {
 		opacity: 0;
@@ -25,9 +21,9 @@ const StyledImage = styled.img`
 
 const DisplayTrack = ({ trackIndex, playing }) => (
 	<div>
-		{trackIndex === 1 && <StyledImage src={dqTitle} />}
-		{trackIndex === 2 && <StyledImage src={dpoyTitle} />}
-		{trackIndex === 3 && <StyledImage src={smoyTitle} />}
+		{trackIndex === 1 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dqTitle.png`} />}
+		{trackIndex === 2 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dpoyTitle.png`} />}
+		{trackIndex === 3 && <StyledImage src={`${process.env.REACT_APP_BUCKET}smoyTitle.png`} />}
 	</div>
 )
 

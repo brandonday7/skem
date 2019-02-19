@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 
-import next from "../../images/next.png"
-
 const StyledImage = styled.img`
 	position: absolute;
 	width: 50px;
@@ -23,7 +21,7 @@ const StyledImage = styled.img`
 `
 
 const Arrow = ({move, type, scale}) => (
-	<StyledImage src={next} onClick={() => move(type)} scale={scale}/>
+	<StyledImage src={`${process.env.REACT_APP_BUCKET}next.png`} onClick={() => move(type)} scale={scale}/>
 )
 
 export default Arrow;
