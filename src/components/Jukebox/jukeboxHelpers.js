@@ -54,7 +54,6 @@ const buttonTranslations = {
 
 const getMeTo = (song, childIndex) => {
 	if (song === "dq") {
-		console.log(childIndex)
 		if (childIndex === 1) return 2
 		else if (childIndex === 2) return 1
 		else return 0
