@@ -29,7 +29,12 @@ const ReturnFooter = () => (
 		<Link to="/" className="return-link">
 			<StyledDiv>
 				<StyledImage src={next} />
-				<Instructions label="Return to the outside world" color="white" size={300} blink={false}/>
+				<Instructions 
+					label="Return to the outside world" 
+					color="white" 
+					size={300} 
+					blink={false}
+				/>
 			</StyledDiv>
 		</Link>
 	</StyledFooter>

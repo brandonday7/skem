@@ -23,7 +23,7 @@ const StyledImage = styled.img`
 	animation: ${fade} 0.7s;
 `
 
-const DisplayTrack = ({ trackIndex }) => (
+const DisplayTrack = ({ trackIndex, playing }) => (
 	<div>
 		{trackIndex === 1 && <StyledImage src={dqTitle} />}
 		{trackIndex === 2 && <StyledImage src={dpoyTitle} />}
