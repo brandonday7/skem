@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom"
 import _ from "lodash";
 import ViewedGallery from "./ViewedGallery";
 import StackedGallery from "./StackedGallery";
-import Instructions from "../Instructions"
 import "./gallery.css";
 import { randomAngle } from "../../utils";
 
@@ -43,15 +41,13 @@ class Gallery extends Component {
 				<h1 className="heading">Gallery</h1>
 				{stackedPolaroids.length ? (
 					<StackedGallery
+						untouched={!viewedPolaroids.length}
 						polaroids={stackedPolaroids}
 						view={this.viewPolaroid}
 					/>
 				) : (
 					<ViewedGallery polaroids={viewedPolaroids} />
 				)}
-				<Link to="/">
-					<Instructions label="Return to reality"/>
-				</Link>
 			</div>
 		);
 	}

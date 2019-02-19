@@ -58,6 +58,10 @@
 	.unviewed {
 		max-height: 60vw;
 	}
+
+	.view-instruction {
+		transform: translateY(20em);
+	}
 }
 
 .polaroid-exit {
@@ -79,4 +83,24 @@
 	font-size: 400%;
 	color: white;
 	margin: 0.5em 0 0 1em;
+}
+
+.return-link {
+	text-decoration: none;
+}
+
+.return-link:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.view-instruction {
+	transform: translateY(-6em);
+	margin: 0;
+}
+
+@media (max-width: 746px) {
+	.view-instruction {
+		transform: translateY(55vh);
+	}
 }

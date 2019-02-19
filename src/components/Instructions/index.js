@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-const blink = keyframes`
+const fade = keyframes`
 	0% {
 		opacity: 1;
 	}
@@ -16,12 +16,27 @@ const blink = keyframes`
 `
 
 const StyledInstruction = styled.p`
-	font-size: 200%;
-	animation: ${blink} 1.5s infinite;
+	font-size: ${({size}) => size}%;
+	${({ blink }) => blink}
+	animation: ${({ blink = true }) => blink && fade} 1.7s infinite;
+	color: ${({color}) => color};
+	text-decoration: none;
+	&:visited {
+		text-decoration: none;
+	}
+
+  @media (max-width: 700px) {
+    font-size: 200%;
+  }
 `
 
-const Instructions = ({ label }) => (
-	<StyledInstruction>{label}</StyledInstruction>
+const Instructions = ({ label, size = 200, ...props }) => (
+	<StyledInstruction 
+		{...props} 
+		size={size}
+	>
+		{label}
+	</StyledInstruction>
 )
 
 export default Instructions

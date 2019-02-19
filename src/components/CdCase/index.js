@@ -3,12 +3,21 @@ import ReactPlayer from "react-player"
 import styled, { keyframes } from "styled-components"
 import Instructions from "../Instructions"
 
-const fade = keyframes`
+const fadeAway = keyframes`
 	from {
 		opacity: 1;
 	}
 	to {
 		opacity: 0
+	}
+`
+
+const fadeIn = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 `
 
@@ -18,13 +27,14 @@ const StyledContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fbf5f9;
+	background-color: #f7f2f6;
 `
 
 const StlyedDiv = styled.div`
-	height: 60vh;
+	height: 70vh;
 	transform: translateX(-3vw);
-	animation: ${({fadeOut}) => fadeOut && fade} 0.6s;
+	cursor: pointer;
+	animation: ${({fadeOut}) => fadeOut ? fadeAway : fadeIn} 0.8s;
 `
 
 const StyledInstruction = styled.div`
@@ -56,7 +66,7 @@ class CdCase extends Component {
 	redirect = () => setTimeout(() => {
 		this.props.setReverse()
 		this.props.history.push("/ep")
-	}, 600)
+	}, 800)
 
 	render() {
 		const { playing, fadeOut } = this.state

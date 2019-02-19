@@ -3,7 +3,6 @@ import Carousel from "../Carousel";
 import DramaQueen from "../DramaQueen";
 import DependsOnYou from "../DependsOnYou";
 import SoMuchOfYourself from "../SoMuchOfYourself";
-import "./carousel.css";
 
 class Lyrics extends Component {
 	render() {
