@@ -17,10 +17,6 @@ const StyledImage = styled.img`
 	transform: translate(23vh, -57vh);
 	z-index: 1;
 	animation: ${fade} 0.7s;
-
-  @media (max-width: 700px) {
-		transform: translate(40vw, -57vh);
-  }
 `
 
 const DisplayTrack = ({ trackIndex, playing }) => (
