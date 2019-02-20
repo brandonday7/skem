@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import ReactPlayer from 'react-player'
 
-// import intro from "../../songs/intro.mp3"
-// import dq from "../../songs/dq.mp3"
-// import dpoy from "../../songs/dpoy.mp3"
-// import smoy from "../../songs/smoy.mp3"
-
 class Player extends Component {
 	constructor(props) {
 		super(props);
@@ -13,23 +8,23 @@ class Player extends Component {
 			tracks: [
 				{
 					name: "intro",
-					// src: intro
-					src: `${process.env.REACT_APP_BUCKET}intro.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}intro.mp3`
+					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
 				},
 				{
 					name: "dramaQueen",
-					// src: dq
-					src: `${process.env.REACT_APP_BUCKET}dq.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}dq.mp3`
+					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
 				},
 				{
 					name: "dependsOnYou",
-					// src: dpoy
-					src: `${process.env.REACT_APP_BUCKET}dpoy.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}dpoy.mp3`
+					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
 				},
 				{
 					name: "soMuchOfYourself",
-					// src: smoy
-					src: `${process.env.REACT_APP_BUCKET}smoy.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}smoy.mp3`
+					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
 				},
 			]
 		};
