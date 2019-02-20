@@ -21,9 +21,9 @@ const StyledImage = styled.img`
 
 const DisplayTrack = ({ trackIndex, playing }) => (
 	<div>
-		{trackIndex === 1 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dqTitle.png`} />}
-		{trackIndex === 2 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dpoyTitle.png`} />}
-		{trackIndex === 3 && <StyledImage src={`${process.env.REACT_APP_BUCKET}smoyTitle.png`} />}
+		{trackIndex === 1 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dqTitleSmall.png`} />}
+		{trackIndex === 2 && <StyledImage src={`${process.env.REACT_APP_BUCKET}dpoyTitleSmall.png`} />}
+		{trackIndex === 3 && <StyledImage src={`${process.env.REACT_APP_BUCKET}smoyTitleSmall.png`} />}
 	</div>
 )
 
