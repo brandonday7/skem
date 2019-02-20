@@ -2,23 +2,27 @@ import React, { Fragment } from "react"
 
 import Button from "./Button"
 
+import pauseButton from "../../images/pause.png"
+import playButton from "../../images/play.png"
+import nextButton from "../../images/next.png"
+
 const ControlButtons = ({ pause, play, nextTrack, myTurn }) => (
 	<Fragment>
 		<Button 
 			name="pause" 
-			src={`${process.env.REACT_APP_BUCKET}pause.png`} 
+			src={pauseButton} 
 			myTurn={myTurn} 
 			onClick={pause}
 		/>
 		<Button 
 			name="play" 
-			src={`${process.env.REACT_APP_BUCKET}play.png`} 
+			src={playButton} 
 			myTurn={myTurn} 
 			onClick={play}
 		/>
 		<Button 
 			name="next" 
-			src={`${process.env.REACT_APP_BUCKET}next.png`} 
+			src={nextButton} 
 			myTurn={myTurn} 
 			onClick={nextTrack}
 		/>
