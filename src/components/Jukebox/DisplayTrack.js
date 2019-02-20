@@ -12,10 +12,10 @@ const fade = keyframes`
 `
 
 const StyledImage = styled.img`
-	width: 130px;
+	width: 20vh;
 	position: absolute;
-	transform: translate(10em, -25em);
-	z-index: 10;
+	transform: translate(23vh, -57vh);
+	z-index: 1;
 	animation: ${fade} 0.7s;
 
   @media (max-width: 700px) {
