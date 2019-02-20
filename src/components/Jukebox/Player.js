@@ -14,17 +14,17 @@ class Player extends Component {
 				{
 					name: "dramaQueen",
 					// src: `${process.env.REACT_APP_BUCKET}dq.mp3`
-					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+					src: "https://www.youtube.com/watch?v=XKQNJzquduI"
 				},
 				{
 					name: "dependsOnYou",
 					// src: `${process.env.REACT_APP_BUCKET}dpoy.mp3`
-					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+					src: "https://www.youtube.com/watch?v=6B3YwcjQ_bU"
 				},
 				{
 					name: "soMuchOfYourself",
 					// src: `${process.env.REACT_APP_BUCKET}smoy.mp3`
-					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+					src: "https://www.youtube.com/watch?v=muU_ERWCgJA"
 				},
 			]
 		};

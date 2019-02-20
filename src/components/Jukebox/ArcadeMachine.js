@@ -3,7 +3,6 @@ import ImageMapper from 'react-image-mapper';
 import ControlButtons from "./ControlButtons"
 import Player from "./Player"
 import DisplayTrack from "./DisplayTrack"
-import PressPlay from "./PressPlay"
 
 import { buttonCoords, getMeTo } from "./jukeboxHelpers.js"
 
@@ -82,7 +81,6 @@ class ArcadeMachine extends Component {
 		    	// everything breaks without this function below, blame react-image-mapper
 		    	onMouseMove={x => null}
 		    />
-		    {!playing && !trackIndex && <PressPlay />}
 	    	{!mobile && 
 	    		<ControlButtons 
 		    		pause={this.pause} 
