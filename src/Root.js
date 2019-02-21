@@ -12,7 +12,8 @@ class Root extends Component {
 		}
 	}
 
-	setReverse = () => this.setState({ reverse: !this.state.reverse })
+	playForward = () => this.setState({ reverse: false })
+	playReverse = () => this.setState({ reverse: true })
 
 	render() {
 		const { reverse } = this.state
@@ -24,7 +25,8 @@ class Root extends Component {
 					  render={(routeProps) => (
 					    <CdCase 
 					    	reverse={reverse} 
-					    	setReverse={this.setReverse}
+					    	playReverse={this.playReverse}
+					    	playForward={this.playForward}
 					    	{...routeProps} 
 					    />
 					  )}
@@ -32,7 +34,7 @@ class Root extends Component {
 		      <Route 
 		      	exact path="/ep" 
 		      	render={(routeProps) => (
-		      		<Fullpage setReverse={this.setReverse}/>
+		      		<Fullpage playReverse={this.playReverse}/>
 		      	)}
 		      />
 		    </Switch>

@@ -53,7 +53,7 @@ class CdCase extends Component {
 	}
 
 	reset = () => {
-		this.setState({ playing: false }, this.props.setReverse)
+		this.setState({ playing: false }, this.props.playForward)
 	}
 
 	play = () => { 
@@ -64,6 +64,7 @@ class CdCase extends Component {
 	wait = () => setTimeout(this.fade, 5000)
 	fade = () => this.setState({ fadeOut: true }, this.redirect)
 	redirect = () => setTimeout(() => {
+		this.props.playReverse()
 		this.props.history.push("/ep")
 	}, 800)
 

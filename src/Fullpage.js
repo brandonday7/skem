@@ -23,11 +23,11 @@ const StyledDiv = styled.div`
 `
 
 
-const Fullpage = ({ setReverse }) => (
+const Fullpage = ({ playReverse }) => (
 	<StyledDiv>
 		<Header />
 		<Jukebox />
-		<Gallery setReverse={setReverse}/>
+		<Gallery playReverse={playReverse}/>
 	</StyledDiv>	
 )
 
