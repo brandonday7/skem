@@ -1,4 +1,5 @@
 import React from "react"
+import Credit from "./Credit"
 
 const Acknowledgments = () => (
 	<div className="dq-lyrics">
@@ -13,10 +14,10 @@ const Acknowledgments = () => (
 			<p className="line">Art direction by Brandon Day</p>
 			<p className="line">Drama Queen session video by Ethan Gans</p>
 			<p className="line">
-				Album art and photo editing by Ajay Rakrhaj
+				Album art and photo editing by <Credit name="Ajay Rakrhaj" site="https://google.com"/>
 			</p>
-			<p className="line">Arcade machines by Hailey Uens</p>
-			<p className="line">CD cover animation by Kevin Lee</p>
+			<p className="line">Arcade machines by <Credit name="Hailey Uens" site="https://www.instagram.com/haileyuensart/?hl=en"/></p>
+			<p className="line">CD cover animation by <Credit name="Kevin Lee" site="https://www.kevinleedesign.com"/></p>
 		</div>
 		<div className="verse">
 			<p className="line">Thanks for doing all this for free</p>
