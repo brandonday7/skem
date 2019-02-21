@@ -19,7 +19,8 @@ class Polaroid extends Component {
 		return (
 			<img
 				onClick={() => {
-					if (unviewed) {
+					// !exiting so you can't exit 2 at once 
+					if (unviewed && !exiting) {
 						this.setState({ exiting: true }, () => this.animateAndView());
 					}
 				}}

@@ -49,6 +49,7 @@
 	.video-container video {
 		/*in widescreen,fixed causes bottom overflow, so it changes for phones only*/
 		position: fixed;
+		min-height: 110%;
 	}
 }
 
