@@ -32,7 +32,6 @@
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	overflow-x: hidden;
 }
 .video-container video {
 	position: absolute;
@@ -46,10 +45,15 @@
 	transform: translate(-50%, -50%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 478px) {
 	.video-container video {
 		/*in widescreen,fixed causes bottom overflow, so it changes for phones only*/
 		position: fixed;
+		min-height: 120%;
+	}
+
+	.chevron {
+		margin-top: 0em;
 	}
 }
 
@@ -66,6 +70,32 @@
 	align-items: center;
 }
 
-.rose-logo {
+.chevron-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 3em;
 	bottom: 0;
+}
+
+.chevron {
+	position: absolute;
+	color: #e3e8ef;
+	font-size: 300%;
+	animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-0.2em);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
