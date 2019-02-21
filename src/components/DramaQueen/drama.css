@@ -3,6 +3,7 @@
 	width: 100vw;
 	background-color: #e8a5a5;
 	padding-top: 2em;
+	z-index: 0;
 }
 
 .drama-heading {

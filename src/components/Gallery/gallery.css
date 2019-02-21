@@ -1,6 +1,7 @@
 .gallery-container {
 	min-height: 100vh;
 	background-color: #009bff;
+	z-index: 0;
 }
 
 .viewed-container {
