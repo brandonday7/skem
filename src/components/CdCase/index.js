@@ -64,7 +64,6 @@ class CdCase extends Component {
 	wait = () => setTimeout(this.fade, 5000)
 	fade = () => this.setState({ fadeOut: true }, this.redirect)
 	redirect = () => setTimeout(() => {
-		this.props.setReverse()
 		this.props.history.push("/ep")
 	}, 800)
 

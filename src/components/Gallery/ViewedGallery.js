@@ -5,7 +5,7 @@ import "./gallery.css";
 
 class ViewedGallery extends Component {
 	render() {
-		const { polaroids } = this.props;
+		const { polaroids, setReverse } = this.props;
 		return (
 			<Fragment>
 			<div className="viewed-container">
@@ -13,7 +13,7 @@ class ViewedGallery extends Component {
 					<Polaroid key={index} src={polaroid.name} />
 				))}
 			</div>
-			<ReturnFooter />
+			<ReturnFooter setReverse={setReverse}/>
 			</Fragment>
 		);
 	}

@@ -35,6 +35,7 @@ class Gallery extends Component {
 	};
 
 	render() {
+		const { setReverse } = this.props
 		const { viewedPolaroids, stackedPolaroids } = this.state;
 		return (
 			<div className="section gallery-container">
@@ -46,7 +47,7 @@ class Gallery extends Component {
 						view={this.viewPolaroid}
 					/>
 				) : (
-					<ViewedGallery polaroids={viewedPolaroids} />
+					<ViewedGallery polaroids={viewedPolaroids} setReverse={setReverse}/>
 				)}
 			</div>
 		);

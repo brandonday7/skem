@@ -22,7 +22,7 @@ class Header extends Component {
 			</div>
 			<div className="chevron-container">
 				<FontAwesomeIcon 
-					className="chevron" 
+					className="header-title chevron" 
 					icon={faChevronDown}
 				/>
 			</div>

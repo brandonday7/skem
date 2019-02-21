@@ -23,9 +23,9 @@ const StyledDiv = styled.div`
 	align-items: center;
 `
 
-const ReturnFooter = () => (
+const ReturnFooter = ({ setReverse }) => (
 	<StyledFooter>
-		<Link to="/" className="return-link">
+		<Link to="/" className="return-link" onClick={setReverse}>
 			<StyledDiv>
 				<StyledImage src={`${process.env.REACT_APP_BUCKET}next.png`} />
 				<Instructions 

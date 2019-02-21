@@ -29,7 +29,12 @@ class Root extends Component {
 					    />
 					  )}
 		      />
-		      <Route path="/ep" exact component={Fullpage} />
+		      <Route 
+		      	exact path="/ep" 
+		      	render={(routeProps) => (
+		      		<Fullpage setReverse={this.setReverse}/>
+		      	)}
+		      />
 		    </Switch>
 		  </BrowserRouter>
 		)
