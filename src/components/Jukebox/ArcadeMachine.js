@@ -73,7 +73,7 @@ class ArcadeMachine extends Component {
 		    	src={`${process.env.REACT_APP_BUCKET}frontView.png`} 
 		    	map={buttonCoords(imgWidth, imgHeight)} 
 		    	height={imgHeight}
-		    	width={0.678064516129032 * imgHeight}
+		    	width={imgWidth}
 		    	onMouseEnter={evt => this.changeHover(evt.name)}
 					fillColor="rgba(255, 255, 255, 0)"
 					strokeColor="rgba(255, 255, 255, 0)"
@@ -81,6 +81,7 @@ class ArcadeMachine extends Component {
 		    	// everything breaks without this function below, blame react-image-mapper
 		    	onMouseMove={x => null}
 		    />
+	    	<DisplayTrack trackIndex={trackIndex} playing={playing} height={imgHeight} width={imgWidth}/>
 	    	{!mobile && 
 	    		<ControlButtons 
 		    		pause={this.pause} 
@@ -89,7 +90,6 @@ class ArcadeMachine extends Component {
 		    		myTurn={this.myTurn}
 	    		/>
 	    	}
-	    	<DisplayTrack trackIndex={trackIndex} playing={playing}/>
 	    	<Player 
 	    		trackIndex={trackIndex} 
 	    		playing={playing} 
