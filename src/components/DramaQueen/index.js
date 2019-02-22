@@ -9,19 +9,19 @@ class DramaQueen extends Component {
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">
 						<div className="verse-drama">
-							<p className="line">This sky could be clean no</p>
-							<p className="line">Nights not what it needs to be</p>
+							<p className="line">This sky could be clean, no</p>
+							<p className="line">Night's not what it needs to be</p>
 							<p className="line">And echo</p>
 						</div>
 						<div className="verse-drama">
-							<p className="line">Im sprawling in my sleep</p>
-							<p className="line">Dreams not what it seems to be</p>
-							<p className="line">Im alone</p>
+							<p className="line">I'm sprawling in my sleep,</p>
+							<p className="line">Dream's not what it seems to be,</p>
+							<p className="line">I'm alone,</p>
 						</div>
 						<div className="verse-drama">
 							<p className="line">Still water blowing steam</p>
 							<p className="line">Being off beyond belief</p>
-							<p className="line">Ur such a woah</p>
+							<p className="line">Ur such a ... woah!</p>
 						</div>
 						<div className="verse-drama">
 							<p className="line">And if its drama Im the Queen</p>
