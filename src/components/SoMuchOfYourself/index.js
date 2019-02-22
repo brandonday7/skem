@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./smoy.css";
 import "../DramaQueen/drama.css";
 
 class SoMuchOfYourself extends Component {
@@ -34,7 +33,9 @@ class SoMuchOfYourself extends Component {
 							<p className="line">And they wont make a scene</p>
 						</div>
 					</div>
-					<img src={`${process.env.REACT_APP_BUCKET}smoy.png`} className="machine-image" alt="Arcade" />
+					<div className="machine-container">
+						<img src={`${process.env.REACT_APP_BUCKET}smoy.png`} className="machine-image" alt="Arcade" />
+					</div>
 					<div className="dq-lyrics">
 						<div className="verse">
 							<p className="line">You think so much of yourself</p>
@@ -55,7 +56,7 @@ class SoMuchOfYourself extends Component {
 								Gans Nicholas Vereschak and Ryan Garbett Recording engineer
 								Danny Paulson Produced by Danny Paulson Brandon Day Guitar and
 								vocals Ethan Gans Guitar Nicholas Vereschak Drums and keys Ryan
-								Garbett Bass guitar Recorded in my bedroom my living room Nicks
+								Garbett Bass guitar Recorded in my bedroom my living room The Shed Nicks
 								apartment and somewhere in Israel Fall 2018
 							</p>
 						</div>

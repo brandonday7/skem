@@ -2,7 +2,7 @@ import React from "react"
 import Credit from "./Credit"
 
 const Acknowledgments = () => (
-	<div className="dq-lyrics">
+	<div className="acknowledgments">
 		<div className="verse">
 			<p className="line">
 				Thank you to all our friends and family for putting up with

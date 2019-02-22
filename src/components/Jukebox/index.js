@@ -51,7 +51,7 @@ class Jukebox extends Component {
 		return(
 			<Fragment>
 				<div className="intro-container">
-					<div className="dq-lyrics-container">
+					<div className="arcade-container">
 						<ArcadeMachine move={this.move} childIndex={childIndex}/>
 						<Acknowledgments />
 					</div>

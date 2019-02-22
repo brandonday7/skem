@@ -9,6 +9,7 @@ body {
 	-ms-user-select: none; /* IE10+ */
 	user-select: none;
 	background-color: #f7f2f6;
+	overflow-x: hidden;
 }
 
 code {

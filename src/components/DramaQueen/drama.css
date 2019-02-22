@@ -23,6 +23,10 @@
 	max-width: 20%;
 }
 
+.machine-container {
+	display: contents;
+}
+
 .dq-lyrics {
 	max-width: 30%;
 	font-size: 170%;
@@ -34,6 +38,10 @@
 
 .line {
 	margin: 0;
+}
+
+.verse-drama {
+	margin-top: 0.8em;
 }
 
 .verse {
@@ -50,7 +58,30 @@
 		max-width: 50%;
 	}
 
+	.machine-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-top: 1em;
+	}
+
+	.arcade-container {
+		flex-direction: column;
+	}
+
 	.dq-lyrics {
 		max-width: 90%;
+	}
+
+	.drama-heading {
+		margin-left: 0.2em;
+	}
+}
+
+@media (max-width: 500px) {
+	.dq-lyrics-container {
+		align-items: baseline;
+		padding-left: 2em;
 	}
 }

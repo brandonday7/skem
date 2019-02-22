@@ -11,6 +11,29 @@
 	z-index: 0;
 }
 
+.arcade-container {
+	display: flex;
+	max-width: 100vw;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0em 2em 0 2em;
+}
+
+.acknowledgments {
+	font-size: 150%;
+	width: 30%;
+}
+
+@media (max-width: 1000px) {
+	.arcade-container {
+		flex-direction: column;
+	}
+
+	.acknowledgments {
+		width: 80%;
+	}
+}
+
 .intro-heading {
 	margin: 1em 0 0 2em;
 }
