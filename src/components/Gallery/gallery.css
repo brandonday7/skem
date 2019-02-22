@@ -89,6 +89,7 @@
 .return-link {
 	text-decoration: none;
 	cursor: pointer;
+	color: black;
 }
 
 .return-link:visited {

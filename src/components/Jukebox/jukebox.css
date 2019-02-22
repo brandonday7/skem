@@ -1,7 +1,8 @@
 .intro-container {
 	min-height: 100vh;
 	width: 100vw;
-	background-color: #e8a5a5;
+	/*background-color: #e8a5a5;*/
+	background-color: #f6a4a6;
 	display: flex;
 	justify-content: center;
 	padding: 1em 0;
@@ -50,4 +51,10 @@
 
 .none {
 	display: none;
+}
+
+.rose-link {
+	cursor: pointer;
+	margin-left: 0.3em;
+	width: 30px;
 }

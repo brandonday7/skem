@@ -15,7 +15,7 @@ const StyledImage = styled.img`
 	width: 20vh;
 	height: auto;
 	position: absolute;
-	transform: translate(${({ width }) => 0.36*width}px, -${({ height }) => 0.62*height}px);
+	transform: translate(${({ width }) => 0.35*width}px, -${({ height }) => 0.62*height}px);
 	z-index: 1;
 	animation: ${fade} 0.7s;
 `
