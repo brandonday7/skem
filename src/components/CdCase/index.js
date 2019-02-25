@@ -27,12 +27,11 @@ const StyledContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f7f2f6;
+	background-color: #faf4f8;
 `
 
 const StlyedDiv = styled.div`
 	height: 70vh;
-	transform: translateX(-3vw);
 	cursor: pointer;
 	animation: ${({fadeOut}) => fadeOut ? fadeAway : fadeIn} 0.8s;
 `
