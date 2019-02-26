@@ -27,9 +27,9 @@ const StyledContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f9f5f7;
+	background-color: #faf4f8;
 `
-	// background-color: #faf4f8;
+	// background-color: #f9f5f7;
 
 const StlyedDiv = styled.div`
 	overflow: hidden;
