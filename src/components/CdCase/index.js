@@ -27,13 +27,20 @@ const StyledContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #faf4f8;
+	background-color: #f9f5f7;
 `
+	// background-color: #faf4f8;
 
 const StlyedDiv = styled.div`
-	height: 70vh;
+	overflow: hidden;
+	width: 65vw;
 	cursor: pointer;
 	animation: ${({fadeOut}) => fadeOut ? fadeAway : fadeIn} 0.8s;
+
+
+  @media (max-width: 700px) {
+		width: 100vw;
+  }
 `
 
 const StyledInstruction = styled.div`
