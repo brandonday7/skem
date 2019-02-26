@@ -8,17 +8,17 @@ class SoMuchOfYourself extends Component {
 				<h1 className="drama-heading">So Much of Yourself</h1>
 				<div className="dq-lyrics-container">
 					<div className="dq-lyrics">
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">You're a liar,</p>
 							<p className="line">I believe,</p>
 							<p className="line">You don't wanna be here,</p>
 							<p className="line">Then leave</p>
 						</div>
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">You think too much of yourself,</p>
 							<p className="line">You think too much of yourself</p>
 						</div>
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">And when you cry,</p>
 							<p className="line">They apologize,</p>
 							<p className="line">Isn't that nice?</p>
@@ -26,7 +26,7 @@ class SoMuchOfYourself extends Component {
 							<p className="line">You're spilling mine,</p>
 							<p className="line">Do you mind?</p>
 						</div>
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">You're a loner,</p>
 							<p className="line">Or is it just me,</p>
 							<p className="line">You don't phone,</p>
@@ -37,11 +37,11 @@ class SoMuchOfYourself extends Component {
 						<img src={`${process.env.REACT_APP_BUCKET}smoy.png`} className="machine-image" alt="Arcade" />
 					</div>
 					<div className="dq-lyrics">
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">You think so much of yourself,</p>
 							<p className="line">You think so much of yourself,</p>
 						</div>
-						<div className="verse">
+						<div className="verse left-padding">
 							<p className="line">And when you cry,</p>
 							<p className="line">They apologize,</p>
 							<p className="line">Isn't that nice?</p>
@@ -51,7 +51,7 @@ class SoMuchOfYourself extends Component {
 						</div>
 
 						<div>
-							<p className="credits">
+							<p className="credits left-padding">
 								So Much of Yourself written and recorded by Brandon Day, Ethan
 								Gans, Nicholas Vereschak, and Ryan Garbett. Recording engineer
 								Danny Paulson. Mixed and produced by Danny Paulson. Brandon Day - Guitar and

@@ -46,10 +46,6 @@
 	margin-top: 0.8em;
 }
 
-.ack-block {
-	margin-top: 0.8em;
-}
-
 .verse {
 	margin-top: 1em;
 }
@@ -90,15 +86,7 @@
 		align-items: baseline;
 	}
 
-	.verse-drama {
-		padding-left: 1.2em;
-	}
-
-	.verse {
-		padding-left: 1.2em;
-	}
-
-	.credits {
+	.left-padding {
 		padding-left: 1.2em;
 	}
 
