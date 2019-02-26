@@ -28,6 +28,7 @@ const StyledContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	background-color: #faf4f8;
+	box-shadow: 0 0 8px 8px red;
 `
 
 const StlyedDiv = styled.div`
@@ -70,7 +71,7 @@ class CdCase extends Component {
 	render() {
 		const { playing, fadeOut } = this.state
 		const { reverse } = this.props
-		let cdVid = reverse ? "cdHiReverse.mp4" : "cdCaseHi.mp4"
+		let cdVid = reverse ? "cdFinalReverse.mp4" : "cdFinal.mp4"
 		return (
 			<StyledContainer>
 				<StlyedDiv fadeOut={fadeOut}>
@@ -78,7 +79,7 @@ class CdCase extends Component {
 		      	onClick={this.play}
 		      	onEnded={() => {if (reverse) this.reset()}}
 		      	muted
-		        className='react-player'
+		      	// className="react-player"
 		        playing={reverse ? true : playing}
 		        url={`${process.env.REACT_APP_BUCKET}${cdVid}`}
 		        width='100%'
