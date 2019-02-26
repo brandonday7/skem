@@ -28,7 +28,6 @@ const StyledContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	background-color: #faf4f8;
-	box-shadow: 0 0 8px 8px red;
 `
 
 const StlyedDiv = styled.div`

@@ -3,14 +3,14 @@ import Credit from "./Credit"
 
 const Acknowledgments = () => (
 	<div className="acknowledgments">
-		<div className="verse">
+		<div className="ack-block">
 			<p className="line">
 				Thank you to all our friends and family for putting up with
 				constant noise and coming to open mics and backyards to watch us
 				have the most fun weve ever had
 			</p>
 		</div>
-		<div className="verse">
+		<div className="ack-block">
 			<p className="line">Art direction by Brandon Day</p>
 			<p className="line">Drama Queen session video by Ethan Gans</p>
 			<p className="line">
@@ -19,10 +19,10 @@ const Acknowledgments = () => (
 			<p className="line">Arcade machines by <Credit name="Hailey Uens" site="//www.instagram.com/haileyuensart/?hl=en"/></p>
 			<p className="line">CD cover animation by <Credit name="Kevin Lee" site="//www.kevinleedesign.com"/></p>
 		</div>
-		<div className="verse">
+		<div className="ack-block">
 			<p className="line">Thanks for doing all this for free</p>
 		</div>
-		<div className="verse">
+		<div className="ack-block">
 			<p className="line">
 				Intro written and recorded by Brandon Day, Ethan Gans, Nicholas
 				Vereschak, and Ryan Garbett. Recording engineer Danny Paulson

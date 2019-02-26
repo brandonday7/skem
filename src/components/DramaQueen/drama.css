@@ -46,6 +46,10 @@
 	margin-top: 0.8em;
 }
 
+.ack-block {
+	margin-top: 0.8em;
+}
+
 .verse {
 	margin-top: 1em;
 }
@@ -84,7 +88,18 @@
 @media (max-width: 500px) {
 	.dq-lyrics-container {
 		align-items: baseline;
-		padding-left: 2.6em;
+	}
+
+	.verse-drama {
+		padding-left: 1.2em;
+	}
+
+	.verse {
+		padding-left: 1.2em;
+	}
+
+	.credits {
+		padding-left: 1.2em;
 	}
 
 	.drama-heading {
