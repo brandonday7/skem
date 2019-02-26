@@ -71,7 +71,7 @@ class CdCase extends Component {
 	render() {
 		const { playing, fadeOut } = this.state
 		const { reverse } = this.props
-		let cdVid = reverse ? "cdFinalReverse.mp4" : "cdFinal.mp4"
+		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
 				<StlyedDiv fadeOut={fadeOut}>
