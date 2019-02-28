@@ -25,3 +25,10 @@ yarn-error.log*
 .env
 
 /src/songs
+
+c2fb1674cc6fc11.crt
+combined.crt
+gd_bundle-g2-g1.crt
+server.csr
+server.key
+server.pass.key
