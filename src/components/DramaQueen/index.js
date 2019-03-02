@@ -28,6 +28,11 @@ class DramaQueen extends Component {
 							<p className="line">How it pays to be me,</p>
 							<p className="line">How I'm broke</p>
 						</div>
+					</div>
+					<div className="machine-container">
+						<img src={`${process.env.REACT_APP_BUCKET}dq.png`} className="machine-image" alt="Arcade" />
+					</div>
+					<div className="dq-lyrics">
 						<div className="verse-drama left-padding">
 							<p className="line">I talk to myself all the time,</p>
 							<p className="line">
@@ -40,11 +45,6 @@ class DramaQueen extends Component {
 							<p className="line">Maybe I don't care as long as we're warm,</p>
 							<p className="line">Maybe that's alright</p>
 						</div>
-					</div>
-					<div className="machine-container">
-						<img src={`${process.env.REACT_APP_BUCKET}dq.png`} className="machine-image" alt="Arcade" />
-					</div>
-					<div className="dq-lyrics">
 						<div className="verse-drama left-padding">
 							<p className="line">A hot head on the scene,</p>
 							<p className="line">Stop and staring at me,</p>
@@ -54,18 +54,6 @@ class DramaQueen extends Component {
 							<p className="line">This sky could be clean,</p>
 							<p className="line">How many sides to this leaf?</p>
 							<p className="line">Time to go</p>
-						</div>
-						<div className="verse-drama left-padding">
-							<p className="line">I talk to myself all the time,</p>
-							<p className="line">
-								Oh, sigh, here he goes fighting foes in his mind,
-							</p>
-							<p className="line">
-								And what it's like to have the air touch my arm,
-							</p>
-							<p className="line">"My dear you won't be harmed ",</p>
-							<p className="line">Maybe I don't care as long as we're warm,</p>
-							<p className="line">Maybe that's alright</p>
 						</div>
 						<div>
 							<p className="credits left-padding">
