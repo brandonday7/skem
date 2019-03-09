@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /ep/
-Sitemap: https://roseredyouth.com/sitemap.xml
+Allow: /, /ep/
