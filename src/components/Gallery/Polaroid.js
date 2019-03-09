@@ -14,7 +14,7 @@ class Polaroid extends Component {
 		setTimeout(() => view(src), 300);
 	};
 	render() {
-		const { src, unviewed, angle } = this.props;
+		const { src, unviewed, angle, alt } = this.props;
 		const { exiting } = this.state;
 		return (
 			<img
@@ -33,7 +33,7 @@ class Polaroid extends Component {
 						: {}
 				}
 				src={`${process.env.REACT_APP_BUCKET}${src}`}
-				alt="Not Available"
+				alt={alt}
 			/>
 		);
 	}

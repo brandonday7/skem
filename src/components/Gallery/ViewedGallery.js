@@ -10,7 +10,7 @@ class ViewedGallery extends Component {
 			<Fragment>
 			<div className="viewed-container">
 				{polaroids.map((polaroid, index) => (
-					<Polaroid key={index} src={polaroid.name} />
+					<Polaroid key={index} src={polaroid.name} alt={polaroid.alt}/>
 				))}
 			</div>
 			<ReturnFooter playReverse={playReverse}/>

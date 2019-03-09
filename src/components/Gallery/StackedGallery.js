@@ -18,6 +18,7 @@ class StackedGallery extends Component {
 						unviewed={true}
 						src={polaroid.name}
 						angle={polaroid.angle}
+						alt={polaroid.alt}
 						key={index}
 						view={view}
 					/>

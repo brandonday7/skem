@@ -10,14 +10,14 @@ class Gallery extends Component {
 		super(props);
 		this.state = {
 			stackedPolaroids: [
-				{ name: "ethanSmall.jpg", angle: randomAngle() },
-				{ name: "keysSmall.jpg", angle: randomAngle() },
-				{ name: "hornSmall.jpg", angle: randomAngle() },
-				{ name: "runawaySmall.jpg", angle: randomAngle() },
-				{ name: "dpoySmall.jpg", angle: randomAngle() },
-				{ name: "vocalsSmall.jpg", angle: randomAngle() },
-				{ name: "shedSmall.jpg", angle: randomAngle() },
-				{ name: "coverSmall.png", angle: randomAngle() }
+				{ name: "ethanSmall.jpg", angle: randomAngle(), alt: "Ethan Gans Rose Red Youth" },
+				{ name: "keysSmall.jpg", angle: randomAngle(), alt: "Nicholas Vereshchak Rose Red Youth" },
+				{ name: "hornSmall.jpg", angle: randomAngle(), alt: "Ryan Garbett Rose Red Youth" },
+				{ name: "runawaySmall.jpg", angle: randomAngle(), alt: "Danny Paulson Rose Red Youth" },
+				{ name: "dpoySmall.jpg", angle: randomAngle(), alt: "Depends on You Rose Red Youth" },
+				{ name: "vocalsSmall.jpg", angle: randomAngle(), alt: "Brandon Day Rose Red Youth" },
+				{ name: "shedSmall.jpg", angle: randomAngle(), alt: "Drama Queen Rose Red Youth" },
+				{ name: "coverSmall.png", angle: randomAngle(), alt: "Rose Red Youth EP" }
 			],
 			viewedPolaroids: []
 		};

@@ -30,7 +30,7 @@ class DramaQueen extends Component {
 						</div>
 					</div>
 					<div className="machine-container">
-						<img src={`${process.env.REACT_APP_BUCKET}dq.png`} className="machine-image" alt="Arcade" />
+						<img src={`${process.env.REACT_APP_BUCKET}dq.png`} className="machine-image" alt="Drama Queen Arcade Machine Rose Red Youth" />
 					</div>
 					<div className="dq-lyrics">
 						<div className="verse-drama left-padding">
