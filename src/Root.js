@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Fullpage from "./Fullpage"
 import CdCase from "./components/CdCase"
@@ -37,6 +37,7 @@ class Root extends Component {
 		      		<Fullpage playReverse={this.playReverse}/>
 		      	)}
 		      />
+					<Route render={() => <Redirect to="/" />} />
 		    </Switch>
 		  </BrowserRouter>
 		)
