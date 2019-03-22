@@ -34,7 +34,11 @@ class SoMuchOfYourself extends Component {
 						</div>
 					</div>
 					<div className="machine-container">
-						<img src={`${process.env.REACT_APP_BUCKET}smoy.png`} className="machine-image" alt="So Much of Yourself Arcade Machine Rose Red Youth" />
+						<img 
+							src={`${process.env.REACT_APP_BUCKET}smoy.png`} 
+							className="machine-image" 
+							alt="So Much of Yourself Arcade Machine Rose Red Youth" 
+						/>
 					</div>
 					<div className="dq-lyrics">
 						<div className="verse left-padding">

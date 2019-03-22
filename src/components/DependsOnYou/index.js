@@ -34,7 +34,10 @@ class DependsOnYou extends Component {
 						</div>
 					</div>
 					<div className="machine-container">
-						<img src={`${process.env.REACT_APP_BUCKET}depends.png`} className="machine-image" alt="Depend on You Arcade Machine Rose Red Youth" />
+						<img 
+							src={`${process.env.REACT_APP_BUCKET}depends.png`} 
+							className="machine-image" 
+							alt="Depend on You Arcade Machine Rose Red Youth" />
 					</div>
 					<div className="dq-lyrics">
 						<div className="verse left-padding">

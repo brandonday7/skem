@@ -21,7 +21,12 @@ const StyledImage = styled.img`
 `
 
 const Arrow = ({move, type, scale}) => (
-	<StyledImage src={`${process.env.REACT_APP_BUCKET}next.png`} onClick={() => move(type)} scale={scale}/>
+	<StyledImage 
+		src={`${process.env.REACT_APP_BUCKET}next.png`} 
+		onClick={() => move(type)} 
+		scale={scale}
+		alt="Rose Red Youth Next"
+		/>
 )
 
 export default Arrow;
