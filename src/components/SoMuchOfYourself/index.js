@@ -54,7 +54,7 @@ class SoMuchOfYourself extends Component {
 							<p className="credits left-padding">
 								So Much of Yourself written and recorded by Brandon Day, Ethan
 								Gans, Nicholas Vereschak, and Ryan Garbett. Recording engineer
-								Danny Paulson. Mixed and produced by Danny Paulson. Brandon Day - Guitar and
+								Danny Paulson. Produced by Nicholas Vereschak and Danny Paulson. Mixed by Danny Paulson. Brandon Day - Guitar and
 								vocals Ethan Gans - Guitar Nicholas Vereschak - Drums and keys Ryan
 								Garbett - Bass guitar. Recorded in my bedroom, my living room, The Shed, Nicks
 								apartment, and somewhere in Israel Fall 2018
