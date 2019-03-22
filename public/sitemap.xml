@@ -11,84 +11,84 @@
     <priority>0.9</priority>
     
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/frontView.png</image:loc>
       <image:title>
       	Rose Red Youth Arcade Machine Front View
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/dq.png</image:loc>
       <image:title>
       	Rose Red Youth Drama Queen Arcade Machine
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/depends.png</image:loc>
       <image:title>
       	Rose Red Youth Depends on You Arcade Machine
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/smoy.png</image:loc>
       <image:title>
       	Rose Red Youth So Much of Yourself Arcade Machine
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/coverSmall.png</image:loc>
       <image:title>
       	Rose Red Youth EP Album Art
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/shedSmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Drama Queen Session Ethan Gans Danny Paulson
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/vocalsSmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Drama Queen Session Brandon Day Vocals
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/dpoySmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Brandon Day Ryan Garbett Bass Guitar
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/runawaySmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Drama Queen Session Danny Paulson Producer
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/hornSmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Intro French Horn Ryan Garbett
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/keysSmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Nicholas Vereshchak Piano
       </image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://roseredyouth.com/ep</image:loc>
+      <image:loc>https://s3.amazonaws.com/roseredbucket/ethanSmall.jpg</image:loc>
       <image:title>
       	Rose Red Youth Depends on You Ethan Gans
       </image:title>
