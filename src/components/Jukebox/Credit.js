@@ -5,7 +5,7 @@ const Credit = ({ name, site }) => (
 	<a 
 		href={site} 
 		target="_blank" 
-		rel="noopener noreferrer"
+		rel="noopener noreferrer nofollow"
 		className="return-link"
 	>
 		{name}
