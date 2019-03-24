@@ -20,7 +20,7 @@ const Acknowledgments = () => (
 			<p className="line">CD cover animation by <Credit name="Kevin Lee" site="//www.kevinleedesign.com"/></p>
 		</div>
 		<div className="verse">
-			<p className="line">Thanks for believing in this</p>
+			<p className="line">Thanks for believing in this project</p>
 		</div>
 		<div className="verse">
 			<p className="line">
