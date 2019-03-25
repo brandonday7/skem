@@ -1,5 +1,6 @@
 import React from "react"
 import Credit from "./Credit"
+import PlatformLinks from "./PlatformLinks"
 
 const Acknowledgments = () => (
 	<div className="acknowledgments">
@@ -30,6 +31,7 @@ const Acknowledgments = () => (
 				Vereschak - Drums Ryan Garbett - French horn and bass guitar Danny
 				Paulson - Slide guitar. Recorded in My Bedroom and The Living Room
 				St Clair Avenue West Fall 2018
+				<PlatformLinks />
 			</p>
 		</div>
 	</div>
