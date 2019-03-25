@@ -10,7 +10,7 @@ const Credit = ({ name, site }) => (
 	>
 		{name}
 		<img 
-			src={`${process.env.REACT_APP_BUCKET}Rose.png`} 
+			src={`${process.env.REACT_APP_BUCKET}babyRose.png`} 
 			className="rose-link"
 			alt=""
 		/>
