@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PlatformLinks from "../Jukebox/PlatformLinks"
 import "../DramaQueen/drama.css";
 
 class DependsOnYou extends Component {
@@ -61,6 +62,8 @@ class DependsOnYou extends Component {
 								Paulson. Mixed and produced by Danny Paulson. Brandon Day - Guitar and vocals
 								Ethan Gans - Guitar Nicholas Vereschak - Drums Ryan Garbett - Bass
 								guitar. Recorded in my bedroom, The Shed, and somewhere in Israel Fall 2018
+								<PlatformLinks platform="itunes" link=""/>
+								<PlatformLinks link=""/>
 							</p>
 						</div>
 					</div>

@@ -1,19 +1,18 @@
 import React from "react"
 import "./jukebox.css"
 
-const PlatformLinks = () => (
-	<div>
-		<img 
-			src={`${process.env.REACT_APP_BUCKET}itunesSmall.png`} 
-			alt="Apple Music Logo"
-			className="platform-link"
-		/>
-		<img 
-			src={`${process.env.REACT_APP_BUCKET}spotifySmall.png`} 
-			alt="Spotify Logo"
-			className="platform-link"
-		/>
-	</div>
+const PlatformLinks = ({ link, platform="spotify" }) => (
+		<a 
+			href={link}
+			target="_blank"
+			rel="noopener noreferrer nofollow"
+		>
+			<img 
+				src={`${process.env.REACT_APP_BUCKET}${platform}Small.png`} 
+				alt="Streaming Logo"
+				className="platform-link"
+			/>
+		</a>
 )
 
 export default PlatformLinks

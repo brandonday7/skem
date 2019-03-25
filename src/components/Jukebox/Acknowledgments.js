@@ -31,7 +31,8 @@ const Acknowledgments = () => (
 				Vereschak - Drums Ryan Garbett - French horn and bass guitar Danny
 				Paulson - Slide guitar. Recorded in My Bedroom and The Living Room
 				St Clair Avenue West Fall 2018
-				<PlatformLinks />
+				<PlatformLinks platform="itunes" link=""/>
+				<PlatformLinks link=""/>
 			</p>
 		</div>
 	</div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PlatformLinks from "../Jukebox/PlatformLinks"
 import "../DramaQueen/drama.css";
 
 class SoMuchOfYourself extends Component {
@@ -62,6 +63,8 @@ class SoMuchOfYourself extends Component {
 								vocals Ethan Gans - Guitar Nicholas Vereschak - Drums and keys Ryan
 								Garbett - Bass guitar. Recorded in my bedroom, my living room, The Shed, Nicks
 								apartment, and somewhere in Israel Fall 2018
+								<PlatformLinks platform="itunes" link=""/>
+								<PlatformLinks link=""/>
 							</p>
 						</div>
 					</div>
