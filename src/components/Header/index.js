@@ -8,12 +8,15 @@ class Header extends Component {
 		return (
 			<Fragment>
 			<div className="video-container">
-				<video className="video" alt="Rose Red Youth EP Backyard" loop autoPlay muted playsInline>
-					<source
-						src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4`}
-						type="video/mp4"
-					/>
-				</video>
+				<video 
+					className="video" 
+					alt="Rose Red Youth EP Backyard" 
+					loop 
+					autoPlay 
+					muted 
+					playsInline
+					src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4`}
+				/>
 				<div className="absolute">
 					<div className="title-container">
 						<h1 className="header-title">Rose Red Youth</h1>

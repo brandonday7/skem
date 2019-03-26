@@ -17,6 +17,7 @@ class ArcadeMachine extends Component {
 			mobile: window.innerWidth < 500,
 			playing: false,
 			hovering: "none",
+			loaded: false
 		};
 	}
 
@@ -30,6 +31,7 @@ class ArcadeMachine extends Component {
 
 	play = () => this.setState({playing: true})
 	pause = () => this.setState({playing: false})
+	loaded = () => this.setState({ loaded: true })
 
 	// this solution is pretty insane...
 	nextTrack = () => {
@@ -65,7 +67,7 @@ class ArcadeMachine extends Component {
 	}
 
 	render() {
-		const { imgHeight, trackIndex, playing, mobile } = this.state
+		const { imgHeight, trackIndex, playing, mobile, loaded } = this.state
 		const imgWidth = 0.678064516129032 * imgHeight
 		return (
 			<div>
@@ -78,10 +80,11 @@ class ArcadeMachine extends Component {
 					fillColor="rgba(255, 255, 255, 0)"
 					strokeColor="rgba(255, 255, 255, 0)"
 					onClick={evt => {if (mobile) this.mobileClick(evt.name)}}
+					onLoad={this.loaded}
 		    	// everything breaks without this function below, blame react-image-mapper
 		    	onMouseMove={x => null}
 		    />
-	    	<DisplayTrack trackIndex={trackIndex} playing={playing} height={imgHeight} width={imgWidth}/>
+	    	{loaded && <DisplayTrack trackIndex={trackIndex} playing={playing} height={imgHeight} width={imgWidth}/>}
 	    	{!mobile && 
 	    		<ControlButtons 
 		    		pause={this.pause} 
