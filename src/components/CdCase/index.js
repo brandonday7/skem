@@ -86,7 +86,7 @@ class CdCase extends Component {
 		      	onClick={this.play}
 		      	onEnded={() => {if (reverse) this.reset()}}
 		      	muted
-		      	// className="react-player"
+		      	playsinline
 		        playing={reverse ? true : playing}
 		        url={`${process.env.REACT_APP_BUCKET}${cdVid}`}
 		        width='100%'
