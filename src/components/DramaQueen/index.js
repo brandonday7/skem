@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import PlatformLinks from "../Jukebox/PlatformLinks"
 import "./drama.css";
 
+const dqApple = ""
+const dqSpotify = ""
+
 class DramaQueen extends Component {
 	render() {
 		return (
@@ -68,8 +71,8 @@ class DramaQueen extends Component {
 								Ethan Gans - Guitar Nicholas Vereschak - Drums Ryan Garbett - Bass
 								guitar Danny Paulson - Organ. Recorded in The Shed Runnymede Street
 								Summer 2018
-								<PlatformLinks platform="itunes" link=""/>
-								<PlatformLinks link=""/>
+								<PlatformLinks platform="apple" link={dqApple} />
+								<PlatformLinks link={dqSpotify} />
 							</p>
 						</div>
 					</div>

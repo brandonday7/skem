@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import ReactPlayer from "react-player"
 import styled, { keyframes } from "styled-components"
 import Instructions from "../Instructions"
+import Platforms from "./Platforms"
 
 const fadeAway = keyframes`
 	from {
@@ -98,6 +99,7 @@ class CdCase extends Component {
   	      	<Instructions label="Click to enter" />
   	      </StyledInstruction>
     	  )}
+    	  <Platforms />
       </StyledContainer>
 		)
 	}
