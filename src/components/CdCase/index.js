@@ -89,7 +89,7 @@ class CdCase extends Component {
 		      	muted
 		      	playsinline
 		        playing={reverse ? true : playing}
-		        url={`${process.env.REACT_APP_BUCKET}${cdVid}`}
+		        url={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
 		        width='100%'
 		        height='100%'
 		      />

@@ -15,7 +15,7 @@ class Header extends Component {
 					autoPlay 
 					muted 
 					playsInline
-					src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4`}
+					src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4#t=0.01`}
 				/>
 				<div className="absolute">
 					<div className="title-container">
