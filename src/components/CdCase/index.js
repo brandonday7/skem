@@ -26,6 +26,7 @@ const StyledContainer = styled.div`
 	height: 100vh;
 	width: 100vw;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: #faf4f8;
@@ -46,8 +47,6 @@ const StlyedDiv = styled.div`
 `
 
 const StyledInstruction = styled.div`
-	position: absolute;
-	transform: translateY(15em);
 	cursor: pointer;
 `
 
