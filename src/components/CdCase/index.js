@@ -36,7 +36,6 @@ const StyledContainer = styled.div`
 const StlyedDiv = styled.div`
 	overflow: hidden;
 	width: 65vw;
-	max-width: 940px;
 	cursor: pointer;
 	animation: ${({fadeOut}) => fadeOut ? fadeAway : fadeIn} 0.8s;
 
@@ -83,7 +82,7 @@ class CdCase extends Component {
 			<StyledContainer>
 				<StlyedDiv fadeOut={fadeOut}>
 		      <ReactPlayer
-		      	onClick={this.play}
+		      	// onClick={this.play}
 		      	onEnded={() => {if (reverse) this.reset()}}
 		      	muted
 		      	playsinline
@@ -94,8 +93,8 @@ class CdCase extends Component {
 		      />
 	      </StlyedDiv>
 	      {!playing && !reverse && (
-	      	<StyledInstruction onClick={this.play}>
-  	      	<Instructions label="Click to enter" />
+	      	<StyledInstruction /* onClick={this.play} */>
+  	      	<Instructions blink={false} label="Coming soon" />
   	      </StyledInstruction>
     	  )}
     	  <Platforms />
