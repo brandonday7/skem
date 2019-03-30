@@ -47,7 +47,7 @@ const DisplayTrack = ({ trackIndex, playing, height, width }) => (
 				blinking
 				height={height} 
 				width={width} 
-				src={`${process.env.REACT_APP_BUCKET}pressPlaySmall.png`} 
+				src={`${process.env.REACT_APP_BUCKET}pressPlayTextSmall.png`} 
 			/>)}
 		{!trackIndex && playing && (
 			<StyledImage 

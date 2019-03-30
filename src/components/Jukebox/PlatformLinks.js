@@ -8,7 +8,7 @@ const PlatformLinks = ({ link, platform="spotify" }) => (
 			rel="noopener noreferrer nofollow"
 		>
 			<img 
-				src={`${process.env.REACT_APP_BUCKET}${platform}Small.png`} 
+				src={`${process.env.REACT_APP_BUCKET}${platform}Paint.png`} 
 				alt="Streaming Logo"
 				className="platform-link"
 			/>
