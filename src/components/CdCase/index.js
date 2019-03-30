@@ -37,8 +37,8 @@ const StlyedDiv = styled.div`
 	overflow: hidden;
 	width: 65vw;
 	cursor: pointer;
-	animation: ${({fadeOut}) => fadeOut ? fadeAway : fadeIn} 0.8s;
-
+	animation: ${({ fadeOut }) => fadeOut ? fadeAway : fadeIn} 0.8s;
+	opacity: ${({ loaded }) => loaded ? 1 : 0}
 
   @media (max-width: 700px) {
 		width: 100vw;
@@ -54,8 +54,14 @@ class CdCase extends Component {
 		super(props)
 		this.state = {
 			playing: false,
-			fadeOut: false
+			fadeOut: false,
+			loaded: false
 		}
+	}
+
+	componentDidMount() {
+		const vid = document.getElementsByTagName("video")
+		vid[0].oncanplaythrough = () => this.setState({ loaded: true })
 	}
 
 	reset = () => {
@@ -75,14 +81,14 @@ class CdCase extends Component {
 	}, 800)
 
 	render() {
-		const { playing, fadeOut } = this.state
+		const { playing, fadeOut, loaded } = this.state
 		const { reverse } = this.props
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut}>
+				<StlyedDiv fadeOut={fadeOut} loaded={loaded}>
 		      <ReactPlayer
-		      	// onClick={this.play}
+		      	onClick={this.play}
 		      	onEnded={() => {if (reverse) this.reset()}}
 		      	muted
 		      	playsinline
