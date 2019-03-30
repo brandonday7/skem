@@ -36,7 +36,6 @@ const StlyedDiv = styled.div`
 	width: 65vw;
 	cursor: pointer;
 	animation: ${({ fadeOut }) => fadeOut ? fadeAway : fadeIn} 0.8s;
-	opacity: ${({ loaded }) => loaded ? 1 : 0}
 
   @media (max-width: 700px) {
 		width: 100vw;
@@ -109,7 +108,11 @@ class CdCase extends Component {
 					/>
 	      </StlyedDiv>
       	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
-	      	<Instructions blink={false} label="Coming soon" color={!playing && !reverse ? "black" : "#faf4f8"} />
+	      	<Instructions 
+	      		blink={false} 
+	      		label="Coming soon" 
+	      		color={!playing && !reverse ? "black" : "#faf4f8"}
+	      	/>
 	      </StyledInstruction>
     	  <Platforms />
       </StyledContainer>
