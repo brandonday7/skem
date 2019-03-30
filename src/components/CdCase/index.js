@@ -94,7 +94,7 @@ class CdCase extends Component {
 				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
 					<video
 						id="cd-case-vid"
-						className={`cd-vid ${!loaded ? "invisible" : ""}`} 
+						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
 						alt="Rose Red Youth EP CD Case"
 						autoPlay={reverse ? true : false}
 						muted
