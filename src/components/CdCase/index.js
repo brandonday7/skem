@@ -59,7 +59,7 @@ class CdCase extends Component {
 
 	componentDidMount() {
 		const vid = document.getElementById("cd-case-vid")
-		vid.oncanplay = () => this.setState({ loaded: true })
+		vid.oncanplaythrough = () => this.setState({ loaded: true })
 		vid.onended = () => {
 			if (this.props.reverse) {
 				this.reset()
@@ -68,7 +68,7 @@ class CdCase extends Component {
 	}
 
 	reset = () => {
-		this.setState({ playing: false }, this.props.playForward)
+		this.setState({ playing: false, loaded: false }, this.props.playForward)
 	}
 
 	play = () => { 
