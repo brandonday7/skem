@@ -92,7 +92,7 @@ class CdCase extends Component {
 		        height='100%'
 		      />
 	      </StlyedDiv>
-      	<StyledInstruction /* onClick={this.play} */>
+      	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
 	      	<Instructions blink={false} label="Coming soon" color={!playing && !reverse ? "black" : "#faf4f8"} />
 	      </StyledInstruction>
     	  <Platforms />
