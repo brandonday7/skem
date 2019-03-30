@@ -50,6 +50,7 @@ const StyledInstruction = styled.div`
 const StyledVideo = styled.video`
 	width: 100%;
 	height: 100%;
+	opacity: ${({ invisible }) => invisible ? 0 : 1}
 `
 
 class CdCase extends Component {
@@ -98,6 +99,7 @@ class CdCase extends Component {
 			<StyledContainer>
 				<StlyedDiv fadeOut={fadeOut} loaded={loaded} onClick={this.play}>
 					<StyledVideo
+						invisible={!loaded}
 						id="cd-case-vid"
 						alt="Rose Red Youth EP CD Case"
 						autoPlay={reverse ? true : false}
