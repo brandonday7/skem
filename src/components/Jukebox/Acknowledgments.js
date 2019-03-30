@@ -22,6 +22,8 @@ const Acknowledgments = () => (
 			</p>
 			<p className="line">Arcade machines by <Credit name="Hailey Uens" site="//www.instagram.com/haileyuensart/?hl=en"/></p>
 			<p className="line">CD cover animation by <Credit name="Kevin Lee" site="//www.kevinleedesign.com"/></p>
+			<p className="line">Mastered at <Credit name="Salmoral Studios" site="//www.salmoralstudios.com"/></p>
+			<p className="line">Additional mixing by <Credit name="Small Dog Studios" site="//smalldogstudio.weebly.com"/></p>
 		</div>
 		<div className="verse">
 			<p className="line">Thanks for believing in this project</p>
