@@ -99,7 +99,7 @@ class CdCase extends Component {
 						autoPlay={reverse ? true : false}
 						muted
 						playsInline
-						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
+						src={`${process.env.REACT_APP_BUCKET}${cdVid}`}
 					/>
 	      </StlyedDiv>
       	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
