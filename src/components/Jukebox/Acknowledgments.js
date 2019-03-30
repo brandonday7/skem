@@ -31,9 +31,9 @@ const Acknowledgments = () => (
 		<div className="verse">
 			<p className="line">
 				Intro written and recorded by Brandon Day, Ethan Gans, Nicholas
-				Vereschak, and Ryan Garbett. Recording engineer Danny Paulson
+				Vereshchak, and Ryan Garbett. Recording engineer Danny Paulson
 				Mixed and produced by Danny Paulson. Brandon Day - Guitar and piano Nicholas
-				Vereschak - Drums Ryan Garbett - French horn and bass guitar Danny
+				Vereshchak - Drums Ryan Garbett - French horn and bass guitar Danny
 				Paulson - Slide guitar. Recorded in My Bedroom and The Living Room
 				St Clair Avenue West Fall 2018
 				<PlatformLinks platform="apple" link={introApple}/>
