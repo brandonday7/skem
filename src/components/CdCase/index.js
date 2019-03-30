@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled, { keyframes } from "styled-components"
 import Instructions from "../Instructions"
 import Platforms from "./Platforms"
+import "./cdCase.css"
 
 const fadeAway = keyframes`
 	from {
@@ -44,12 +45,6 @@ const StlyedDiv = styled.div`
 
 const StyledInstruction = styled.div`
 	cursor: pointer;
-`
-
-const StyledVideo = styled.video`
-	width: 100%;
-	height: 100%;
-	opacity: ${({ invisible }) => invisible ? 0 : 1}
 `
 
 class CdCase extends Component {
@@ -97,12 +92,12 @@ class CdCase extends Component {
 		return (
 			<StyledContainer>
 				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
-					<StyledVideo
-						invisible={!loaded}
+					<video
 						id="cd-case-vid"
+						className={`cd-vid ${!loaded ? "invisible" : ""}`} 
 						alt="Rose Red Youth EP CD Case"
 						autoPlay={reverse ? true : false}
-						muted 
+						muted
 						playsInline
 						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
 					/>
