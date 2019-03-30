@@ -20,32 +20,34 @@ class Header extends Component {
 		const { loaded } = this.state
 		return (
 			<Fragment>
-			<div className="video-container">
-				<video 
-					id="session-vid"
-					className={`video ${!loaded ? "invisible" : ""}`} 
-					alt="Rose Red Youth EP Backyard" 
-					loop 
-					autoPlay 
-					muted 
-					playsInline
-					src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4#t=0.01`}
-				/>
-				<div className="absolute">
-					<div className="title-container">
-						{loaded ?
-							<h1 className="header-title">Rose Red Youth</h1> :
-							<Instructions label="Loading..." color="#ffaaad" size="400"/>
-						}
+				<div className="video-container">
+					<video 
+						id="session-vid"
+						className={`video ${!loaded ? "invisible" : ""}`} 
+						alt="Rose Red Youth EP Backyard" 
+						loop 
+						autoPlay 
+						muted 
+						playsInline
+						src={`${process.env.REACT_APP_BUCKET}pinkAndWhite.mp4#t=0.01`}
+					/>
+					<div className="absolute">
+						<div className="title-container">
+							{loaded ?
+								<h1 className="header-title">Rose Red Youth</h1> :
+								<Instructions label="Loading..." color="#ffaaad" size="400"/>
+							}
+						</div>
 					</div>
 				</div>
-			</div>
-			{loaded && <div className="chevron-container">
-							<FontAwesomeIcon 
-								className="header-title chevron" 
-								icon={faChevronDown}
-							/>
-						</div>}
+				{loaded && 
+					<div className="chevron-container">
+						<FontAwesomeIcon 
+							className="header-title chevron" 
+							icon={faChevronDown}
+						/>
+					</div>
+				}
 			</Fragment>
 		);
 	}
