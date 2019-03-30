@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import ReactPlayer from "react-player"
 import styled, { keyframes } from "styled-components"
 import Instructions from "../Instructions"
 import Platforms from "./Platforms"
@@ -31,7 +30,6 @@ const StyledContainer = styled.div`
 	justify-content: center;
 	background-color: #faf4f8;
 `
-	// background-color: #f9f5f7;
 
 const StlyedDiv = styled.div`
 	overflow: hidden;
@@ -49,6 +47,11 @@ const StyledInstruction = styled.div`
 	cursor: pointer;
 `
 
+const StyledVideo = styled.video`
+	width: 100%;
+	height: 100%;
+`
+
 class CdCase extends Component {
 	constructor(props) {
 		super(props)
@@ -60,8 +63,13 @@ class CdCase extends Component {
 	}
 
 	componentDidMount() {
-		const vid = document.getElementsByTagName("video")
-		vid[0].oncanplaythrough = () => this.setState({ loaded: true })
+		const vid = document.getElementById("cd-case-vid")
+		vid.oncanplaythrough = () => this.setState({ loaded: true })
+		vid.onended = () => {
+			if (this.props.reverse) {
+				this.reset()
+			}
+		}
 	}
 
 	reset = () => {
@@ -70,6 +78,8 @@ class CdCase extends Component {
 
 	play = () => { 
 		if (!this.state.playing) {
+			const vid = document.getElementById("cd-case-vid")
+			vid.play()
 			this.setState({ playing: true }, this.wait)
 		}
 	}
@@ -86,17 +96,15 @@ class CdCase extends Component {
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} loaded={loaded}>
-		      <ReactPlayer
-		      	onClick={this.play}
-		      	onEnded={() => {if (reverse) this.reset()}}
-		      	muted
-		      	playsinline
-		        playing={reverse ? true : playing}
-		        url={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
-		        width='100%'
-		        height='100%'
-		      />
+				<StlyedDiv fadeOut={fadeOut} loaded={loaded} onClick={this.play}>
+					<StyledVideo
+						id="cd-case-vid"
+						alt="Rose Red Youth EP CD Case"
+						autoPlay={reverse ? true : false}
+						muted 
+						playsInline
+						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
+					/>
 	      </StlyedDiv>
       	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
 	      	<Instructions blink={false} label="Coming soon" color={!playing && !reverse ? "black" : "#faf4f8"} />
