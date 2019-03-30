@@ -50,10 +50,6 @@
 	opacity: 0;
 }
 
-.pink {
-	color: #ffaaad;
-}
-
 @media (max-width: 478px) {
 	.video-container video {
 		/*in widescreen,fixed causes bottom overflow, so it changes for phones only*/
