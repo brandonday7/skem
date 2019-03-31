@@ -58,11 +58,14 @@ class CdCase extends Component {
 	}
 
 	componentDidMount() {
+		const { reverse } = this.props
 		const vid = document.getElementById("cd-case-vid")
+		if (!reverse) vid.pause()
 		vid.oncanplaythrough = () => this.setState({ loaded: true })
 		vid.onended = () => {
-			if (this.props.reverse) {
+			if (reverse) {
 				this.reset()
+				vid.pause()
 			}
 		}
 	}
@@ -91,12 +94,12 @@ class CdCase extends Component {
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} /* onClick={this.play} */>
+				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
 					<video
 						id="cd-case-vid"
 						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
 						alt="Rose Red Youth EP CD Case"
-						autoPlay={reverse ? true : false}
+						autoPlay//={reverse ? true : false}
 						muted
 						playsInline
 						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
