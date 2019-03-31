@@ -12,6 +12,11 @@ body {
 	overflow-x: hidden;
 }
 
+#root {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;

@@ -18,7 +18,6 @@ const fade = keyframes`
 const StyledDiv = styled.div`	
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden;
 	animation: ${fade} 2s;
 `
 
