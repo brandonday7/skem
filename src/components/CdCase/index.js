@@ -57,6 +57,11 @@ class CdCase extends Component {
 		}
 	}
 
+	/* 
+		On instagram and facebook in-app browser on Android, weird play button 
+		icon shows on load, so this is a roundabout way of preventing it.
+		Only way to get it to load without showing the icon on in app browsers
+	*/
 	componentDidMount() {
 		const { reverse } = this.props
 		const vid = document.getElementById("cd-case-vid")
@@ -94,7 +99,7 @@ class CdCase extends Component {
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
+				<StlyedDiv fadeOut={fadeOut} /* onClick={this.play} */>
 					<video
 						id="cd-case-vid"
 						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
