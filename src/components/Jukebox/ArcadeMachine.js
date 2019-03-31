@@ -84,7 +84,16 @@ class ArcadeMachine extends Component {
 		    	// everything breaks without this function below, blame react-image-mapper
 		    	onMouseMove={x => null}
 		    />
-	    	{loaded && <DisplayTrack trackIndex={trackIndex} playing={playing} height={imgHeight} width={imgWidth}/>}
+	    	{loaded && 
+	    		<DisplayTrack 
+	    			trackIndex={trackIndex} 
+	    			playing={playing} 
+	    			height={imgHeight} 
+	    			width={imgWidth}
+	    			pause={this.pause}
+	    			play={this.play}
+	    		/>
+	    	}
 	    	{!mobile && 
 	    		<ControlButtons 
 		    		pause={this.pause} 

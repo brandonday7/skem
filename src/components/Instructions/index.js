@@ -24,6 +24,9 @@ const StyledInstruction = styled.p`
 	&:visited {
 		text-decoration: none;
 	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
   @media (max-width: 700px) {
     font-size: 200%;

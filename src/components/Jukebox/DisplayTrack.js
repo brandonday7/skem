@@ -31,6 +31,7 @@ const StyledImage = styled.img`
 	position: absolute;
 	transform: translate(${({ width }) => 0.36*width}px, -${({ height }) => 0.63*height}px);
 	z-index: 1;
+	cursor: pointer;
 	animation: ${({ blinking }) => {
 		if (blinking) {
 			return css`${blink} 2.5s infinite`
@@ -40,10 +41,11 @@ const StyledImage = styled.img`
 	}}
 `
 
-const DisplayTrack = ({ trackIndex, playing, height, width }) => (
+const DisplayTrack = ({ trackIndex, playing, height, width, pause, play }) => (
 	<div>
 		{!playing && (
 			<StyledImage 
+				onClick={play}
 				blinking
 				height={height} 
 				width={width} 
@@ -51,24 +53,28 @@ const DisplayTrack = ({ trackIndex, playing, height, width }) => (
 			/>)}
 		{!trackIndex && playing && (
 			<StyledImage 
+				onClick={pause}
 				height={height} 
 				width={width} 
 				src={`${process.env.REACT_APP_BUCKET}introTitleSmall.png`} 
 			/>)}
 		{trackIndex === 1 && playing && (
-			<StyledImage 
+			<StyledImage
+				onClick={pause} 
 				height={height} 
 				width={width} 
 				src={`${process.env.REACT_APP_BUCKET}dqTitleSmall.png`} 
 			/>)}
 		{trackIndex === 2 && playing && (
-			<StyledImage 
+			<StyledImage
+				onClick={pause} 
 				height={height} 
 				width={width} 
 				src={`${process.env.REACT_APP_BUCKET}dpoyTitleSmall.png`} 
 			/>)}
 		{trackIndex === 3 && playing && (
-			<StyledImage 
+			<StyledImage
+				onClick={pause} 
 				height={height} 
 				width={width} 
 				src={`${process.env.REACT_APP_BUCKET}smoyTitleSmall.png`} 
