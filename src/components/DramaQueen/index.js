@@ -66,9 +66,9 @@ class DramaQueen extends Component {
 						<div>
 							<p className="credits left-padding">
 								Drama Queen written and recorded by Brandon Day, Ethan Gans,
-								Nicholas Vereshchak, and Ryan Garbett. Recording engineer Danny
+								Nick Vereshchak, and Ryan Garbett. Recording engineer Danny
 								Paulson. Mixed and produced by Danny Paulson. Brandon Day - Guitar and vocals
-								Ethan Gans - Guitar Nicholas Vereshchak - Drums Ryan Garbett - Bass
+								Ethan Gans - Guitar Nick Vereshchak - Drums Ryan Garbett - Bass
 								guitar Danny Paulson - Organ. Recorded in The Shed Runnymede Street
 								Summer 2018
 								<PlatformLinks platform="apple" link={dqApple} />
