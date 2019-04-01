@@ -99,7 +99,7 @@ class CdCase extends Component {
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} onClick={this.play} >
+				<StlyedDiv fadeOut={fadeOut} /* onClick={this.play} */>
 					<video
 						id="cd-case-vid"
 						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
