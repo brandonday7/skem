@@ -2,9 +2,13 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import spotify from "../../images/spotify.png"
 import apple from "../../images/appleMusic.png"
+import bandcamp from "../../images/bandcamp.png"
+// import instagram from "../../images/instagram.png"
 
 const epAppleMusic = ""
 const epSpotify = ""
+const epBandcamp = ""
+// const instagramProf = "https://www.instagram.com/roseredyouthband/"
 
 const fade = keyframes`
 	from {
@@ -46,6 +50,13 @@ const Platforms = () => (
 			rel="noopener noreferrer nofollow"
 		>
 			<StyledImg src={spotify} alt="Spotify Logo"/>
+		</a>
+		<a
+			href={epBandcamp} 
+			target="_blank"
+			rel="noopener noreferrer nofollow"
+		>
+			<StyledImg src={bandcamp} alt="Bandcamp Logo"/>
 		</a>
 	</StyledDiv>
 )
