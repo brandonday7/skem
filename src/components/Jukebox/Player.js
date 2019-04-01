@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactPlayer from 'react-player'
+import YouTubePlayer from 'react-player/lib/players/YouTube'
 
 class Player extends Component {
 	constructor(props) {
@@ -9,7 +9,7 @@ class Player extends Component {
 				{
 					name: "intro",
 					// src: `${process.env.REACT_APP_BUCKET}intro.mp3`
-					src: "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+					src: "https://www.youtube.com/watch?v=XIUQeSOFm0M"
 				},
 				{
 					name: "dramaQueen",
@@ -19,7 +19,7 @@ class Player extends Component {
 				{
 					name: "dependsOnYou",
 					// src: `${process.env.REACT_APP_BUCKET}dpoy.mp3`
-					src: "https://www.youtube.com/watch?v=6B3YwcjQ_bU"
+					src: "https://www.youtube.com/watch?v=SLrqm8F7TgM"
 				},
 				{
 					name: "soMuchOfYourself",
@@ -34,11 +34,12 @@ class Player extends Component {
 		const { playing, trackIndex, nextTrack } = this.props
 		const { tracks } = this.state
 		return (
-      <ReactPlayer
+			// only works for youtube links without ads
+      <YouTubePlayer
         playing={playing}
         height={'0px'}
         width={'0px'}
-        config={{ file: { forceAudio: true } }}
+        config={{ youtube: { preload: true } }}
         url={tracks[trackIndex].src} 
         onEnded={nextTrack}
       />
