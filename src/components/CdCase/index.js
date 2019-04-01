@@ -113,7 +113,7 @@ class CdCase extends Component {
       	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
 	      	<Instructions 
 	      		blink={false} 
-	      		label="Coming soon" 
+	      		label="04. 26. 2019." 
 	      		color={!playing && !reverse ? "black" : "#faf4f8"}
 	      	/>
 	      </StyledInstruction>
