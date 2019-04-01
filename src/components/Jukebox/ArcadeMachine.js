@@ -29,8 +29,15 @@ class ArcadeMachine extends Component {
 		return trackIndex + 1
 	}
 
-	play = () => this.setState({playing: true})
-	pause = () => this.setState({playing: false})
+	play = () => this.setState({ playing: true })
+	resetPlay = () => {
+		this.setState({ playing: false }, () => {
+			// setTimeout(() => this.setState({ playing: true }), 1000)
+			this.setState({ playing: true })
+		})
+	}
+	pause = () => this.setState({ playing: false })
+
 	loaded = () => this.setState({ loaded: true })
 
 	// this solution is pretty insane...
@@ -102,10 +109,12 @@ class ArcadeMachine extends Component {
 		    		myTurn={this.myTurn}
 	    		/>
 	    	}
-	    	<Player 
+    		<Player 
 	    		trackIndex={trackIndex} 
 	    		playing={playing} 
 	    		nextTrack={this.nextTrack}
+	    		resetPlay={this.resetPlay}
+	    		play={this.play}
 	    	/>
 	    </div>
 		);

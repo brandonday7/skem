@@ -11,7 +11,6 @@ class Player extends Component {
 					name: "intro",
 					// src: `${process.env.REACT_APP_BUCKET}intro.mp3`
 					src: "https://www.youtube.com/watch?v=XIUQeSOFm0M"
-
 				},
 				{
 					name: "dramaQueen",
@@ -33,17 +32,27 @@ class Player extends Component {
 	}
 
 	render() {
-		const { playing, trackIndex, nextTrack } = this.props
+		const { playing, trackIndex, nextTrack, resetPlay, play } = this.props
 		const { tracks } = this.state
 		return (
 			// only works for youtube links without ads
       <YouTubePlayer
+      	onReady={resetPlay}
+      	onPlay={() => document.getElementById("site-wrapper").style.backgroundColor = "green"}
+      	onPause={() => {
+      		document.getElementById("site-wrapper").style.backgroundColor = "red"
+      		// resetPlay()
+      		// console.log(document.getElementsByTagName("iframe")[0])
+      		// play()
+      	}}
+      	light
+      	onBuffer={() => document.getElementById("site-wrapper").style.backgroundColor = "blue"}
         playing={playing}
         height={'0px'}
         width={'0px'}
         // config={{ file: { forceAudio: true } }}
         config={{ youtube: { preload: true } }}
-        url={tracks[trackIndex].src} 
+        url={`${tracks[trackIndex].src}?autoplay=1`} 
         onEnded={nextTrack}
       />
 		);
