@@ -47,7 +47,7 @@ class SoMuchOfYourself extends Component {
 					<div className="dq-lyrics">
 						<div className="verse left-padding">
 							<p className="line">You think so much of yourself,</p>
-							<p className="line">You think so much of yourself,</p>
+							<p className="line">Ahsamed of everything else,</p>
 						</div>
 						<div className="verse left-padding">
 							<p className="line">And when you cry,</p>

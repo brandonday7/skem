@@ -6,7 +6,7 @@ import bandcamp from "../../images/bandcamp.png"
 // import instagram from "../../images/instagram.png"
 
 const epAppleMusic = ""
-const epSpotify = ""
+const epSpotify = "https://distrokid.com/hyperfollow/roseredyouth/rose-red-youth-ep"
 const epBandcamp = ""
 // const instagramProf = "https://www.instagram.com/roseredyouthband/"
 
