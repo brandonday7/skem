@@ -24,6 +24,7 @@ const Acknowledgments = () => (
 			<p className="line">CD cover animation by <Credit name="Kevin Lee" site="//www.kevinleedesign.com"/></p>
 			<p className="line">Additional mixing by <Credit name="Small Dog Studios" site="//smalldogstudio.weebly.com"/></p>
 			<p className="line">Mastered by <Credit name="Connor Salmoral at Salmoral Mastering" site="//www.salmoralstudios.com"/></p>
+			<p className="line">Special thanks to Christo Paulson</p>
 		</div>
 		<div className="verse">
 			<p className="line">Thanks for believing in this project</p>
