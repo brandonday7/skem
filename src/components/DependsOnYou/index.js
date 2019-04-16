@@ -64,7 +64,7 @@ class DependsOnYou extends Component {
 								Nick Vereshchak, and Ryan Garbett. Recording engineer Danny
 								Paulson. Mixed and produced by Danny Paulson. Brandon Day - Guitar and vocals
 								Ethan Gans - Guitar Nick Vereshchak - Drums Ryan Garbett - Bass
-								guitar. Recorded in my bedroom, The Shed, and somewhere in Israel Fall 2018
+								guitar. Recorded in my house, The Shed, and somewhere in Israel Fall 2018
 								<PlatformLinks platform="apple" link={dpoyApple} />
 								<PlatformLinks link={dpoySpotify} />
 							</p>
