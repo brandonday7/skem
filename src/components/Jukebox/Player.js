@@ -15,7 +15,7 @@ class Player extends Component {
 				},
 				{
 					name: "dramaQueen",
-					src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
+					src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
 					// src: "https://www.youtube.com/watch?v=SLrqm8F7TgM"
 				},
 				{
@@ -25,7 +25,7 @@ class Player extends Component {
 				},
 				{
 					name: "soMuchOfYourself",
-					src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
+					src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
 					// src: "https://www.youtube.com/watch?v=muU_ERWCgJA"
 				},
 			]
