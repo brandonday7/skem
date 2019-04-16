@@ -2,29 +2,46 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136878802-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-136878802-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-136878802-1');
+      gtag("config", "UA-136878802-1");
     </script>
 
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <meta property="og:title" content="Rose Red Youth EP - OUT NOW">
-    <meta name="description" content="An immersive listening experience for the new EP by Toronto band, Rose Red Youth. Explore lyrics, credits, and exclusive content.">
-    <meta property="og:image" content="https://s3.amazonaws.com/roseredbucket/coverSmall.png" />
-    <meta property="og:url" content="https://roseredyouth.com">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Rose Red Youth EP - OUT NOW" />
+    <meta
+      name="description"
+      content="An immersive listening experience for the new EP by Toronto band, Rose Red Youth. Explore lyrics, credits, and exclusive content."
+    />
+    <meta
+      property="og:image"
+      content="https://s3.amazonaws.com/roseredbucket/coverSmall.png"
+    />
+    <meta property="og:url" content="https://roseredyouth.com" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
+      rel="stylesheet"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,16 +54,17 @@
     <title>Rose Red Youth</title>
     <script>
       const host = "www.roseredyouth.com" || "roseredyouth.com";
-      if ((host == window.location.host) && (window.location.protocol != "https:")){
-      window.location.protocol = "https";
+      if (
+        host == window.location.host &&
+        window.location.protocol != "https:"
+      ) {
+        window.location.protocol = "https";
       }
     </script>
   </head>
   <body>
     <div id="site-wrapper">
-      <noscript>
-        You need to enable JavaScript to run this app.
-      </noscript>
+      <noscript> You need to enable JavaScript to run this app. </noscript>
       <div id="root"></div>
       <!--
         This HTML file is a template.

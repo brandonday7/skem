@@ -3,12 +3,12 @@ import styled, { keyframes } from "styled-components"
 import spotify from "../../images/spotify.png"
 import apple from "../../images/appleMusic.png"
 import bandcamp from "../../images/bandcamp.png"
-// import instagram from "../../images/instagram.png"
+import soundcloud from "../../images/soundcloud.png"
 
 const epAppleMusic = "https://itunes.apple.com/ca/album/rose-red-youth-ep/1458703611"
 const epSpotify = "https://distrokid.com/hyperfollow/roseredyouth/rose-red-youth-ep"
 const epBandcamp = ""
-// const instagramProf = "https://www.instagram.com/roseredyouthband/"
+const epSoundcloud = ""
 
 const fade = keyframes`
 	from {
@@ -37,6 +37,13 @@ const StyledImg = styled.img`
 
 const Platforms = () => (
 	<StyledDiv>
+		<a
+			href={epSpotify} 
+			target="_blank"
+			rel="noopener noreferrer nofollow"
+		>
+			<StyledImg src={spotify} alt="Spotify Logo"/>
+		</a>
 		<a 
 			href={epAppleMusic} 
 			target="_blank"
@@ -45,11 +52,11 @@ const Platforms = () => (
 			<StyledImg src={apple} alt="Apple Music Logo"/>
 		</a>
 		<a
-			href={epSpotify} 
+			href={epSoundcloud} 
 			target="_blank"
 			rel="noopener noreferrer nofollow"
 		>
-			<StyledImg src={spotify} alt="Spotify Logo"/>
+			<StyledImg src={soundcloud} alt="Soundcloud Logo"/>
 		</a>
 		<a
 			href={epBandcamp} 
