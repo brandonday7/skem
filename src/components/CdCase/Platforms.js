@@ -4,13 +4,11 @@ import spotify from "../../images/spotify.png"
 import apple from "../../images/appleMusic.png"
 import bandcamp from "../../images/bandcamp.png"
 import soundcloud from "../../images/soundcloud.png"
-import mail from "../../images/mail.svg"
 
 const epAppleMusic = "https://itunes.apple.com/ca/album/rose-red-youth-ep/1458703611"
 const epSpotify = "https://distrokid.com/hyperfollow/roseredyouth/rose-red-youth-ep"
 const epBandcamp = "https://roseredyouth.bandcamp.com/releases"
 const epSoundcloud = "https://soundcloud.com/roseredyouth"
-const epMail = "mailto:brandontday7@gmail.com"
 
 const fade = keyframes`
 	from {
@@ -66,12 +64,6 @@ const Platforms = () => (
 			rel="noopener noreferrer nofollow"
 		>
 			<StyledImg src={bandcamp} alt="Bandcamp Logo"/>
-		</a>
-		<a
-			href={epMail} 
-			rel="noopener noreferrer nofollow"
-		>
-			<StyledImg src={mail} alt="Mail Logo"/>
 		</a>
 	</StyledDiv>
 )
