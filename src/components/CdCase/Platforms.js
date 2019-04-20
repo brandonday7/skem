@@ -8,7 +8,7 @@ import soundcloud from "../../images/soundcloud.png"
 const epAppleMusic = "https://itunes.apple.com/ca/album/rose-red-youth-ep/1458703611"
 const epSpotify = "https://distrokid.com/hyperfollow/roseredyouth/rose-red-youth-ep"
 const epBandcamp = ""
-const epSoundcloud = ""
+const epSoundcloud = "https://soundcloud.com/roseredyouth"
 
 const fade = keyframes`
 	from {
