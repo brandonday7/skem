@@ -15,8 +15,7 @@ const Acknowledgments = () => (
 			</p>
 		</div>
 		<div className="verse">
-			<p className="line">Art direction by <Credit name="Brandon Day" site="mailto:brandontday7@gmail.com"/></p>
-			<p className="line">(contact brandontday7@gmail.com)</p>
+			<p className="line">Art direction by Brandon Day</p>
 			<p className="line">Drama Queen session video by Ethan Gans</p>
 			<p className="line">
 				Album art and photo editing by Ajay Rakhraj
