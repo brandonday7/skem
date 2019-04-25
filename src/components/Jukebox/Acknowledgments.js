@@ -3,7 +3,7 @@ import Credit from "./Credit"
 import PlatformLinks from "./PlatformLinks"
 
 const introApple = ""
-const introSpotify = ""
+const introSpotify = "https://open.spotify.com/track/7GFUHcZsURiLhKt3j0oxso?si=k4W1h_4jRw2M6JXxOYxtng"
 
 const Acknowledgments = () => (
 	<div className="acknowledgments">

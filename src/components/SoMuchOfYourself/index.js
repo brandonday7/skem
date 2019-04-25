@@ -3,7 +3,7 @@ import PlatformLinks from "../Jukebox/PlatformLinks"
 import "../DramaQueen/drama.css";
 
 const smoyApple = ""
-const smoySpotify = ""
+const smoySpotify = "https://open.spotify.com/track/4dbuxwBllABuuDpxvXbiBM?si=yaZo2tMJRRmd2F8MRq9xWg"
 
 class SoMuchOfYourself extends Component {
 	render() {

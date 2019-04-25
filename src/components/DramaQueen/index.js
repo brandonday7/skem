@@ -3,7 +3,7 @@ import PlatformLinks from "../Jukebox/PlatformLinks"
 import "./drama.css";
 
 const dqApple = ""
-const dqSpotify = ""
+const dqSpotify = "https://open.spotify.com/track/78BsVaWZWv81cqsVkcLTw0?si=h9guXwKoSFadc5PdrQfOWQ"
 
 class DramaQueen extends Component {
 	render() {
