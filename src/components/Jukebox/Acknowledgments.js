@@ -2,7 +2,7 @@ import React from "react"
 import Credit from "./Credit"
 import PlatformLinks from "./PlatformLinks"
 
-const introApple = ""
+const introApple = "https://itunes.apple.com/ca/album/intro/1458703611?i=1458703738"
 const introSpotify = "https://open.spotify.com/track/7GFUHcZsURiLhKt3j0oxso?si=k4W1h_4jRw2M6JXxOYxtng"
 
 const Acknowledgments = () => (

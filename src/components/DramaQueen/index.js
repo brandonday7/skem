@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PlatformLinks from "../Jukebox/PlatformLinks"
 import "./drama.css";
 
-const dqApple = ""
+const dqApple = "https://itunes.apple.com/ca/album/drama-queen/1458703611?i=1458703739"
 const dqSpotify = "https://open.spotify.com/track/78BsVaWZWv81cqsVkcLTw0?si=h9guXwKoSFadc5PdrQfOWQ"
 
 class DramaQueen extends Component {

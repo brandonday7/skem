@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PlatformLinks from "../Jukebox/PlatformLinks"
 import "../DramaQueen/drama.css";
 
-const smoyApple = ""
+const smoyApple = "https://itunes.apple.com/ca/album/so-much-of-yourself/1458703611?i=1458703741"
 const smoySpotify = "https://open.spotify.com/track/4dbuxwBllABuuDpxvXbiBM?si=yaZo2tMJRRmd2F8MRq9xWg"
 
 class SoMuchOfYourself extends Component {

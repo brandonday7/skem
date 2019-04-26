@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PlatformLinks from "../Jukebox/PlatformLinks"
 import "../DramaQueen/drama.css";
 
-const dpoyApple = ""
+const dpoyApple = "https://itunes.apple.com/ca/album/depends-on-you/1458703611?i=1458703740"
 const dpoySpotify = "https://open.spotify.com/track/3FgC976YtfakSwI90dRfIQ?si=W3VKT71SRG64iXkREJ4XFA"
 
 class DependsOnYou extends Component {
