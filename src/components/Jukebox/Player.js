@@ -8,23 +8,23 @@ class Player extends Component {
 			tracks: [
 				{
 					name: "intro",
-					src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
-					// src: `${process.env.REACT_APP_BUCKET}mp3s/INTRO_FINAL.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
+					src: `${process.env.REACT_APP_BUCKET}mp3s/INTRO_FINAL.mp3`
 				},
 				{
 					name: "dramaQueen",
-					src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
-					// src: `${process.env.REACT_APP_BUCKET}mp3s/DQ_FINAL.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
+					src: `${process.env.REACT_APP_BUCKET}mp3s/DQ_FINAL.mp3`
 				},
 				{
 					name: "dependsOnYou",
-					src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
-					// src: `${process.env.REACT_APP_BUCKET}mp3s/DPOY_FINAL.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}Super+Rich+Kids.mp3`
+					src: `${process.env.REACT_APP_BUCKET}mp3s/DPOY_FINAL.mp3`
 				},
 				{
 					name: "soMuchOfYourself",
-					src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
-					// src: `${process.env.REACT_APP_BUCKET}mp3s/SMOY_FINAL.mp3`
+					// src: `${process.env.REACT_APP_BUCKET}tyler.mp3`
+					src: `${process.env.REACT_APP_BUCKET}mp3s/SMOY_FINAL.mp3`
 				},
 			]
 		};

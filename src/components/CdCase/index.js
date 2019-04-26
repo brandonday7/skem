@@ -99,7 +99,7 @@ class CdCase extends Component {
 		let cdVid = reverse ? "cdCroppedReverse.mp4" : "cdCropped.mp4"
 		return (
 			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} /* onClick={this.play} */>
+				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
 					<video
 						id="cd-case-vid"
 						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
@@ -110,10 +110,9 @@ class CdCase extends Component {
 						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
 					/>
 	      </StlyedDiv>
-      	<StyledInstruction /* onClick={() => !reverse && this.play()} */>
+      	<StyledInstruction onClick={() => !reverse && this.play()}>
 	      	<Instructions 
-	      		blink={false} 
-	      		label="04. 26. 2019." 
+	      		label="Click to enter" 
 	      		color={!playing && !reverse ? "black" : "#faf4f8"}
 	      	/>
 	      </StyledInstruction>
