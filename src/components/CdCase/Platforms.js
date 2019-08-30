@@ -54,13 +54,6 @@ const Platforms = () => (
 			<StyledImg src={apple} alt="Apple Music Logo"/>
 		</a>
 		<a
-			href={epSoundcloud} 
-			target="_blank"
-			rel="noopener noreferrer nofollow"
-		>
-			<StyledImg src={soundcloud} alt="Soundcloud Logo"/>
-		</a>
-		<a
 			href={epYoutube} 
 			target="_blank"
 			rel="noopener noreferrer nofollow"

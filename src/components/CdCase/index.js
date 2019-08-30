@@ -2,6 +2,13 @@ import React, { Component } from "react"
 import styled, { keyframes } from "styled-components"
 import Instructions from "../Instructions"
 import Platforms from "./Platforms"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
+import ReactPlayer from "react-player"
+
+import "../Header/header.css"
 import "./cdCase.css"
 
 const fadeAway = keyframes`
@@ -41,6 +48,11 @@ const StlyedDiv = styled.div`
   @media (max-width: 700px) {
 		width: 100vw;
   }
+`
+
+const StyledStack = styled.div`
+	display: flex;
+	flex-direction: column;
 `
 
 const StyledInstruction = styled.div`
@@ -98,26 +110,42 @@ class CdCase extends Component {
 		const { reverse } = this.props
 		let cdVid = reverse ? "cdMedHiReverse.mp4" : "cdMedHi.mp4"
 		return (
-			<StyledContainer>
-				<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
-					<video
-						id="cd-case-vid"
-						className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
-						alt="Rose Red Youth EP CD Case"
-						autoPlay//={reverse ? true : false}
-						muted
-						playsInline
-						src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
-					/>
-	      </StlyedDiv>
-      	<StyledInstruction onClick={() => !reverse && this.play()}>
-	      	<Instructions 
-	      		label="Click to enter" 
-	      		color={!playing && !reverse ? "black" : "#faf4f8"}
-	      	/>
-	      </StyledInstruction>
-    	  <Platforms />
-      </StyledContainer>
+			<StyledStack>
+				<StyledContainer>
+						<ReactPlayer 
+							url="https://www.youtube.com/watch?v=cva83zJlya0#t=0.01"
+							playing={true}
+							playsInline
+						/>
+						<div className="chevron-container">
+							<FontAwesomeIcon 
+								style={{color: "#C03432", }}
+								className="header-title chevron" 
+								icon={faChevronDown}
+							/>
+						</div>
+				</StyledContainer>
+				<StyledContainer>
+					<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
+						<video
+							id="cd-case-vid"
+							className={`cd-vid ${!loaded ? "invisible" : "visible"}`} 
+							alt="Rose Red Youth EP CD Case"
+							autoPlay//={reverse ? true : false}
+							muted
+							playsInline
+							src={`${process.env.REACT_APP_BUCKET}${cdVid}#t=0.01`}
+						/>
+		      </StlyedDiv>
+	      	<StyledInstruction onClick={() => !reverse && this.play()}>
+		      	<Instructions 
+		      		label="Click to enter" 
+		      		color={!playing && !reverse ? "black" : "#faf4f8"}
+		      	/>
+		      </StyledInstruction>
+	    	  <Platforms />
+	      </StyledContainer>
+      </StyledStack>
 		)
 	}
 }
