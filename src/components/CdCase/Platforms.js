@@ -6,11 +6,11 @@ import bandcamp from "../../images/bandcamp.png"
 import soundcloud from "../../images/soundcloud.png"
 import youtube from "../../images/youtube.png"
 
-const epAppleMusic = "https://itunes.apple.com/ca/album/rose-red-youth-ep/1458703611"
-const epSpotify = "https://open.spotify.com/album/1d2uKzIftSCT0fZA7H6hbM?si=OKf467qCS3SijZJYiAhgkw"
-const epBandcamp = "https://roseredyouth.bandcamp.com/releases"
-const epSoundcloud = "https://soundcloud.com/roseredyouth/sets/rose-red-youth-ep"
-const epYoutube = "https://www.youtube.com/watch?v=_dcZlkXmCFc&list=PLAg5H04gQ7hmN8-xVKBxK2TMF4LMFKCei&index=2&t=0s"
+const epAppleMusic = "https://music.apple.com/ca/artist/rose-red-youth/1458640768"
+const epSpotify = "https://open.spotify.com/artist/2GnSTnxs3NcFhxJNOrSb92?si=x0SHXrk1S2KqJ4Xm4d1iBQ"
+const epBandcamp = "https://roseredyouth.bandcamp.com"
+const epSoundcloud = "https://soundcloud.com/roseredyouth"
+const epYoutube = "https://www.youtube.com/channel/UCwOLyxcAVrRVY6DIb96TJmg"
 
 const fade = keyframes`
 	from {
