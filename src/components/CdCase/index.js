@@ -113,6 +113,20 @@ class CdCase extends Component {
 			<StyledStack>
 				<StyledContainer>
 						<ReactPlayer 
+							url="https://www.youtube.com/watch?v=LcHiu4W-sCw#t=0.01"
+							playing={true}
+							playsInline
+						/>
+						<div className="chevron-container">
+							<FontAwesomeIcon 
+								style={{color: "#C03432", }}
+								className="header-title chevron" 
+								icon={faChevronDown}
+							/>
+						</div>
+				</StyledContainer>
+				<StyledContainer>
+						<ReactPlayer 
 							url="https://www.youtube.com/watch?v=cva83zJlya0#t=0.01"
 							playing={true}
 							playsInline
