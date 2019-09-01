@@ -128,16 +128,9 @@ class CdCase extends Component {
 				<StyledContainer>
 						<ReactPlayer 
 							url="https://www.youtube.com/watch?v=cva83zJlya0#t=0.01"
-							playing={true}
+							playing={false}
 							playsInline
 						/>
-						<div className="chevron-container">
-							<FontAwesomeIcon 
-								style={{color: "#C03432", }}
-								className="header-title chevron" 
-								icon={faChevronDown}
-							/>
-						</div>
 				</StyledContainer>
 				<StyledContainer>
 					<StlyedDiv fadeOut={fadeOut} onClick={this.play}>
