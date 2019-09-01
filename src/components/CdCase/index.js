@@ -109,6 +109,7 @@ class CdCase extends Component {
 		const { playing, fadeOut, loaded } = this.state
 		const { reverse } = this.props
 		let cdVid = reverse ? "cdMedHiReverse.mp4" : "cdMedHi.mp4"
+		const phone = window.innerWidth < 500
 		return (
 			<StyledStack>
 				<StyledContainer>
@@ -116,6 +117,8 @@ class CdCase extends Component {
 							url="https://www.youtube.com/watch?v=LcHiu4W-sCw#t=0.01"
 							playing={true}
 							playsInline
+							width={phone ? "350px" : "500px"}
+							height={phone ? "197px" : "281px"}
 						/>
 						<div className="chevron-container">
 							<FontAwesomeIcon 
@@ -130,6 +133,8 @@ class CdCase extends Component {
 							url="https://www.youtube.com/watch?v=cva83zJlya0#t=0.01"
 							playing={false}
 							playsInline
+							width={phone ? "350px" : "500px"}
+							height={phone ? "197px" : "281px"}
 						/>
 				</StyledContainer>
 				<StyledContainer>
