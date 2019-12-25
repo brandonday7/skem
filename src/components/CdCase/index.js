@@ -11,9 +11,11 @@ import "./cdCase.css"
 
 
 const CdCase = () => (
-	<div class="site-container black">				
+	<div className="site-container black">				
 		<div className="artwork-container">
-			<img alt="imisssummer" className="album-art" src={iMissSummer} />
+			<Link to="/imisssummer">
+				<img alt="imisssummer" className="album-art" src={iMissSummer} />
+			</Link>
 			<Link to="/ep">
 				<img alt="rry" className="album-art" src={rryEp} />
 			</Link>
