@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from 'react-router-dom';
 import Platforms from "./Platforms"
 
-import rryEp from "../../images/rryEp.jpg"
-// import closeToYou from "../../images/closeToYou.jpg"
-import iMissSummer from "../../images/iMissSummer.png"
+import rryEp from "../../images/album-art/rryEp.jpg"
+// import closeToYou from "../../images/album-art/closeToYou.jpg"
+import iMissSummer from "../../images/album-art/iMissSummer.png"
 
 import "../Header/header.css"
 import "./cdCase.css"
@@ -13,9 +13,9 @@ import "./cdCase.css"
 const CdCase = () => (
 	<div class="site-container black">				
 		<div className="artwork-container">
-			<img className="album-art" src={iMissSummer} />
+			<img alt="imisssummer" className="album-art" src={iMissSummer} />
 			<Link to="/ep">
-				<img className="album-art" src={rryEp} />
+				<img alt="rry" className="album-art" src={rryEp} />
 			</Link>
 		</div>
 		<Platforms />
