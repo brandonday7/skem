@@ -3,6 +3,7 @@ import styled from "styled-components"
 import "./i-miss-summer.css"
 
 import IMissStatements from "./IMissStatements"
+import Lyrics from "./Lyrics"
 
 const Stack = styled.div`
 	display: flex;
@@ -12,8 +13,9 @@ const Stack = styled.div`
 
 const IMissSummer = () => {
 	return (
-		<Stack>
-			<IMissStatements />			
+		<Stack className="i-miss-summer-container">
+			<IMissStatements />		
+			<Lyrics />
 		</Stack>
 	)
 }

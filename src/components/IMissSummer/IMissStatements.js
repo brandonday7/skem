@@ -5,6 +5,7 @@ import "./i-miss-summer.css"
 const StyledMessage = styled.h1`
 	font-size: 500%;
 	color: white;
+	text-align: center;
 `
 
 const StyledFullscreen = styled.div`
@@ -24,35 +25,70 @@ class IMissStatements extends Component {
 			complete: false,
 			statements: [
 				{
-					message: "I miss being a kid",
-					time: 200
+					message: "I miss",
+					time: 500
 				},
 				{
-					message: "I miss the sun",
-					time: 200
-				},
-				{
-					message: "I miss my friends",
-					time: 200
-				},
-				{
-					message: "I miss girls",
-					time: 200
-				},
-				{
-					message: "I miss when feeling close with my family didn't feel like an accomplishment",
-					time: 300
-				},
-				{
-					message: "I miss feeling like I was getting somewhere,",
+					message: "being a kid",
 					time: 400
 				},
 				{
-					message: "And when somewhere had a name",
-					time: 100
+					message: "I miss",
+					time: 400
+				},
+				{
+					message: "the sun",
+					time: 500
+				},
+				{
+					message: "I miss",
+					time: 600
+				},
+				{
+					message: "my friends",
+					time: 400
+				},
+				{
+					message: "I miss",
+					time: 400
+				},
+				{
+					message: "girls",
+					time: 200
+				},
+				{
+					message: "I miss",
+					time: 500
+				},
+				{
+					message: "when feeling close",
+					time: 800
+				},
+				{
+					message: "with my family",
+					time: 500
+				},
+				{
+					message: "didn't feel like an accomplishment",
+					time: 700
+				},
+				{
+					message: "I miss",
+					time: 300
+				},
+				{
+					message: "feeling like",
+					time: 200
+				},
+				{
+					message: "I was getting somewhere,",
+					time: 500
+				},
+				{
+					message: "and when somewhere had a name.",
+					time: 1300
 				}
-			],
-			currentWord: "I"
+			]
 		}
 	}
 
@@ -70,7 +106,9 @@ class IMissStatements extends Component {
 				})
 			}, statements[index].time)
 		} else {
-			this.setState({ complete: true })
+			setTimeout(() => {
+				this.setState({ complete: true })
+			}, statements[index].time)
 		}
 
 	}
