@@ -32,3 +32,6 @@ gd_bundle-g2-g1.crt
 server.csr
 server.key
 server.pass.key
+
+dc834a74c418769b_bundle.crt
+domain-nopassphrase.key
