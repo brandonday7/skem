@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import "../i-miss-summer.css"
 
-import kids from "../../../images/ims-photos/kids.jpg"
+import urOk from "../../../images/ims-photos/ur-ok.JPG"
+import nick from "../../../images/ims-photos/nick.jpg"
 
 
 const StyledFullscreen = styled.div`
@@ -31,7 +32,7 @@ const StyledImage = styled.img`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 3vw 0 0 20vw;
+	margin: 0vw 0 0 25vw;
 `
 
 
@@ -91,8 +92,8 @@ const UrOk = () => (
 					<StyledLine>Ur ok, ok now</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={kids} />
-					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={kids} />
+					<StyledImage alt="days" src={nick} style={{width: "20%"}}/>
+					<StyledImage alt="days" style={{transform: "translate(-15vw, 15vw)"}} src={urOk} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

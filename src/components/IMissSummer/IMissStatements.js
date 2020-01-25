@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import "./i-miss-summer.css"
 
 const StyledMessage = styled.h1`
@@ -26,7 +26,6 @@ class IMissStatements extends Component {
 		super(props)
 		this.state = {
 			index: 0,
-			complete: false,
 			statements: [
 				{
 					message: "I miss",
@@ -141,7 +140,7 @@ class IMissStatements extends Component {
 
 
 	render() {
-		const { complete, statements, index } = this.state
+		const { statements, index } = this.state
 		return (
 			<StyledFullscreen>
 				<StyledMessage

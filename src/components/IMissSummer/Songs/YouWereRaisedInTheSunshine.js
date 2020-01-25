@@ -3,6 +3,7 @@ import styled from "styled-components"
 import "../i-miss-summer.css"
 
 import ethanKids from "../../../images/ims-photos/ethan-ims.jpg"
+import sunshine from "../../../images/ims-photos/sunshine.png"
 
 
 const StyledFullscreen = styled.div`
@@ -27,11 +28,11 @@ const StyledLine = styled.p`
 
 const StyledImage = styled.img`
 	position: absolute;
-	width: 30vw;
+	width: 20vw;
 `
 
 const StyledImgContainer = styled.div`
-	margin: 3vw 0 0 20vw;
+	margin: 0vw 0 0 22vw;
 `
 
 
@@ -48,8 +49,8 @@ const YouWereRaisedInTheSunshine = () => (
 					<StyledLine>Raised in the sunshine</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={ethanKids} />
-					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={ethanKids} />
+					<StyledImage alt="days" src={sunshine} />
+					<StyledImage alt="days" style={{transform: "translate(-25vw, 15vw)", width: "30vw"}} src={ethanKids} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

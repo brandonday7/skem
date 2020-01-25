@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import "../i-miss-summer.css"
 
-import kids from "../../../images/ims-photos/kids.jpg"
+import days from "../../../images/ims-photos/days.jpg"
+import ye from "../../../images/ims-photos/ye.png"
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
@@ -87,8 +88,8 @@ const NostalgiaUltra = () => (
 					<StyledLine>We were so wrong</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={kids} />
-					<StyledImage alt="days" style={{transform: "translate(20vw, 15vw)"}} src={kids} />
+					<StyledImage alt="days" src={days} />
+					<StyledImage alt="days" style={{transform: "translate(20vw, 15vw)"}} src={ye} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

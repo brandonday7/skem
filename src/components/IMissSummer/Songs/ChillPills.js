@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import "../i-miss-summer.css"
 
-import kids from "../../../images/ims-photos/kids.jpg"
+import rock from "../../../images/ims-photos/rock.png"
+import drums from "../../../images/ims-photos/drums.jpg"
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
@@ -88,8 +89,8 @@ const ChillPills = () => (
 					<StyledLine>From everybody else?</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={kids} />
-					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={kids} />
+					<StyledImage alt="days" src={rock} />
+					<StyledImage alt="days" style={{transform: "translate(-20vw, 10vw)"}} src={drums} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>
