@@ -24,7 +24,7 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 2vw 0 0 18vw;
+	margin: 1em 0 0 28em;
 `
 
 
@@ -42,7 +42,7 @@ const YouWereRaisedInTheSunshine = () => (
 				</div>
 				<StyledImgContainer>
 					<img className="ims-image" alt="days" src={sunshine} />
-					<img className="ims-image" alt="days" style={{transform: "translate(-20em, 15em)", minWidth: "400px"}} src={ethanKids} />
+					<img className="ims-image big" alt="days" style={{transform: "translate(-28em, 12em)", minWidth: "400px"}} src={ethanKids} />
 				</StyledImgContainer>
 			</div>
 		</div>

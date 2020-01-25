@@ -83,8 +83,8 @@ const Daisy = () => (
 					<StyledLine>I'm on again</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<img className="ims-image" alt="days" src={mixMaster}/>
-					<img className="ims-image" alt="days" style={{transform: "translate(14em, -10em)"}} src={danny} />
+					<img className="ims-image big" alt="days" src={mixMaster}/>
+					<img className="ims-image" alt="days" style={{transform: "translate(10em, -15em)"}} src={danny} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

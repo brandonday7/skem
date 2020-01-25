@@ -84,8 +84,8 @@ const NostalgiaUltra = () => (
 					<StyledLine>We were so wrong</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<img className="ims-image" alt="days" src={days} />
-					<img className="ims-image" alt="days" style={{transform: "translate(17em, 8em)"}} src={ye} />
+					<img className="ims-image big" alt="days" src={days} />
+					<img className="ims-image" alt="days" style={{transform: "translate(18em, 17em)"}} src={ye} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

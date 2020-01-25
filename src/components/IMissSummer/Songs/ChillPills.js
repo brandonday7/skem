@@ -27,7 +27,7 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 3em 0 0 17em;
+	margin: 0em 0 0 14em;
 `
 
 
@@ -86,7 +86,7 @@ const ChillPills = () => (
 				</div>
 				<StyledImgContainer>
 					<img className="ims-image" alt="days" src={rock} />
-					<img className="ims-image" alt="days" style={{transform: "translate(-15em, 10em)"}} src={drums} />
+					<img className="ims-image big" alt="days" style={{transform: "translate(-17em, 15em)"}} src={drums} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>
