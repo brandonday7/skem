@@ -4,9 +4,8 @@ import "./i-miss-summer.css"
 
 const StyledMessage = styled.h1`
 	font-size: ${({ size }) => size ? size : 500}%;
-  background: linear-gradient(to top, #AB7747, #AF7F4C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	color: white;
+	opacity: 0.7;
 	text-align: center;
 `
 
@@ -18,7 +17,7 @@ const StyledFullscreen = styled.div`
 	align-items: center;
 	background: url("https://roseredbucket.s3.amazonaws.com/blank-ims.jpg");
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: bottom;
 `
 
 class IMissStatements extends Component {
@@ -47,17 +46,17 @@ class IMissStatements extends Component {
 				{
 					message: "the sun",
 					time: 600,
-					size: 450,
+					size: 400,
 				},
 				{
 					message: "I miss",
 					time: 700,
-					size: 800,
+					size: 500,
 				},
 				{
 					message: "my friends",
 					time: 500,
-					size: 500,
+					size: 700,
 				},
 				{
 					message: "I miss",
@@ -76,7 +75,7 @@ class IMissStatements extends Component {
 				},
 				{
 					message: "when feeling close",
-					time: 700,
+					time: 650,
 					size: 700,
 				},
 				{
@@ -100,13 +99,18 @@ class IMissStatements extends Component {
 					size: 600,
 				},
 				{
-					message: "I was getting somewhere,",
-					time: 800,
+					message: "I was getting",
+					time: 600,
 					size: 500,
 				},
 				{
-					message: "and when somewhere had a name",
-					time: 900,
+					message: "Somewhere,",
+					time: 550,
+					size: 300,
+				},
+				{
+					message: "and when Somewhere had a name.",
+					time: 1000,
 					size: 400,
 				},
 				{
