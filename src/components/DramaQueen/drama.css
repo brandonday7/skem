@@ -30,7 +30,7 @@
 .dq-lyrics {
 	max-width: 30%;
 	font-size: 170%;
-	/*color: #f6a4a6;*/
+	color: #f6a4a6;
 }
 
 .credits {
@@ -38,6 +38,7 @@
 }
 
 .line {
+	color: black;
 	margin: 0;
 }
 

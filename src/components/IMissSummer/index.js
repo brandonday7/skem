@@ -8,7 +8,7 @@ import Lyrics from "./Lyrics"
 const Stack = styled.div`
 	display: flex;
 	flex-direction: column;
-	background-color: #121212;
+	background-color: white;
 `
 
 const IMissSummer = () => {

@@ -4,7 +4,7 @@ import Platforms from "./Platforms"
 
 import rryEp from "../../images/album-art/rryEp.jpg"
 // import closeToYou from "../../images/album-art/closeToYou.jpg"
-import iMissSummer from "../../images/album-art/iMissSummer.png"
+import iMissSummer from "../../images/album-art/roslindale.jpg"
 
 import "../Header/header.css"
 import "./cdCase.css"
