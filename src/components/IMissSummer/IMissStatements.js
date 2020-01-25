@@ -55,13 +55,13 @@ class IMissStatements extends Component {
 				},
 				{
 					message: "my friends",
-					time: 500,
+					time: 600,
 					size: 700,
 				},
 				{
 					message: "I miss",
-					time: 500,
-					size: 800,
+					time: 400,
+					size: 900,
 				},
 				{
 					message: "girls",
@@ -85,7 +85,7 @@ class IMissStatements extends Component {
 				},
 				{
 					message: "didn't feel like an accomplishment",
-					time: 800,
+					time: 850,
 					size: 500,
 				},
 				{

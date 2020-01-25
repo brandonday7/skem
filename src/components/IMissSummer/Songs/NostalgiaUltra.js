@@ -22,7 +22,7 @@ const NostalgiaUltra = () => (
 				<br />
 				<p>Four in the morning, that's ok</p>
 				<p>If you got something to say</p>
-				<p>I got a mustang</p>
+				<p>I got a Mustang</p>
 				<br />
 				<p>Now go outside, oh no!</p>
 			</div>
@@ -37,7 +37,7 @@ const NostalgiaUltra = () => (
 				<p>We were so loved</p>
 				<p>Trying to go</p>
 				<p>Faster on the run</p>
-				<p>So long, so anyway, still catching up</p>
+				<p>So long, so anyway... still catching up</p>
 				<p>We were so wrong</p>
 			</div>
 
@@ -70,7 +70,7 @@ const NostalgiaUltra = () => (
 				<p>We were so loved</p>
 				<p>Trying to go</p>
 				<p>Faster on the run</p>
-				<p>So long, so anyway, still catching up</p>
+				<p>So long, so anyway... still catching up</p>
 				<p>We were so wrong</p>
 			</div>
 

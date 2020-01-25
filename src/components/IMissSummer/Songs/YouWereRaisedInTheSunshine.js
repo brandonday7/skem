@@ -2,24 +2,58 @@ import React from "react"
 import styled from "styled-components"
 import "../i-miss-summer.css"
 
-import kids from "../../../images/ims-photos/kids.jpg"
+import ethanKids from "../../../images/ims-photos/ethan-ims.jpg"
+
+
+const StyledFullscreen = styled.div`
+	width: 100vw;
+	height: 100vh;
+	background-color: #e8e9eb;
+	padding: 2em 3em
+`
+
+const StyledTitle = styled.h1`
+	font-size: 300%;
+`
+
+const StyledRow = styled.div`
+	display: flex;
+`
+
+const StyledLine = styled.p`
+	margin: 0;
+	font-size: 120%;
+`
+
+const StyledImage = styled.img`
+	position: absolute;
+	width: 30vw;
+`
+
+const StyledImgContainer = styled.div`
+	margin: 3vw 0 0 20vw;
+`
 
 
 const YouWereRaisedInTheSunshine = () => (
-	<div className="center">
-		<div className="row">
-			<div className="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>Hold me honey, oh you're all mine</p>
-				<p>Thinking of me, only sometimes</p>
-				<p>You be brave on the front lines</p>
-				<p>You were raised,</p>
-				<p>Raised in the sunshine</p>
-			</div>
+	<StyledFullscreen>
+		<div>
+			<StyledTitle>You Were Raised in the Sunshine</StyledTitle>	
+			<StyledRow>	
+				<div className="square">
+					<StyledLine>Hold me honey, oh you're all mine</StyledLine>
+					<StyledLine>Thinking of me, only sometimes</StyledLine>
+					<StyledLine>You be brave on the front lines</StyledLine>
+					<StyledLine>You were raised,</StyledLine>
+					<StyledLine>Raised in the sunshine</StyledLine>
+				</div>
+				<StyledImgContainer>
+					<StyledImage alt="days" src={ethanKids} />
+					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={ethanKids} />
+				</StyledImgContainer>
+			</StyledRow>
 		</div>
-	</div>
+	</StyledFullscreen>
 )
 
 export default YouWereRaisedInTheSunshine

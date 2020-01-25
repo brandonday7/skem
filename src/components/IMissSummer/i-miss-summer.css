@@ -1,7 +1,7 @@
-p {
-	color: white;
+/*p {
+	color: black;
 	margin: 0;
-}
+}*/
 
 .i-miss-summer-container {
 	font-family: "Roslindale", monospace;
@@ -16,7 +16,6 @@ p {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	margin: 1em;
 }
 
 .center {
@@ -34,8 +33,4 @@ p {
 	min-height: 10em;
 	display: flex;
 	flex-direction: column;
-	margin: 1em;
-	/*justify-content: center;*/
-	/*align-items: center;*/
-	/*text-align: left;*/
 }
