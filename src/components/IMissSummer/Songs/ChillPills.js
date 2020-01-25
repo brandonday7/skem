@@ -4,75 +4,96 @@ import "../i-miss-summer.css"
 
 import kids from "../../../images/ims-photos/kids.jpg"
 
+const StyledFullscreen = styled.div`
+	width: 100vw;
+	height: 100vh;
+	background-color: #e8e9eb;
+	padding: 2em 3em
+`
+
+const StyledTitle = styled.h1`
+	font-size: 300%;
+`
+
+const StyledRow = styled.div`
+	display: flex;
+`
+
+const StyledLine = styled.p`
+	margin: 0;
+	font-size: 120%;
+`
+
+const StyledImage = styled.img`
+	position: absolute;
+	width: 30vw;
+`
+
+const StyledImgContainer = styled.div`
+	margin: 3vw 0 0 20vw;
+`
+
+
 
 const ChillPills = () => (
-	<div className="center">
-		<div className="row">
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>You'd settle down if you tried</p>
-				<p>I know your mouth pounds and your heart's dry</p>
-				<p>And you've been keeping busy straightening that little tongue tie</p>
-				<p>They say your're just fine</p>
-			</div>
+	<StyledFullscreen>
+		<div>
+			<StyledTitle>Chill Pills</StyledTitle>	
+			<StyledRow>	
+				<div className="square">
+					<StyledLine>You'd settle down if you tried</StyledLine>
+					<StyledLine>I know your mouth pounds and your heart's dry</StyledLine>
+					<StyledLine>And you've been keeping busy straightening</StyledLine>
+					<StyledLine>That little tongue tie</StyledLine>
+					<StyledLine>They say your're just fine</StyledLine>
+					<br />
+					<StyledLine>But I think you're dying</StyledLine>
+					<StyledLine>I think you're choking on chill pills</StyledLine>
+					<StyledLine>At night</StyledLine>
+					<StyledLine>I think too much</StyledLine>
+					<StyledLine>You're so absent-minded</StyledLine>
+					<StyledLine>You take enough breaks to fix your face</StyledLine>
+					<StyledLine>At night</StyledLine>
+					<StyledLine>I think you're right</StyledLine>
+					<StyledLine>You say you're unwinding</StyledLine>
+					<StyledLine>You say you're just finding yourself</StyledLine>
+					<StyledLine>And I,</StyledLine>
+					<StyledLine>Feel afraid when it hurts to help</StyledLine>
+					<StyledLine>What if you're lying?</StyledLine>
+					<StyledLine>What if you're hiding</StyledLine>
+					<StyledLine>From everybody else?</StyledLine>
+				</div>
 
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>But I think you're dying</p>
-				<p>I think you're choking on chill pills</p>
-				<p>At night</p>
-				<p>I think too much</p>
-				<p>You're so absent-minded</p>
-				<p>You take enough breaks to fix your face</p>
-				<p>At night</p>
-				<p>I think you're right</p>
-				<p>You say you're unwinding</p>
-				<p>You say you're just finding yourself</p>
-				<p>And I,</p>
-				<p>Feel afraid when it hurts to help</p>
-				<p>What if you're lying?</p>
-				<p>What if you're hiding</p>
-				<p>From everybody else?</p>
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>You're scratching up at the sky</p>
-				<p>You've been holding your breath for a long time</p>
-				<p>You'd be making it all up if not for</p>
-				<p>That little orange light</p>
-				<p>They say you dress fine</p>
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>But I think you're dying</p>
-				<p>I think you're choking on chill pills</p>
-				<p>At night</p>
-				<p>I think too much</p>
-				<p>You're so absent-minded</p>
-				<p>You take enough breaks to fix your face</p>
-				<p>At night</p>
-				<p>I think you're right</p>
-				<p>You say you're unwinding</p>
-				<p>You say you're just finding yourself</p>
-				<p>And I,</p>
-				<p>Feel afraid when it hurts to help</p>
-				<p>What if you're lying?</p>
-				<p>What if you're hiding</p>
-				<p>From everybody else?</p>
-			</div>
-
+				<div className="square">
+					<StyledLine>You're scratching up at the sky</StyledLine>
+					<StyledLine>You've been holding your breath for a long time</StyledLine>
+					<StyledLine>You'd be making it all up if not for</StyledLine>
+					<StyledLine>That little orange light</StyledLine>
+					<StyledLine>They say you dress fine</StyledLine>
+					<br />
+					<StyledLine>But I think you're dying</StyledLine>
+					<StyledLine>I think you're choking on chill pills</StyledLine>
+					<StyledLine>At night</StyledLine>
+					<StyledLine>I think too much</StyledLine>
+					<StyledLine>You're so absent-minded</StyledLine>
+					<StyledLine>You take enough breaks to fix your face</StyledLine>
+					<StyledLine>At night</StyledLine>
+					<StyledLine>I think you're right</StyledLine>
+					<StyledLine>You say you're unwinding</StyledLine>
+					<StyledLine>You say you're just finding yourself</StyledLine>
+					<StyledLine>And I,</StyledLine>
+					<StyledLine>Feel afraid when it hurts to help</StyledLine>
+					<StyledLine>What if you're lying?</StyledLine>
+					<StyledLine>What if you're hiding</StyledLine>
+					<StyledLine>From everybody else?</StyledLine>
+				</div>
+				<StyledImgContainer>
+					<StyledImage alt="days" src={kids} />
+					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={kids} />
+				</StyledImgContainer>
+			</StyledRow>
 		</div>
-	</div>
+	</StyledFullscreen>
 )
 
 export default ChillPills

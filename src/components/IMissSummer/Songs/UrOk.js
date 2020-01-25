@@ -5,89 +5,98 @@ import "../i-miss-summer.css"
 import kids from "../../../images/ims-photos/kids.jpg"
 
 
+const StyledFullscreen = styled.div`
+	width: 100vw;
+	height: 100vh;
+	background-color: #e8e9eb;
+	padding: 2em 3em
+`
+
+const StyledTitle = styled.h1`
+	font-size: 300%;
+`
+
+const StyledRow = styled.div`
+	display: flex;
+`
+
+const StyledLine = styled.p`
+	margin: 0;
+	font-size: 120%;
+`
+
+const StyledImage = styled.img`
+	position: absolute;
+	width: 30vw;
+`
+
+const StyledImgContainer = styled.div`
+	margin: 3vw 0 0 20vw;
+`
+
+
 const UrOk = () => (
-	<div className="center">
-		<div className="row">
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>I'll jump</p>
-				<p>But you first</p>
-				<p>I'm scared</p>
-				<p>But I swear nothing's worse</p>
-				<p>I overshare</p>
-				<p>There, there</p>
-				<p>Got my things in your purse</p>
-				<p>I know, I know</p>
-				<p>I'm the worst</p>
-			</div>
+	<StyledFullscreen>
+		<div>
+			<StyledTitle>Ur ok</StyledTitle>	
+			<StyledRow>	
+				<div className="square">
+					<StyledLine>I'll jump</StyledLine>
+					<StyledLine>But you first</StyledLine>
+					<StyledLine>I'm scared</StyledLine>
+					<StyledLine>But I swear nothing's worse</StyledLine>
+					<StyledLine>I overshare</StyledLine>
+					<StyledLine>There, there</StyledLine>
+					<StyledLine>Got my things in your purse</StyledLine>
+					<StyledLine>I know, I know</StyledLine>
+					<StyledLine>I'm the worst</StyledLine>
+					<br />
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>And you got nothing to say now</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<br />
+					<StyledLine>Knuckles are bloody</StyledLine>
+					<StyledLine>Can't cry but it hurts</StyledLine>
+					<StyledLine>You're not like the boys</StyledLine>
+					<StyledLine>Tell me I'm funny</StyledLine>
+					<StyledLine>Me, I'm lovely</StyledLine>
+					<StyledLine>Me, tell me what I deserve</StyledLine>
+					<StyledLine>I felt it but I ain't heard</StyledLine>
+					<StyledLine>We're so self-assured</StyledLine>
+				</div>
 
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>Ur ok, ok now</p>
-				<p>Ur ok, ok now</p>
-				<p>And you got nothing to say now</p>
-				<p>Ur ok, ok now</p>
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>Knuckles are bloody</p>
-				<p>Can't cry but it hurts</p>
-				<p>You're not like the boys</p>
-				<p>Tell me I'm funny</p>
-				<p>Me, I'm lovely</p>
-				<p>Me, tell me what I deserve</p>
-				<p>I felt it but I ain't heard</p>
-				<p>We're so self-assured</p>
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>Ur ok, ok now</p>
-				<p>Ur ok, ok now</p>
-				<p>And you got nothing to say now</p>
-				<p>It's not funny, ok now??</p>
-				<p>Ur ok, ok now</p>
-
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>You're enough</p>
-				<p>Just knowing you showed up</p>
-				<p>You burn like a sun</p>
-				<p>Like that could be anyone</p>
-				<p>I miss the bus</p>
-				<p>Been busy growing up</p>
-				<p>You and your shoes are undone</p>
-				<p>Screaming I could be anyone</p>
-				<p>Baby, I could be anyone</p>
-			</div>
-
-			<div class="square">
-				<img alt="days" width="300" src={kids} />
-			</div>
-			<div className="square">
-				<p>Ur ok, ok now</p>
-				<p>Ur ok, ok now</p>
-				<p>And you got nothing to say now</p>
-				<p>It's not funny, ok now??</p>
-				<p>I love you, ur ok now</p>
-				<p>Ur ok, ok now</p>
-			</div>
-
+				<div className="square">
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>And you got nothing to say now</StyledLine>
+					<StyledLine>It's not funny, ok now??</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>				
+					<br />
+					<StyledLine>You're enough</StyledLine>
+					<StyledLine>Just knowing you showed up</StyledLine>
+					<StyledLine>You burn like a sun</StyledLine>
+					<StyledLine>Like that could be anyone</StyledLine>
+					<StyledLine>I miss the bus</StyledLine>
+					<StyledLine>Been busy growing up</StyledLine>
+					<StyledLine>You and your shoes are undone</StyledLine>
+					<StyledLine>Screaming I could be anyone</StyledLine>
+					<StyledLine>Baby, I could be anyone</StyledLine>
+					<br />
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>
+					<StyledLine>And you got nothing to say now</StyledLine>
+					<StyledLine>It's not funny, ok now??</StyledLine>
+					<StyledLine>I love you, ur ok now</StyledLine>
+					<StyledLine>Ur ok, ok now</StyledLine>
+				</div>
+				<StyledImgContainer>
+					<StyledImage alt="days" src={kids} />
+					<StyledImage alt="days" style={{transform: "translate(-25vw, 10vw)"}} src={kids} />
+				</StyledImgContainer>
+			</StyledRow>
 		</div>
-	</div>
+	</StyledFullscreen>
 )
 
 export default UrOk
