@@ -32,7 +32,7 @@ const StyledImage = styled.img`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 0vw 0 0 22vw;
+	margin: 0vw 0 0 28vw;
 `
 
 
