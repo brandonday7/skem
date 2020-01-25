@@ -4,7 +4,8 @@ import "./i-miss-summer.css"
 
 const StyledMessage = styled.h1`
 	font-size: 500%;
-	color: white;
+	color: #D6A149;
+	-webkit-text-stroke: 1px #C3813E;
 	text-align: center;
 `
 
