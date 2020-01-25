@@ -9,11 +9,12 @@ const StyledFullscreen = styled.div`
 	width: 100vw;
 	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em
+	padding: 2em 3em;
 `
 
 const StyledTitle = styled.h1`
 	font-size: 300%;
+	max-width: 90vw;
 `
 
 const StyledRow = styled.div`
@@ -23,11 +24,6 @@ const StyledRow = styled.div`
 const StyledLine = styled.p`
 	margin: 0;
 	font-size: 120%;
-`
-
-const StyledImage = styled.img`
-	position: absolute;
-	width: 25vw;
 `
 
 const StyledImgContainer = styled.div`
@@ -63,7 +59,7 @@ const NostalgiaUltra = () => (
 					<StyledLine>So long, so anyway... still catching up</StyledLine>
 					<StyledLine>We were so wrong</StyledLine>
 				</div>
-				<div className="square">
+				<div className="square second-square">
 					<StyledLine>I was a loving son in the shade</StyledLine>
 					<StyledLine>I was in touch with my faith</StyledLine>
 					<StyledLine>It was a roadway</StyledLine>
@@ -88,8 +84,8 @@ const NostalgiaUltra = () => (
 					<StyledLine>We were so wrong</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={days} />
-					<StyledImage alt="days" style={{transform: "translate(20vw, 15vw)"}} src={ye} />
+					<img className="ims-image" alt="days" src={days} />
+					<img className="ims-image" alt="days" style={{transform: "translate(17em, 8em)"}} src={ye} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

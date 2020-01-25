@@ -9,11 +9,12 @@ const StyledFullscreen = styled.div`
 	width: 100vw;
 	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em
+	padding: 2em 3em;
 `
 
 const StyledTitle = styled.h1`
 	font-size: 300%;
+	max-width: 90vw;
 `
 
 const StyledRow = styled.div`
@@ -25,13 +26,8 @@ const StyledLine = styled.p`
 	font-size: 120%;
 `
 
-const StyledImage = styled.img`
-	position: absolute;
-	width: 30vw;
-`
-
 const StyledImgContainer = styled.div`
-	margin: 15vw 0 0 1vw;
+	margin: 13em 0 0 1em;
 `
 
 
@@ -63,7 +59,7 @@ const Daisy = () => (
 					<StyledLine>Just to see if you notice us</StyledLine>
 					<StyledLine>I'm on again</StyledLine>
 				</div>
-				<div className="square">
+				<div className="square second-square">
 					<StyledLine>Looking back at it blinking</StyledLine>
 					<StyledLine>So dazedly, unattainably</StyledLine>
 					<StyledLine>It's a shame but we're sinking!</StyledLine>
@@ -87,8 +83,8 @@ const Daisy = () => (
 					<StyledLine>I'm on again</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={mixMaster}/>
-					<StyledImage alt="days" style={{transform: "translate(15vw, -18vw)"}} src={danny} />
+					<img className="ims-image" alt="days" src={mixMaster}/>
+					<img className="ims-image" alt="days" style={{transform: "translate(14em, -10em)"}} src={danny} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

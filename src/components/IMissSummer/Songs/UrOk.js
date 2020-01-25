@@ -10,11 +10,12 @@ const StyledFullscreen = styled.div`
 	width: 100vw;
 	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em
+	padding: 2em 3em;
 `
 
 const StyledTitle = styled.h1`
 	font-size: 300%;
+	max-width: 90vw;
 `
 
 const StyledRow = styled.div`
@@ -26,13 +27,8 @@ const StyledLine = styled.p`
 	font-size: 120%;
 `
 
-const StyledImage = styled.img`
-	position: absolute;
-	width: 30vw;
-`
-
 const StyledImgContainer = styled.div`
-	margin: 0vw 0 0 25vw;
+	margin: 0 0 0 22em;
 `
 
 
@@ -67,7 +63,7 @@ const UrOk = () => (
 					<StyledLine>We're so self-assured</StyledLine>
 				</div>
 
-				<div className="square">
+				<div className="square second-square">
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>And you got nothing to say now</StyledLine>
@@ -92,8 +88,8 @@ const UrOk = () => (
 					<StyledLine>Ur ok, ok now</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={nick} style={{width: "20%"}}/>
-					<StyledImage alt="days" style={{transform: "translate(-15vw, 15vw)"}} src={urOk} />
+					<img className="ims-image" alt="days" src={nick} />
+					<img className="ims-image" alt="days" style={{transform: "translate(-15em, 15em)"}} src={urOk} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

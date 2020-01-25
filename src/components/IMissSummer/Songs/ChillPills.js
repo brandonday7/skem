@@ -9,11 +9,12 @@ const StyledFullscreen = styled.div`
 	width: 100vw;
 	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em
+	padding: 2em 3em;
 `
 
 const StyledTitle = styled.h1`
 	font-size: 300%;
+	max-width: 90vw;
 `
 
 const StyledRow = styled.div`
@@ -25,13 +26,8 @@ const StyledLine = styled.p`
 	font-size: 120%;
 `
 
-const StyledImage = styled.img`
-	position: absolute;
-	width: 30vw;
-`
-
 const StyledImgContainer = styled.div`
-	margin: 3vw 0 0 20vw;
+	margin: 3em 0 0 17em;
 `
 
 
@@ -65,7 +61,7 @@ const ChillPills = () => (
 					<StyledLine>From everybody else?</StyledLine>
 				</div>
 
-				<div className="square">
+				<div className="square second-square">
 					<StyledLine>You're scratching up at the sky</StyledLine>
 					<StyledLine>You've been holding your breath for a long time</StyledLine>
 					<StyledLine>You'd be making it all up if not for</StyledLine>
@@ -89,8 +85,8 @@ const ChillPills = () => (
 					<StyledLine>From everybody else?</StyledLine>
 				</div>
 				<StyledImgContainer>
-					<StyledImage alt="days" src={rock} />
-					<StyledImage alt="days" style={{transform: "translate(-20vw, 10vw)"}} src={drums} />
+					<img className="ims-image" alt="days" src={rock} />
+					<img className="ims-image" alt="days" style={{transform: "translate(-15em, 10em)"}} src={drums} />
 				</StyledImgContainer>
 			</StyledRow>
 		</div>

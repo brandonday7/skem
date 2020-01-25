@@ -14,8 +14,12 @@
 
 .row {
 	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
+}
+
+@media (max-width: 850px) {
+	.row {
+		flex-direction: column;
+	}
 }
 
 .center {
@@ -33,4 +37,16 @@
 	min-height: 10em;
 	display: flex;
 	flex-direction: column;
+	margin-right: 2em;
+}
+
+.second-square {
+	margin-top: 3em;
+}
+
+.ims-image {
+	position: absolute;
+	/*min-width: 200px;*/
+	max-width: 400px;
+	max-height: 400px;
 }
