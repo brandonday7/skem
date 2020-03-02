@@ -3,7 +3,7 @@ import styled from "styled-components"
 import "./i-miss-summer.css"
 
 const StyledMessage = styled.h1`
-	font-size: ${({ size }) => size ? size : 500}%;
+	font-size: ${({ size }) => size ? size : 50}px;
 	color: white;
 	opacity: 0.7;
 	text-align: center;
@@ -28,94 +28,99 @@ class IMissStatements extends Component {
 			index: 0,
 			statements: [
 				{
+					message: "",
+					time: 1000,
+					size: 10
+				},
+				{
 					message: "I miss",
 					time: 700,
-					size: 750,
+					size: 75,
 				},
 				{
 					message: "being a kid",
 					time: 500,
-					size: 450,
+					size: 45,
 				},
 				{
 					message: "I miss",
 					time: 500,
-					size: 900,
+					size: 90,
 				},
 				{
 					message: "the sun",
 					time: 600,
-					size: 400,
+					size: 40,
 				},
 				{
 					message: "I miss",
 					time: 700,
-					size: 500,
+					size: 50,
 				},
 				{
 					message: "my friends",
 					time: 600,
-					size: 700,
+					size: 70,
 				},
 				{
 					message: "I miss",
 					time: 400,
-					size: 900,
+					size: 90,
 				},
 				{
 					message: "girls",
 					time: 250,
-					size: 300,
+					size: 30,
 				},
 				{
 					message: "I miss",
 					time: 800,
-					size: 600,
+					size: 60,
 				},
 				{
 					message: "when feeling close",
 					time: 650,
-					size: 700,
+					size: 70,
 				},
 				{
 					message: "with my family",
 					time: 600,
-					size: 400,
+					size: 40,
 				},
 				{
 					message: "didn't feel like an accomplishment",
 					time: 850,
-					size: 500,
+					size: 50,
 				},
 				{
 					message: "I miss",
 					time: 400,
-					size: 800,
+					size: 80,
 				},
 				{
 					message: "feeling like",
 					time: 400,
-					size: 600,
+					size: 60,
 				},
 				{
 					message: "I was getting",
 					time: 600,
-					size: 500,
+					size: 50,
 				},
 				{
 					message: "Somewhere,",
 					time: 550,
-					size: 300,
+					size: 30,
 				},
 				{
 					message: "and when Somewhere had a name.",
 					time: 1000,
-					size: 400,
+					size: 40,
 				},
 				{
-					message: "I MISS SUMMER",
+					message: "I Miss Summer",
 					time: 0,
-					size: 800,
+					size: 80,
 				}
 			]
 		}
