@@ -45,7 +45,7 @@
 }
 
 .ims-image {
-	position: absolute;
+	/* position: absolute; */
 	max-width: 400px;
 	max-height: 450px;
 }

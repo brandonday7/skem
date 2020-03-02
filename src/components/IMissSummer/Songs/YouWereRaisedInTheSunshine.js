@@ -25,12 +25,21 @@ const StyledLine = styled.p`
 
 const StyledImgContainer = styled.div`
 	margin: 1em 0 0 30em;
-	transform: translateY(-10em);
+	/* transform: translateY(-10em); */
+`
+
+const StyledColumn = styled.div`
+	display: flex;
+
+  @media (max-width: 600px) {
+		flex-direction: column;
+  }
 `
 
 
 const YouWereRaisedInTheSunshine = () => (
 	<StyledFullscreen>
+		<StyledColumn>
 		<div>
 			<StyledTitle>You Were Raised in the Sunshine</StyledTitle>	
 			<div className="row">	
@@ -42,11 +51,12 @@ const YouWereRaisedInTheSunshine = () => (
 					<StyledLine>Raised in the sunshine</StyledLine>
 				</div>
 			</div>
-		</div>
-		<StyledImgContainer>
-			<img className="ims-image" alt="days" src={sunshine} />
-			<img className="ims-image big" alt="days" style={{transform: "translate(-28em, 12em)", minWidth: "400px"}} src={ethanKids} />
-		</StyledImgContainer>
+			</div>
+			<StyledImgContainer>
+				<img className="ims-image" alt="days" src={sunshine} />
+				<img className="ims-image big" alt="days" style={{transform: "translate(0px, 12em)", minWidth: "400px"}} src={ethanKids} />
+			</StyledImgContainer>
+		</StyledColumn>
 	</StyledFullscreen>
 )
 
