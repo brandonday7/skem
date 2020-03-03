@@ -8,14 +8,8 @@ import sunshine from "../../../images/ims-photos/sunshine.png";
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
-	min-height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em;
-
-
-  @media (max-width: 500px) {
-		padding: 2em 1em;
-  }	
+	padding: 2em 2em;
 `;
 
 const StyledTitle = styled.h1`
@@ -23,45 +17,45 @@ const StyledTitle = styled.h1`
 	max-width: 90vw;
 `
 
+const LyricsContainer = styled.div`
+	min-width: 300px;
+`
+
 const StyledLine = styled.p`
 	margin: 0;
 	font-size: 120%;
 `;
 
-const StyledImgContainer = styled.div`
-	margin-top: 2em;
-	margin-left: 6em;
-
-  @media (max-width: 900px) {
-		margin-top: 1em;
-		margin-left: 0;
-  }	
-`;
-
 const StyledColumn = styled.div`
 	display: flex;
 
-  @media (max-width: 900px) {
+	@media (max-width: 980px) {
 		flex-direction: column;
-  }
+	}
 `;
 
-const StyledBase = styled.img`
-	position: absolute;
+const StyledImgContainer = styled.div`
+	margin-top: 2em;
+	min-height: 500px;
 
-  @media (max-width: 900px) {
-		position: inherit;
+  @media (max-width: 700px) {
+		display: flex;
+		flex-direction: column;
   }	
 `;
 
-const StyledFloater = styled.img`
-	position: absolute;
-	transform: translate(15em, 13em);
 
-	  @media (max-width: 900px) {
-		position: inherit;
+const StyledPrimaryImage = styled.img`
+	width: 300px;
+`;
+
+const StyledSecondaryImage = styled.img`
+	transform: translate(-3em, 4em);
+	width: 400px;
+	
+	@media (max-width: 700px) {
 		transform: translate(-2em, -2em);
-  }	
+  }
 `;
 
 
@@ -69,20 +63,16 @@ const YouWereRaisedInTheSunshine = () => (
 	<StyledFullscreen>
 	<StyledTitle>You Were Raised in the Sunshine</StyledTitle>	
 		<StyledColumn>
-		<div>
-			<div className="row">	
-				<div className="square">
+				<LyricsContainer>
 					<StyledLine>Hold me honey, oh you're all mine</StyledLine>
 					<StyledLine>Thinking of me, only sometimes</StyledLine>
 					<StyledLine>You be brave on the front lines</StyledLine>
 					<StyledLine>You were raised,</StyledLine>
 					<StyledLine>Raised in the sunshine</StyledLine>
-				</div>
-			</div>
-			</div>
+				</LyricsContainer>
 			<StyledImgContainer>
-				<StyledBase className="ims-image" alt="danny" src={sunshine} />
-				<StyledFloater className="ims-image big" alt="ethan-kids" src={ethanKids} />
+				<StyledPrimaryImage alt="danny" src={sunshine} />
+				<StyledSecondaryImage alt="ethan-kids" src={ethanKids} />
 			</StyledImgContainer>
 		</StyledColumn>
 	</StyledFullscreen>
