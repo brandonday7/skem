@@ -3,7 +3,7 @@ import ShopifyBuy from "@shopify/buy-button-js"
 import styled from "styled-components"
 
 const StyledDiv = styled.div`
-  margin-top: 3em;
+  padding: 3em;
 `
 
 class Store extends Component {
