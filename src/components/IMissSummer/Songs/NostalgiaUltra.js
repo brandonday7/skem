@@ -10,12 +10,24 @@ const StyledFullscreen = styled.div`
 	height: 100vh;
 	background-color: #e8e9eb;
 	padding: 2em 3em;
+
+  @media (max-width: 500px) {
+		padding: 2em 1em;
+  }	
 `
 
 const StyledTitle = styled.h1`
 	font-size: 300%;
 	max-width: 90vw;
 `
+
+const StyledColumn = styled.div`
+	display: flex;
+
+  @media (max-width: 900px) {
+		flex-direction: column;
+  }
+`;
 
 const StyledRow = styled.div`
 	display: flex;
@@ -27,13 +39,34 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 0vw 0 0 5vw;
+  @media (max-width: 900px) {
+		margin-top: 1em;
+		margin-left: 0;
+  }	
 `
+
+const StyledBase = styled.img`
+	position: absolute;
+
+  @media (max-width: 900px) {
+		position: inherit;
+  }	
+`;
+
+const StyledFloater = styled.img`
+	position: absolute;
+	transform: translate(15em, 15em);
+
+	  @media (max-width: 900px) {
+		position: inherit;
+		transform: translate(-2em, -2em);
+  }	
+`;
 
 const NostalgiaUltra = () => (
 	<StyledFullscreen>
-		<div>
-			<StyledTitle>Nostalgia Ultra</StyledTitle>	
+		<StyledTitle>Nostalgia Ultra</StyledTitle>	
+		<StyledColumn>
 			<StyledRow>	
 				<div className="square">
 					<StyledLine>Chlorine in our hair</StyledLine>
@@ -83,12 +116,12 @@ const NostalgiaUltra = () => (
 					<StyledLine>So long, so anyway... still catching up</StyledLine>
 					<StyledLine>We were so wrong</StyledLine>
 				</div>
-				<StyledImgContainer>
-					<img className="ims-image big" alt="days" src={days} />
-					<img className="ims-image" alt="days" style={{transform: "translate(18em, 17em)"}} src={ye} />
-				</StyledImgContainer>
 			</StyledRow>
-		</div>
+			<StyledImgContainer>
+				<StyledBase className="ims-image big" alt="days" src={days} />
+				<StyledFloater className="ims-image" alt="days" src={ye} />
+			</StyledImgContainer>
+		</StyledColumn>
 	</StyledFullscreen>
 )
 

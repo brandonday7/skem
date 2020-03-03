@@ -10,7 +10,12 @@ const StyledFullscreen = styled.div`
 	width: 100vw;
 	min-height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em
+	padding: 2em 3em;
+
+
+  @media (max-width: 500px) {
+		padding: 2em 1em;
+  }	
 `;
 
 const StyledTitle = styled.h1`
