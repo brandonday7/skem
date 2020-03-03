@@ -1,5 +1,10 @@
 import React, { Component } from "react"
 import ShopifyBuy from "@shopify/buy-button-js"
+import styled from "styled-components"
+
+const StyledDiv = styled.div`
+  margin-top: 3em;
+`
 
 class Store extends Component {
   constructor(props) {
@@ -51,16 +56,38 @@ class Store extends Component {
                 "text-align": "left"
               },
               "title": {
-                "font-size": "26px"
+                "font-family": "Crimson Text, serif",
+                "font-weight": "normal",
+                "font-size": "30px",
+                "color": "#000000"
+              },
+              "button": {
+                "font-family": "Times New Roman, serif",
+                ":hover": {
+                  "background-color": "#cf924b"
+                },
+                "background-color": "#e6a253",
+                ":focus": {
+                  "background-color": "#cf924b"
+                }
               },
               "price": {
-                "font-size": "18px"
+                "font-family": "Crimson Text, serif",
+                "font-size": "18px",
+                "color": "#6b6b6b"
               },
               "compareAt": {
-                "font-size": "15.299999999999999px"
+                "font-family": "Crimson Text, serif",
+                "font-size": "15.299999999999999px",
+                "color": "#6b6b6b"
               },
               "unitPrice": {
-                "font-size": "15.299999999999999px"
+                "font-family": "Crimson Text, serif",
+                "font-size": "15.299999999999999px",
+                "color": "#6b6b6b"
+              },
+              "description": {
+                "font-family": "Crimson Text, serif"
               }
             },
             "layout": "horizontal",
@@ -72,7 +99,10 @@ class Store extends Component {
             "width": "100%",
             "text": {
               "button": "Add to cart"
-            }
+            },
+            "googleFonts": [
+              "Crimson Text"
+            ]
           },
           "productSet": {
             "styles": {
@@ -97,16 +127,146 @@ class Store extends Component {
                   "margin-left": "0px",
                   "margin-bottom": "0px"
                 }
+              },
+              "button": {
+                "font-family": "Times New Roman, serif",
+                ":hover": {
+                  "background-color": "#cf924b"
+                },
+                "background-color": "#e6a253",
+                ":focus": {
+                  "background-color": "#cf924b"
+                }
               }
             },
             "text": {
               "button": "Add to cart"
             }
           },
+          "option": {
+            "styles": {
+              "label": {
+                "font-family": "Crimson Text, serif",
+                "font-size": "15px",
+                "color": "#787878"
+              },
+              "select": {
+                "font-family": "Crimson Text, serif"
+              }
+            },
+            "googleFonts": [
+              "Crimson Text"
+            ]
+          },
           "cart": {
+            "styles": {
+              "button": {
+                "font-family": "Times New Roman, serif",
+                ":hover": {
+                  "background-color": "#cf924b"
+                },
+                "background-color": "#e6a253",
+                ":focus": {
+                  "background-color": "#cf924b"
+                }
+              },
+              "title": {
+                "color": "#3b3b3b"
+              },
+              "header": {
+                "color": "#3b3b3b"
+              },
+              "lineItems": {
+                "color": "#3b3b3b"
+              },
+              "subtotalText": {
+                "color": "#3b3b3b"
+              },
+              "subtotal": {
+                "color": "#3b3b3b"
+              },
+              "notice": {
+                "color": "#3b3b3b"
+              },
+              "currency": {
+                "color": "#3b3b3b"
+              },
+              "close": {
+                "color": "#3b3b3b",
+                ":hover": {
+                  "color": "#3b3b3b"
+                }
+              },
+              "empty": {
+                "color": "#3b3b3b"
+              },
+              "noteDescription": {
+                "color": "#3b3b3b"
+              },
+              "discountText": {
+                "color": "#3b3b3b"
+              },
+              "discountIcon": {
+                "fill": "#3b3b3b"
+              },
+              "discountAmount": {
+                "color": "#3b3b3b"
+              }
+            },
             "text": {
               "total": "Subtotal",
               "button": "Checkout"
+            }
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-family": "Times New Roman, serif",
+                "background-color": "#e6a253",
+                ":hover": {
+                  "background-color": "#cf924b"
+                },
+                ":focus": {
+                  "background-color": "#cf924b"
+                }
+              }
+            }
+          },
+          "lineItem": {
+            "styles": {
+              "variantTitle": {
+                "color": "#3b3b3b"
+              },
+              "title": {
+                "color": "#3b3b3b"
+              },
+              "price": {
+                "color": "#3b3b3b"
+              },
+              "fullPrice": {
+                "color": "#3b3b3b"
+              },
+              "discount": {
+                "color": "#3b3b3b"
+              },
+              "discountIcon": {
+                "fill": "#3b3b3b"
+              },
+              "quantity": {
+                "color": "#3b3b3b"
+              },
+              "quantityIncrement": {
+                "color": "#3b3b3b",
+                "border-color": "#3b3b3b"
+              },
+              "quantityDecrement": {
+                "color": "#3b3b3b",
+                "border-color": "#3b3b3b"
+              },
+              "quantityInput": {
+                "color": "#3b3b3b",
+                "border-color": "#3b3b3b"
+              }
             }
           }
         },
@@ -115,7 +275,9 @@ class Store extends Component {
 
   render() {
     return(
-      <div id='product-component-1583111281325'></div>
+      <StyledDiv>
+        <div id='product-component-1583111281325'></div>
+      </StyledDiv>
     )
   }
 }
