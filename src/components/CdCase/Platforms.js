@@ -2,14 +2,14 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import spotify from "../../images/logos/spotify.png"
 import apple from "../../images/logos/appleMusic.png"
-import bandcamp from "../../images/logos/bandcamp.png"
+// import bandcamp from "../../images/logos/bandcamp.png"
 import soundcloud from "../../images/logos/soundcloud.png"
 import youtube from "../../images/logos/youtube.png"
 import instagram from "../../images/logos/instagram.png"
 
 const epAppleMusic = "https://music.apple.com/ca/artist/rose-red-youth/1458640768"
 const epSpotify = "https://open.spotify.com/artist/2GnSTnxs3NcFhxJNOrSb92?si=x0SHXrk1S2KqJ4Xm4d1iBQ"
-const epBandcamp = "https://roseredyouth.bandcamp.com"
+// const epBandcamp = "https://roseredyouth.bandcamp.com"
 const epSoundcloud = "https://soundcloud.com/roseredyouth"
 const epYoutube = "https://www.youtube.com/channel/UCwOLyxcAVrRVY6DIb96TJmg"
 const epInstagram = "https://www.instagram.com/roseredyouthband/"
@@ -68,13 +68,6 @@ const Platforms = () => (
 			rel="noopener noreferrer nofollow"
 		>
 			<StyledImg src={soundcloud} alt="Soundcloud Logo" />
-		</a>
-		<a
-			href={epBandcamp} 
-			target="_blank"
-			rel="noopener noreferrer nofollow"
-		>
-			<StyledImg src={bandcamp} alt="Bandcamp Logo"/>
 		</a>
 		<a
 			href={epInstagram}
