@@ -1,11 +1,41 @@
-.cd-vid {
-	width: 100%;
-	height: 100%;
-}
-.invisible {
-	opacity: 0;
+.site-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e8e9eb;
+	overflow-y: scroll;
 }
 
-.visible {
-	opacity: 1;
+.artwork-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* width: 75vw; */
+}
+
+.album-art {
+	width: 35vw;
+	cursor: pointer;
+}
+
+.album-art:hover {
+	background-color: black;
+	opacity: 0.95;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+	transition: 0.2s;
+}
+
+@media (max-width: 500px) {
+	.artwork-container {
+		flex-direction: column;
+	}
+
+	.album-art {
+		margin-top: 3em;
+		width: 50vw;
+	}
 }

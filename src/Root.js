@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Fullpage from "./Fullpage"
 import CdCase from "./components/CdCase"
+import IMissSummer from "./components/IMissSummer"
+import Store from "./components/Store"
 
 class Root extends Component {
 	constructor(props) {
@@ -34,9 +36,16 @@ class Root extends Component {
 		      <Route 
 		      	exact path="/ep" 
 		      	render={(routeProps) => (
-		      		<Fullpage playReverse={this.playReverse}/>
+		      		<Fullpage />
 		      	)}
 		      />
+		      <Route 
+		      	exact path="/imisssummer" 
+		      	render={(routeProps) => (
+		      		<IMissSummer {...routeProps}/>
+		      	)}
+		      />
+					<Route exact path="/store" render={(routeProps) => <Store />}/>
 					<Route render={() => <Redirect to="/" />} />
 		    </Switch>
 		  </BrowserRouter>

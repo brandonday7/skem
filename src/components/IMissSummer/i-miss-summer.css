@@ -1,0 +1,22 @@
+/*p {
+	color: black;
+	margin: 0;
+}*/
+
+.i-miss-summer-container {
+	font-family: "Roslindale", monospace;
+}
+
+@font-face {
+	font-family: "Roslindale";
+	src: url("../../fonts/RoslindaleDisplayCondensed-Bold.woff") format("woff");
+}
+
+.second-lyrics {
+	margin-top: 3em;
+}
+
+.video-width {
+	max-width: 95vw;
+	max-height: 65vw;;
+}
