@@ -31,13 +31,13 @@ const StyledHeading = styled.p`
 
 const CdCase = () => (
 	<div className="site-container black">	
-		<Link to="/store">
+		{/* <Link to="/store">
 			<StyledHeading>Store</StyledHeading>
-		</Link>
+		</Link> */}
 		<div className="artwork-container">
-			<Link to="/imisssummer">
+			{/* <Link to="/imisssummer">
 				<img alt="imisssummer" className="album-art" src={iMissSummer} />
-			</Link>
+			</Link> */}
 			<Link to="/ep">
 				<img alt="rry" className="album-art" src={rryEp} />
 			</Link>
