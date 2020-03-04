@@ -42,7 +42,7 @@ class Root extends Component {
 		      <Route 
 		      	exact path="/imisssummer" 
 		      	render={(routeProps) => (
-		      		<IMissSummer />
+		      		<IMissSummer {...routeProps}/>
 		      	)}
 		      />
 					<Route exact path="/store" render={(routeProps) => <Store />}/>
