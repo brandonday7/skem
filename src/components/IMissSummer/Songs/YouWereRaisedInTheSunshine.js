@@ -18,7 +18,7 @@ const StyledTitle = styled.h1`
 `
 
 const LyricsContainer = styled.div`
-	min-width: 300px;
+	min-width: 280px;
 `
 
 const StyledLine = styled.p`
@@ -43,7 +43,6 @@ const StyledImgContainer = styled.div`
 		flex-direction: column;
   }	
 `;
-
 
 const StyledPrimaryImage = styled.img`
 	width: 300px;

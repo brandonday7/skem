@@ -7,13 +7,8 @@ import ye from "../../../images/ims-photos/ye.png"
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
-	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em;
-
-  @media (max-width: 500px) {
-		padding: 2em 1em;
-  }	
+	padding: 2em 2em;
 `
 
 const StyledTitle = styled.h1`
@@ -24,13 +19,21 @@ const StyledTitle = styled.h1`
 const StyledColumn = styled.div`
 	display: flex;
 
-  @media (max-width: 900px) {
+  @media (max-width: 980px) {
 		flex-direction: column;
   }
 `;
 
-const StyledRow = styled.div`
+const StyledLyricsColumn = styled.div`
 	display: flex;
+
+  @media (max-width: 600px) {
+		flex-direction: column;
+  }
+`;
+
+const LyricsContainer = styled.div`
+	min-width: 300px;
 `
 
 const StyledLine = styled.p`
@@ -39,36 +42,45 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-  @media (max-width: 900px) {
-		margin-top: 1em;
-		margin-left: 0;
-  }	
-`
+	margin-top: 2em;
 
-const StyledBase = styled.img`
-	position: absolute;
-
-  @media (max-width: 900px) {
-		position: inherit;
+  @media (max-width: 750px) {
+		display: flex;
+		flex-direction: column;
   }	
 `;
 
-const StyledFloater = styled.img`
-	position: absolute;
-	transform: translate(15em, 15em);
+const StyledPrimaryImage = styled.img`
+	width: 400px;
 
-	  @media (max-width: 900px) {
-		position: inherit;
-		transform: translate(-2em, -2em);
-  }	
+	@media (max-width: 750px) {
+		transform: translate(-2em, 0em);
+  }
+`;
+
+const StyledSecondaryImage = styled.img`
+	transform: translate(-10em, 14em);
+	width: 350px;
+	
+	@media (max-width: 1340px) {
+		transform: translate(12em, -3em);
+	}
+
+	@media (max-width: 980px) {
+		transform: translate(-3em, 4em);
+	}
+	
+	@media (max-width: 750px) {
+		transform: translate(5em, -2em);
+  }
 `;
 
 const NostalgiaUltra = () => (
 	<StyledFullscreen>
 		<StyledTitle>Nostalgia Ultra</StyledTitle>	
 		<StyledColumn>
-			<StyledRow>	
-				<div className="square">
+			<StyledLyricsColumn>	
+				<LyricsContainer className="square">
 					<StyledLine>Chlorine in our hair</StyledLine>
 					<StyledLine>To snoring in our beds</StyledLine>
 					<StyledLine>We had it made</StyledLine>
@@ -91,8 +103,8 @@ const NostalgiaUltra = () => (
 					<StyledLine>Faster on the run</StyledLine>
 					<StyledLine>So long, so anyway... still catching up</StyledLine>
 					<StyledLine>We were so wrong</StyledLine>
-				</div>
-				<div className="square second-square">
+				</LyricsContainer>
+				<LyricsContainer className="square second-square">
 					<StyledLine>I was a loving son in the shade</StyledLine>
 					<StyledLine>I was in touch with my faith</StyledLine>
 					<StyledLine>It was a roadway</StyledLine>
@@ -115,11 +127,11 @@ const NostalgiaUltra = () => (
 					<StyledLine>Faster on the run</StyledLine>
 					<StyledLine>So long, so anyway... still catching up</StyledLine>
 					<StyledLine>We were so wrong</StyledLine>
-				</div>
-			</StyledRow>
+				</LyricsContainer>
+			</StyledLyricsColumn>
 			<StyledImgContainer>
-				<StyledBase className="ims-image big" alt="days" src={days} />
-				<StyledFloater className="ims-image" alt="days" src={ye} />
+				<StyledPrimaryImage alt="days" src={days} />
+				<StyledSecondaryImage alt="days" src={ye} />
 			</StyledImgContainer>
 		</StyledColumn>
 	</StyledFullscreen>
