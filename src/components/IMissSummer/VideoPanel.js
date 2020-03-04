@@ -40,7 +40,8 @@ const StyledChapterHeading = styled.p`
 `
 
 const StyledTrackTitle = styled.p`
-  font-size: 400%;
+  max-width: 95vw;
+  font-size: 300%;
   margin: 0 0 0.5em 0;
   color: #d6a047;
   -webkit-text-stroke: 1px #c88246;
@@ -100,7 +101,7 @@ class VideoPanel extends Component {
             })}
           </StyledChapterContainer>
           <StyledTrackTitle>{tracks[trackIndex].title}</StyledTrackTitle>
-        <ReactPlayer url={tracks[trackIndex].url} />
+        <ReactPlayer url={tracks[trackIndex].url} className="video-width"/>
         <StyledChapterHeading 
           selected={true} 
           topMargin={true}

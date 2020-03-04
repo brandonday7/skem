@@ -12,47 +12,11 @@
 	src: url("../../fonts/RoslindaleDisplayCondensed-Bold.woff") format("woff");
 }
 
-.row {
-	display: flex;
-}
-
-@media (max-width: 850px) {
-	.row {
-		flex-direction: column;
-	}
-}
-
-.center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.f1 {
-	flex: 1;
-}
-
-.square {
-	min-width: 10em;
-	min-height: 10em;
-	display: flex;
-	flex-direction: column;
-	margin-right: 2em;
-}
-
-.second-square {
-	margin-top: 3em;
-}
-
 .second-lyrics {
 	margin-top: 3em;
 }
 
-.ims-image {
-	max-width: 400px;
-	max-height: 450px;
-}
-
-.big {
-	max-width: 450px;
+.video-width {
+	max-width: 95vw;
+	max-height: 65vw;;
 }
