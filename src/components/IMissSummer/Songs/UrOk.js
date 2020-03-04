@@ -8,9 +8,8 @@ import nick from "../../../images/ims-photos/nick.jpg"
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
-	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em;
+	padding: 2em 2em;
 `
 
 const StyledTitle = styled.h1`
@@ -18,17 +17,26 @@ const StyledTitle = styled.h1`
 	max-width: 90vw;
 `
 
-const StyledRow = styled.div`
-	display: flex;
-`
-
 const StyledColumn = styled.div`
 	display: flex;
 
-  @media (max-width: 900px) {
+  @media (max-width: 980px) {
 		flex-direction: column;
   }
 `;
+
+const StyledLyricsColumn = styled.div`
+	display: flex;
+	margin-right: 6em;
+
+  @media (max-width: 600px) {
+		flex-direction: column;
+  }
+`;
+
+const LyricsContainer = styled.div`
+	min-width: 300px;
+`
 
 const StyledLine = styled.p`
 	margin: 0;
@@ -36,28 +44,37 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-  @media (max-width: 900px) {
-		margin-top: 1em;
-		margin-left: 0;
-  }	
-`
+	margin-top: 2em;
 
-const StyledBase = styled.img`
-	position: absolute;
-
-  @media (max-width: 900px) {
-		position: inherit;
+  @media (max-width: 750px) {
+		display: flex;
+		flex-direction: column;
   }	
 `;
 
-const StyledFloater = styled.img`
-	position: absolute;
-	transform: translate(15em, 15em);
+const StyledPrimaryImage = styled.img`
+	width: 300px;
 
-	  @media (max-width: 900px) {
-		position: inherit;
-		transform: translate(-2em, -2em);
-  }	
+	@media (max-width: 750px) {
+		transform: translate(-2em, 0em);
+  }
+`;
+
+const StyledSecondaryImage = styled.img`
+	transform: translate(-10em, 10em);
+	width: 350px;
+	
+	@media (max-width: 1255px) {
+		transform: translate(10em, -8em);
+	}
+
+	@media (max-width: 980px) {
+		transform: translate(-3em, 4em);
+	}
+	
+	@media (max-width: 750px) {
+		transform: translate(3em, -4em);
+  }
 `;
 
 
@@ -65,8 +82,8 @@ const UrOk = () => (
 	<StyledFullscreen>
 		<StyledTitle>Ur ok</StyledTitle>
 		<StyledColumn>
-			<StyledRow>
-				<div className="square">
+			<StyledLyricsColumn>
+				<LyricsContainer className="square">
 					<StyledLine>I'll jump</StyledLine>
 					<StyledLine>But you first</StyledLine>
 					<StyledLine>I'm scared</StyledLine>
@@ -90,8 +107,8 @@ const UrOk = () => (
 					<StyledLine>Me, tell me what I deserve</StyledLine>
 					<StyledLine>I felt it but I ain't heard</StyledLine>
 					<StyledLine>We're so self-assured</StyledLine>
-				</div>
-				<div className="square second-square">
+				</LyricsContainer>
+				<LyricsContainer className="square second-square">
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>And you got nothing to say now</StyledLine>
@@ -114,11 +131,11 @@ const UrOk = () => (
 					<StyledLine>It's not funny, ok now??</StyledLine>
 					<StyledLine>I love you, ur ok now</StyledLine>
 					<StyledLine>Ur ok, ok now</StyledLine>
-				</div>
-			</StyledRow>
+				</LyricsContainer>
+			</StyledLyricsColumn>
 			<StyledImgContainer>
-				<StyledBase className="ims-image big" alt="days" src={nick} />
-				<StyledFloater className="ims-image" alt="days" src={urOk} />
+				<StyledPrimaryImage className="ims-image big" alt="days" src={nick} />
+				<StyledSecondaryImage className="ims-image" alt="days" src={urOk} />
 			</StyledImgContainer>
 		</StyledColumn>
 	</StyledFullscreen>
