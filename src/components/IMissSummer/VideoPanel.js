@@ -18,8 +18,18 @@ const StyledChapterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
+  width: ${({ width }) => width}px;
   flex-wrap: wrap;
+  margin: 0 0.8em;
+`
+
+const StyledFlexBox = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column
+  }
 `
 
 const StyledChapterHeading = styled.p`
@@ -87,19 +97,34 @@ class VideoPanel extends Component {
     const { history } = this.props
     return (
       <StyledContainer>
-        <StyledChapterContainer>
-          {tracks.map((track, key) => {
-            return(
-              <StyledChapterHeading 
-                key={key}
-                onClick={() => this.setState({ trackIndex: key })}
-                selected={trackIndex === key}
-              >
-                {track.label}
-              </StyledChapterHeading>
+        <StyledFlexBox>
+          <StyledChapterContainer width={200}>
+            {tracks.slice(0, 2).map((track, key) => {
+              return(
+                <StyledChapterHeading 
+                  key={key}
+                  onClick={() => this.setState({ trackIndex: key })}
+                  selected={trackIndex === key}
+                >
+                  {track.label}
+                </StyledChapterHeading>
+                )
+              })}
+            </StyledChapterContainer>
+          <StyledChapterContainer width={340}>
+            {tracks.slice(2, 5).map((track, key) => {
+              return (
+                <StyledChapterHeading
+                  key={key}
+                  onClick={() => this.setState({ trackIndex: key + 2 })}
+                  selected={trackIndex === key + 2}
+                >
+                  {track.label}
+                </StyledChapterHeading>
               )
             })}
           </StyledChapterContainer>
+        </StyledFlexBox>
           <StyledTrackTitle>{tracks[trackIndex].title}</StyledTrackTitle>
         <ReactPlayer url={tracks[trackIndex].url} className="video-width"/>
         <StyledChapterHeading 
