@@ -7,13 +7,8 @@ import mixMaster from "../../../images/ims-photos/mixMaster.JPG"
 
 const StyledFullscreen = styled.div`
 	width: 100vw;
-	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em;
-
-  @media (max-width: 500px) {
-		padding: 2em 1em;
-  }	
+	padding: 2em 2em;
 `
 
 const StyledTitle = styled.h1`
@@ -21,8 +16,25 @@ const StyledTitle = styled.h1`
 	max-width: 90vw;
 `
 
-const StyledRow = styled.div`
+const StyledColumn = styled.div`
 	display: flex;
+
+  @media (max-width: 980px) {
+		flex-direction: column;
+  }
+`;
+
+const StyledLyricsColumn = styled.div`
+	display: flex;
+	margin-right: 6em;
+
+  @media (max-width: 600px) {
+		flex-direction: column;
+  }
+`;
+
+const LyricsContainer = styled.div`
+	min-width: 300px;
 `
 
 const StyledLine = styled.p`
@@ -31,17 +43,47 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 13em 0 0 1em;
-`
+	margin-top: 2em;
 
+  @media (max-width: 750px) {
+		display: flex;
+		flex-direction: column;
+  }	
+`;
+
+const StyledPrimaryImage = styled.img`
+	transform: translate(3em, 0em);
+	width: 350px;
+
+	@media (max-width: 750px) {
+		transform: translate(-2em, 0em);
+  }
+`;
+
+const StyledSecondaryImage = styled.img`
+	transform: translate(-3em, -3em);
+	width: 400px;
+	
+	@media (max-width: 1255px) {
+		transform: translate(-2em, -1em);
+	}
+
+	@media (max-width: 980px) {
+		transform: translate(-3em, 4em);
+	}
+	
+	@media (max-width: 750px) {
+		transform: translate(3em, -4em);
+  }
+`;
 
 
 const Daisy = () => (
 	<StyledFullscreen>
-		<div>
-			<StyledTitle>Daisy</StyledTitle>	
-			<StyledRow>	
-				<div className="square">
+		<StyledTitle>Daisy</StyledTitle>
+		<StyledColumn>
+			<StyledLyricsColumn>
+				<LyricsContainer>
 					<StyledLine>Look alive, feeling dead</StyledLine>
 					<StyledLine>Before sunrise, no I don't mind if the lights go red</StyledLine>
 					<StyledLine>I fell asleep in the front seat</StyledLine>
@@ -62,8 +104,8 @@ const Daisy = () => (
 					<StyledLine>Take it and post it up</StyledLine>
 					<StyledLine>Just to see if you notice us</StyledLine>
 					<StyledLine>I'm on again</StyledLine>
-				</div>
-				<div className="square second-square">
+				</LyricsContainer>
+				<LyricsContainer className="second-lyrics">
 					<StyledLine>Looking back at it blinking</StyledLine>
 					<StyledLine>So dazedly, unattainably</StyledLine>
 					<StyledLine>It's a shame but we're sinking!</StyledLine>
@@ -85,13 +127,13 @@ const Daisy = () => (
 					<StyledLine>Take it and post it up</StyledLine>
 					<StyledLine>Just to see if you notice us</StyledLine>
 					<StyledLine>I'm on again</StyledLine>
-				</div>
-				<StyledImgContainer>
-					<img className="ims-image big" alt="days" src={mixMaster}/>
-					<img className="ims-image" alt="days" style={{transform: "translate(10em, -15em)"}} src={danny} />
-				</StyledImgContainer>
-			</StyledRow>
-		</div>
+				</LyricsContainer>
+			</StyledLyricsColumn>
+			<StyledImgContainer>
+				<StyledPrimaryImage alt="days" src={danny} />
+				<StyledSecondaryImage alt="days" src={mixMaster} />
+			</StyledImgContainer>
+		</StyledColumn>
 	</StyledFullscreen>
 )
 

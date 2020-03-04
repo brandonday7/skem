@@ -80,7 +80,7 @@ const NostalgiaUltra = () => (
 		<StyledTitle>Nostalgia Ultra</StyledTitle>	
 		<StyledColumn>
 			<StyledLyricsColumn>	
-				<LyricsContainer className="square">
+				<LyricsContainer>
 					<StyledLine>Chlorine in our hair</StyledLine>
 					<StyledLine>To snoring in our beds</StyledLine>
 					<StyledLine>We had it made</StyledLine>
@@ -104,7 +104,7 @@ const NostalgiaUltra = () => (
 					<StyledLine>So long, so anyway... still catching up</StyledLine>
 					<StyledLine>We were so wrong</StyledLine>
 				</LyricsContainer>
-				<LyricsContainer className="square second-square">
+				<LyricsContainer className="second-lyrics">
 					<StyledLine>I was a loving son in the shade</StyledLine>
 					<StyledLine>I was in touch with my faith</StyledLine>
 					<StyledLine>It was a roadway</StyledLine>

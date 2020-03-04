@@ -5,15 +5,11 @@ import "../i-miss-summer.css"
 import rock from "../../../images/ims-photos/rock.png"
 import drums from "../../../images/ims-photos/drums.jpg"
 
+
 const StyledFullscreen = styled.div`
 	width: 100vw;
-	height: 100vh;
 	background-color: #e8e9eb;
-	padding: 2em 3em;
-
-  @media (max-width: 500px) {
-		padding: 2em 1em;
-  }	
+	padding: 2em 2em;
 `
 
 const StyledTitle = styled.h1`
@@ -21,8 +17,25 @@ const StyledTitle = styled.h1`
 	max-width: 90vw;
 `
 
-const StyledRow = styled.div`
+const StyledColumn = styled.div`
 	display: flex;
+
+  @media (max-width: 980px) {
+		flex-direction: column;
+  }
+`;
+
+const StyledLyricsColumn = styled.div`
+	display: flex;
+	margin-right: 6em;
+
+  @media (max-width: 600px) {
+		flex-direction: column;
+  }
+`;
+
+const LyricsContainer = styled.div`
+	min-width: 300px;
 `
 
 const StyledLine = styled.p`
@@ -31,17 +44,46 @@ const StyledLine = styled.p`
 `
 
 const StyledImgContainer = styled.div`
-	margin: 0em 0 0 14em;
-`
+	margin-top: 2em;
 
+  @media (max-width: 750px) {
+		display: flex;
+		flex-direction: column;
+  }	
+`;
+
+const StyledPrimaryImage = styled.img`
+	width: 300px;
+
+	@media (max-width: 750px) {
+		transform: translate(-2em, 0em);
+  }
+`;
+
+const StyledSecondaryImage = styled.img`
+	transform: translate(-10em, 10em);
+	width: 350px;
+	
+	@media (max-width: 1255px) {
+		transform: translate(10em, -8em);
+	}
+
+	@media (max-width: 980px) {
+		transform: translate(-3em, 4em);
+	}
+	
+	@media (max-width: 750px) {
+		transform: translate(3em, -4em);
+  }
+`;
 
 
 const ChillPills = () => (
 	<StyledFullscreen>
-		<div>
-			<StyledTitle>Chill Pills</StyledTitle>	
-			<StyledRow>	
-				<div className="square">
+		<StyledTitle>Chill Pills</StyledTitle>
+		<StyledColumn>
+			<StyledLyricsColumn>
+				<LyricsContainer>
 					<StyledLine>You'd settle down if you tried</StyledLine>
 					<StyledLine>I know your mouth pounds and your heart's dry</StyledLine>
 					<StyledLine>And you've been keeping busy straightening</StyledLine>
@@ -63,9 +105,8 @@ const ChillPills = () => (
 					<StyledLine>What if you're lying?</StyledLine>
 					<StyledLine>What if you're hiding</StyledLine>
 					<StyledLine>From everybody else?</StyledLine>
-				</div>
-
-				<div className="square second-square">
+				</LyricsContainer>
+				<LyricsContainer className="second-lyrics">
 					<StyledLine>You're scratching up at the sky</StyledLine>
 					<StyledLine>You've been holding your breath for a long time</StyledLine>
 					<StyledLine>You'd be making it all up if not for</StyledLine>
@@ -87,13 +128,13 @@ const ChillPills = () => (
 					<StyledLine>What if you're lying?</StyledLine>
 					<StyledLine>What if you're hiding</StyledLine>
 					<StyledLine>From everybody else?</StyledLine>
-				</div>
-				<StyledImgContainer>
-					<img className="ims-image" alt="days" src={rock} />
-					<img className="ims-image big" alt="days" style={{transform: "translate(-17em, 15em)"}} src={drums} />
-				</StyledImgContainer>
-			</StyledRow>
-		</div>
+				</LyricsContainer>
+			</StyledLyricsColumn>
+			<StyledImgContainer>
+				<StyledPrimaryImage alt="days" src={rock} />
+				<StyledSecondaryImage alt="days" src={drums} />
+			</StyledImgContainer>
+		</StyledColumn>
 	</StyledFullscreen>
 )
 

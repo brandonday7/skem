@@ -83,7 +83,7 @@ const UrOk = () => (
 		<StyledTitle>Ur ok</StyledTitle>
 		<StyledColumn>
 			<StyledLyricsColumn>
-				<LyricsContainer className="square">
+				<LyricsContainer>
 					<StyledLine>I'll jump</StyledLine>
 					<StyledLine>But you first</StyledLine>
 					<StyledLine>I'm scared</StyledLine>
@@ -108,7 +108,7 @@ const UrOk = () => (
 					<StyledLine>I felt it but I ain't heard</StyledLine>
 					<StyledLine>We're so self-assured</StyledLine>
 				</LyricsContainer>
-				<LyricsContainer className="square second-square">
+				<LyricsContainer className="second-lyrics">
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>Ur ok, ok now</StyledLine>
 					<StyledLine>And you got nothing to say now</StyledLine>
@@ -134,8 +134,8 @@ const UrOk = () => (
 				</LyricsContainer>
 			</StyledLyricsColumn>
 			<StyledImgContainer>
-				<StyledPrimaryImage className="ims-image big" alt="days" src={nick} />
-				<StyledSecondaryImage className="ims-image" alt="days" src={urOk} />
+				<StyledPrimaryImage alt="days" src={nick} />
+				<StyledSecondaryImage alt="days" src={urOk} />
 			</StyledImgContainer>
 		</StyledColumn>
 	</StyledFullscreen>
