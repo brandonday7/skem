@@ -53,7 +53,7 @@ const StyledImgContainer = styled.div`
 `;
 
 const StyledPrimaryImage = styled.img`
-	width: 300px;
+	width: 350px;
 
 	@media (max-width: 750px) {
 		transform: translate(-2em, 0em);
@@ -61,19 +61,23 @@ const StyledPrimaryImage = styled.img`
 `;
 
 const StyledSecondaryImage = styled.img`
-	transform: translate(-10em, 10em);
-	width: 350px;
+	transform: translate(-2em, 5em);
+	width: 400px;
 	
-	@media (max-width: 1255px) {
-		transform: translate(10em, -8em);
+	@media (max-width: 1470px) {
+		transform: translate(10em, -3em);
 	}
 
-	@media (max-width: 980px) {
-		transform: translate(-3em, 4em);
+	@media (max-width: 1250px) {
+		transform: translate(-5em, 6em);
 	}
 	
 	@media (max-width: 750px) {
-		transform: translate(3em, -4em);
+		transform: translate(3em, 0em);
+	}
+	
+	@media (max-width: 400px) {
+		transform: translate(3em, -1em);
   }
 `;
 
