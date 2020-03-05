@@ -26,6 +26,15 @@ const StyledLine = styled.p`
 	font-size: 120%;
 `;
 
+const StyledSpacer = styled.div`
+	margin: 3em 0;
+`
+
+const StyledCredit = styled.p`
+	margin: 0.3em 0;
+	font-size: 80%;
+`;
+
 const StyledColumn = styled.div`
 	display: flex;
 
@@ -68,6 +77,14 @@ const YouWereRaisedInTheSunshine = () => (
 					<StyledLine>You be brave on the front lines</StyledLine>
 					<StyledLine>You were raised,</StyledLine>
 					<StyledLine>Raised in the sunshine</StyledLine>
+					<StyledSpacer>
+						<StyledCredit>All songs written, recorded, </StyledCredit>
+						<StyledCredit>produced, and mixed by Rose Red Youth</StyledCredit>
+						<StyledCredit>Additional recording by Darren McGill</StyledCredit>
+						<StyledCredit>Lyric videos directed and edited by Ajay Rakhraj</StyledCredit>
+						<StyledCredit>and shot by Richard Michael L Gonzales</StyledCredit>
+						<StyledCredit>Original album art photo by Jack Aldous</StyledCredit>
+					</StyledSpacer>
 				</LyricsContainer>
 			<StyledImgContainer>
 				<StyledPrimaryImage alt="danny" src={sunshine} />
