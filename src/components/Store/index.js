@@ -3,7 +3,7 @@ import ShopifyBuy from "@shopify/buy-button-js"
 import styled from "styled-components"
 
 const StyledDiv = styled.div`
-  padding: 3em;
+  padding: 3em 0;
 `
 
 class Store extends Component {
@@ -15,6 +15,7 @@ class Store extends Component {
   }
 
   componentDidMount() {
+
     if (window.ShopifyBuy) {
       if (window.ShopifyBuy.UI) {
         this.ShopifyBuyInit();
@@ -51,8 +52,9 @@ class Store extends Component {
                 "@media (min-width: 601px)": {
                   "max-width": "100%",
                   "margin-left": "0",
-                  "margin-bottom": "50px"
+                  "margin-bottom": "50px",
                 },
+                "padding": "0 2em",
                 "text-align": "left"
               },
               "title": {
