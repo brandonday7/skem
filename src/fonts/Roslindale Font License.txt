@@ -1,0 +1,15 @@
+* Roslindale Font purchased from https://djr.com/ *
+* License of use available at https://djr.com/license/ *
+* This font is not available for download from this endpoint, other licenses are available on DJR's website. Thank you *
+
+
+
+This license allows you to use the font on websites using CSS @font-face, so long as that website meets the web traffic limits defined in your order summary.
+
+WEB TRAFFIC: You are allowed to serve the font, in web font formats, on a website that receives a limited number of unique visitors per month as defined in your order summary. If unique visitors are not recorded for your website, you may alternatively measure your traffic by monthly pageviews. If you exceed your limit for three consecutive months, you must upgrade your license. I reserve the right to inspect or monitor your use.
+
+DOMAINS: I ask that you identify and register all domains where the font is served via @font-face. You may contact me at any time to register an additional domain. You are not limited to a specific number of domains or subdomains, so long as all websites using the font are operated by you, and the cumulative traffic does not exceed your web traffic limitation.
+
+FORMATS: You may only serve web fonts in WOFF, WOFF2, EOT, and SVG formats.
+
+SERVER: You must host the font on your website’s server or on a CDN (content delivery network) where you host other website assets. You must make a reasonable effort to prevent unauthorized use or distribution of the font. If the server’s directory structure is publicly listed or searchable, you must include the text of this license alongside the hosted files and clearly mark them as licensed assets.
