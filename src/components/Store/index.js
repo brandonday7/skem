@@ -41,8 +41,8 @@ class Store extends Component {
     });
     const ui = ShopifyBuy.UI.init(client);
       ui.createComponent('product', {
-        id: '4586097868859',
-        node: document.getElementById('product-component-1583111281325'),
+        id: '4613366513723',
+        node: document.getElementById('product-component-1583381330134'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
           "product": {
@@ -63,12 +63,14 @@ class Store extends Component {
               },
               "button": {
                 "font-family": "Times New Roman, serif",
+                "color": "#232323",
                 ":hover": {
-                  "background-color": "#cf924b"
+                  "color": "#232323",
+                  "background-color": "#c4c2ab"
                 },
-                "background-color": "#e6a253",
+                "background-color": "#dad7be",
                 ":focus": {
-                  "background-color": "#cf924b"
+                  "background-color": "#c4c2ab"
                 }
               },
               "price": {
@@ -130,12 +132,14 @@ class Store extends Component {
               },
               "button": {
                 "font-family": "Times New Roman, serif",
+                "color": "#232323",
                 ":hover": {
-                  "background-color": "#cf924b"
+                  "color": "#232323",
+                  "background-color": "#c4c2ab"
                 },
-                "background-color": "#e6a253",
+                "background-color": "#dad7be",
                 ":focus": {
-                  "background-color": "#cf924b"
+                  "background-color": "#c4c2ab"
                 }
               }
             },
@@ -162,12 +166,14 @@ class Store extends Component {
             "styles": {
               "button": {
                 "font-family": "Times New Roman, serif",
+                "color": "#232323",
                 ":hover": {
-                  "background-color": "#cf924b"
+                  "color": "#232323",
+                  "background-color": "#c4c2ab"
                 },
-                "background-color": "#e6a253",
+                "background-color": "#dad7be",
                 ":focus": {
-                  "background-color": "#cf924b"
+                  "background-color": "#c4c2ab"
                 }
               },
               "title": {
@@ -216,19 +222,29 @@ class Store extends Component {
             "text": {
               "total": "Subtotal",
               "button": "Checkout"
-            }
+            },
+            "popup": false
           },
           "toggle": {
             "styles": {
               "toggle": {
                 "font-family": "Times New Roman, serif",
-                "background-color": "#e6a253",
+                "background-color": "#dad7be",
                 ":hover": {
-                  "background-color": "#cf924b"
+                  "background-color": "#c4c2ab"
                 },
                 ":focus": {
-                  "background-color": "#cf924b"
+                  "background-color": "#c4c2ab"
                 }
+              },
+              "count": {
+                "color": "#232323",
+                ":hover": {
+                  "color": "#232323"
+                }
+              },
+              "iconPath": {
+                "fill": "#232323"
               }
             }
           },
@@ -276,7 +292,7 @@ class Store extends Component {
   render() {
     return(
       <StyledDiv>
-        <div id='product-component-1583111281325'></div>
+        <div id='product-component-1583380851900'></div>
       </StyledDiv>
     )
   }

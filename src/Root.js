@@ -46,6 +46,11 @@ class Root extends Component {
 		      	)}
 		      />
 					<Route exact path="/store" render={(routeProps) => <Store />}/>
+					<Route exact path="/epk" 
+						component={() => {
+							window.location.href = "https://drive.google.com/open?id=1IUIly_Sbe4fxDtq1TTIeHVHvRgdnrw_O";
+							return null;
+						}} />					
 					<Route render={() => <Redirect to="/" />} />
 		    </Switch>
 		  </BrowserRouter>
