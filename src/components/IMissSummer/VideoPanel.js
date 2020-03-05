@@ -46,7 +46,11 @@ const StyledChapterHeading = styled.p`
     opacity: 1;
 		color: #df9211;
 		transition: 0.5s;
-	}
+  }
+  
+  @media (max-width: 615px) {
+    font-size: 140%;
+  }	
 `
 
 const StyledTrackTitle = styled.p`
@@ -55,6 +59,10 @@ const StyledTrackTitle = styled.p`
   margin: 0 0 0.5em 0;
   color: #d6a047;
   -webkit-text-stroke: 1px #c88246;
+
+  @media (max-width: 615px) {
+    font-size: 205%;
+  }	
 `
 
 class VideoPanel extends Component {
@@ -64,27 +72,27 @@ class VideoPanel extends Component {
       tracks: [
         {
           title: "You Were Raised in the Sunshine", 
-          url: "https://www.youtube.com/watch?v=NF47oaT6qzc",
+          url: "https://youtu.be/z3qZsIBStOA",
           label: "Chapter I"
         },
         {
           title: "Nostalgia Ultra",
-          url: "https://www.youtube.com/watch?v=Iyy3YOpxL2k",
+          url: "https://youtu.be/piJIUQDqkIY",
           label: "Chapter II"
         },
         {
           title: "Ur ok",
-          url: "https://www.youtube.com/watch?v=1K93ioXL63c",
+          url: "https://youtu.be/r4pi__ynpPg",
           label: "Chapter III"
         },
         {
           title: "Daisy",
-          url: "https://www.youtube.com/watch?v=IFXIjI1ZZQs",
+          url: "https://youtu.be/TyBuNsgEjT0",
           label: "Chapter IV"
         },
         {
           title: "Chill Pills",
-          url: "https://www.youtube.com/watch?v=Bimd2nZirT4",
+          url: "https://youtu.be/TyBuNsgEjT0",
           label: "Chapter V"
         }
     ],
