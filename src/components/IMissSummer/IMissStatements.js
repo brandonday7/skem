@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import "./i-miss-summer.css"
+import $ from "jquery"
 
 const StyledMessage = styled.h1`
 	font-size: ${({ size }) => size ? size : 50}px;
@@ -15,7 +16,6 @@ const StyledFullscreen = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("https://roseredbucket.s3.amazonaws.com/blank-ims.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 `
@@ -127,7 +127,12 @@ class IMissStatements extends Component {
 	}
 
 	componentDidMount() {
-		this.setNewMessage()
+		const context = this
+		$('<img/>').attr('src', `${process.env.REACT_APP_BUCKET}blank-ims.jpg`).on('load', function () {
+			$(this).remove(); // prevent memory leaks
+			context.setNewMessage()
+			$('#background').css('background-image', `url(${process.env.REACT_APP_BUCKET}blank-ims.jpg)`);
+		});
 	}
 
 
@@ -147,7 +152,7 @@ class IMissStatements extends Component {
 	render() {
 		const { statements, index } = this.state
 		return (
-			<StyledFullscreen>
+			<StyledFullscreen id="background">
 				<StyledMessage
 					size={statements[index].size} 
 				>
