@@ -80,7 +80,7 @@ const YouWereRaisedInTheSunshine = () => (
 					<StyledSpacer>
 						<StyledCredit>All songs written, recorded, </StyledCredit>
 						<StyledCredit>produced, and mixed by Rose Red Youth</StyledCredit>
-						<StyledCredit>Additional recording by Darren McGill</StyledCredit>
+						<StyledCredit>Live drums engineering by Darren McGill</StyledCredit>
 						<StyledCredit>Lyric videos directed and edited by Ajay Rakhraj</StyledCredit>
 						<StyledCredit>and shot by Richard Michael L Gonzales</StyledCredit>
 						<StyledCredit>Original album art photo by Jack Aldous</StyledCredit>
