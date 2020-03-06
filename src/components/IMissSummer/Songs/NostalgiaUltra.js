@@ -71,7 +71,7 @@ const StyledSecondaryImage = styled.img`
 	}
 	
 	@media (max-width: 750px) {
-		transform: translate(5em, -2em);
+		transform: translate(4em, -2em);
   }
 `;
 

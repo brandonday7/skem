@@ -6,6 +6,12 @@ import ethanKids from "../../../images/ims-photos/ethan-ims.jpg";
 import sunshine from "../../../images/ims-photos/sunshine.png";
 
 
+const StyledLink = styled.a`
+	text-decoration: none;
+	color: black;
+
+`
+
 const StyledFullscreen = styled.div`
 	width: 100vw;
 	background-color: #e8e9eb;
@@ -28,10 +34,11 @@ const StyledLine = styled.p`
 
 const StyledSpacer = styled.div`
 	margin: 3em 0;
+	line-height: 8px;
 `
 
 const StyledCredit = styled.p`
-	margin: 0.3em 0;
+	margin: 0.5em 0;
 	font-size: 80%;
 `;
 
@@ -80,10 +87,35 @@ const YouWereRaisedInTheSunshine = () => (
 					<StyledSpacer>
 						<StyledCredit>All songs written, recorded, </StyledCredit>
 						<StyledCredit>produced, and mixed by Rose Red Youth</StyledCredit>
-						<StyledCredit>Live drums engineering by Darren McGill</StyledCredit>
-						<StyledCredit>Lyric videos directed and edited by Ajay Rakhraj</StyledCredit>
-						<StyledCredit>and shot by Richard Michael L Gonzales</StyledCredit>
-						<StyledCredit>Original album art photo by Jack Aldous</StyledCredit>
+						<br></br>
+						<StyledCredit>
+							<StyledLink href="https://unionsoundcompany.com/about/" target="_blank">
+								Drum kit engineering by Darren McGill at Union Sound
+							</StyledLink>
+						</StyledCredit>
+					<br></br>
+					<StyledCredit>
+						<StyledLink href="https://www.salmoralstudios.com/" target="_blank">
+							Mastered by Connor Salmoral at Salmoral Studios
+						</StyledLink>
+					</StyledCredit>
+						<br></br>
+						<StyledCredit>
+							<StyledLink href="https://vimeo.com/user18686101" target="_blank">
+								Lyric videos directed and edited by Ajay Rakhraj
+							</StyledLink>
+						</StyledCredit>
+						<StyledCredit>
+							<StyledLink href="https://www.rmlgonzales.com" target="_blank">
+								and shot by Richard Michael L Gonzales
+							</StyledLink>
+						</StyledCredit>
+						<br></br>
+						<StyledCredit>
+							<StyledLink href="https://www.instagram.com/whitecricketmusic/?hl=en" target="_blank">
+								Original album art photo by Jack Aldous
+							</StyledLink>
+						</StyledCredit>
 					</StyledSpacer>
 				</LyricsContainer>
 			<StyledImgContainer>
