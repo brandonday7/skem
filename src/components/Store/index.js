@@ -293,8 +293,8 @@ class Store extends Component {
 
   render() {
     return(
-      <StyledDiv>
-        <div id='product-component-1583380851900'></div>
+      <StyledDiv id="container">
+        <div id='product-component-1583381330134'></div>
       </StyledDiv>
     )
   }
