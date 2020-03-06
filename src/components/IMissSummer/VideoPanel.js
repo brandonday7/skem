@@ -72,27 +72,27 @@ class VideoPanel extends Component {
       tracks: [
         {
           title: "You Were Raised in the Sunshine", 
-          url: "https://youtu.be/z3qZsIBStOA",
+          url: "https://www.youtube.com/watch?v=z3qZsIBStOA",
           label: "Chapter I"
         },
         {
           title: "Nostalgia Ultra",
-          url: "https://youtu.be/piJIUQDqkIY",
+          url: "https://www.youtube.com/watch?v=piJIUQDqkIY",
           label: "Chapter II"
         },
         {
           title: "Ur ok",
-          url: "https://youtu.be/r4pi__ynpPg",
+          url: "https://www.youtube.com/watch?v=r4pi__ynpPg",
           label: "Chapter III"
         },
         {
           title: "Daisy",
-          url: "https://youtu.be/TyBuNsgEjT0",
+          url: "https://www.youtube.com/watch?v=TyBuNsgEjT0",
           label: "Chapter IV"
         },
         {
           title: "Chill Pills",
-          url: "https://youtu.be/TyBuNsgEjT0",
+          url: "https://www.youtube.com/watch?v=YC-Rr1HaqEw",
           label: "Chapter V"
         }
     ],
