@@ -39,7 +39,7 @@ const StyledArtworkContainer = styled.div`
 	@media (max-width: 500px) {
 		flex-direction: column;
 		width: 70vw;
-		transform: translateY(-30px);
+		transform: translateY(-40px);
 	}
 `
 
