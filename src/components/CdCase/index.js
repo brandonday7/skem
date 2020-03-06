@@ -19,13 +19,13 @@ const StyledHeading = styled.p`
 	right: 0;
 	margin: 0.5em 0.5em;
 	position: absolute;
-	color: ${({ main }) => main ? '#777' : 'transparent'};
+	color: ${({ main }) => main ? '#888' : 'transparent'};
 	transform: ${({ main }) => main ? 'translate(3px, -3px)' : 'none'};
-	-webkit-text-stroke: 1.2px #777;
+	-webkit-text-stroke: 1.2px #888;
 	
 	&:hover {
-		color: ${({ main }) => main ? '#999' : 'transparent'};
-		-webkit-text-stroke: 1.2px #999;
+		color: ${({ main }) => main ? '#AAA' : 'transparent'};
+		-webkit-text-stroke: 1.2px #AAA;
 		transition: 0.7s;
 	}
 `
