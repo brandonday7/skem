@@ -45,13 +45,7 @@ class Root extends Component {
 		      		<IMissSummer {...routeProps}/>
 		      	)}
 		      />
-					<Route exact path="/store" render={(routeProps) => <Store />}/>
-					<Route exact path="/epk" 
-						component={() => {
-							window.open("https://drive.google.com/open?id=1IUIly_Sbe4fxDtq1TTIeHVHvRgdnrw_O", "_blank");
-							window.location.href = "https://www.roseredyouth.com";
-							return null;
-						}} />					
+					<Route exact path="/store" render={(routeProps) => <Store />}/>			
 					<Route render={() => <Redirect to="/" />} />
 		    </Switch>
 		  </BrowserRouter>
