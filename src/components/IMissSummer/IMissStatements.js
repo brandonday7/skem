@@ -29,7 +29,7 @@ class IMissStatements extends Component {
 			statements: [
 				{
 					message: "",
-					time: 1000,
+					time: 500,
 					size: 10
 				},
 				{

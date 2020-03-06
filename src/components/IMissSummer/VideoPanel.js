@@ -61,7 +61,7 @@ const StyledTrackTitle = styled.p`
   -webkit-text-stroke: 1px #c88246;
 
   @media (max-width: 615px) {
-    font-size: 205%;
+    font-size: 180%;
   }	
 `
 
