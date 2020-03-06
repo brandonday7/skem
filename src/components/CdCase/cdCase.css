@@ -8,13 +8,6 @@
 	overflow-y: scroll;
 }
 
-.artwork-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 75vw;
-}
-
 .album-art {
 	width: 35vw;
 	cursor: pointer;
@@ -30,14 +23,9 @@
 }
 
 @media (max-width: 500px) {
-	.artwork-container {
-		flex-direction: column;
-		width: 70vw;
-
-	}
-
 	.album-art {
+		transform: translateY(-20px);
 		margin-top: 3em;
-		width: 47vw;
+		width: 50vw;
 	}
 }

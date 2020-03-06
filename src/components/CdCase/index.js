@@ -30,6 +30,19 @@ const StyledHeading = styled.p`
 	}
 `
 
+const StyledArtworkContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 75vw;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+		width: 70vw;
+		transform: translateY(-30px);
+	}
+`
+
 
 const CdCase = () => (
 	<div className="site-container black">	
@@ -39,14 +52,14 @@ const CdCase = () => (
 				<StyledHeading>Store</StyledHeading>
 			</div>
 		</Link>
-		<div className="artwork-container">
+		<StyledArtworkContainer className="artwork-container">
 			<Link to="/imisssummer">
 				<img alt="imisssummer" className="album-art" src={iMissSummer} />
 			</Link>
 			<Link to="/ep">
 				<img alt="rry" className="album-art" src={rryEp} />
 			</Link>
-		</div>
+		</StyledArtworkContainer>
 		<Platforms />
 	</div>
 )
