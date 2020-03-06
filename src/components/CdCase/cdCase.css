@@ -32,6 +32,8 @@
 @media (max-width: 500px) {
 	.artwork-container {
 		flex-direction: column;
+		width: 70vw;
+
 	}
 
 	.album-art {
