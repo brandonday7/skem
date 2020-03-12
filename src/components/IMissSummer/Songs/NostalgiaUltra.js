@@ -93,7 +93,8 @@ const NostalgiaUltra = () => (
 					<StyledLine>If you got something to say</StyledLine>
 					<StyledLine>I got a Mustang</StyledLine>
 					<br />
-					<StyledLine>They warned us, Don't wish it away</StyledLine>
+					<StyledLine>They warned us,</StyledLine>
+					<StyledLine>Don't wish it away</StyledLine>
 					<StyledLine>Got an adorable face</StyledLine>
 					<StyledLine>It's a heartbreak</StyledLine>
 					<br />
