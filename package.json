@@ -8,7 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@shopify/buy-button-js": "^2.1.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-image-mapper": "0.0.11",
