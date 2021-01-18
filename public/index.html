@@ -53,9 +53,9 @@
       const host = "www.roseredyouth.com" || "roseredyouth.com";
       if (
         host == window.location.host &&
-        window.location.protocol != "https:"
+        window.location.protocol == "https:"
       ) {
-        window.location.protocol = "https";
+        window.location.protocol = "http";
       }
     </script>
   </head>
