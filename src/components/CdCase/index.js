@@ -46,12 +46,12 @@ const StyledArtworkContainer = styled.div`
 
 const CdCase = () => (
 	<div className="site-container black">	
-		<Link to="/store">
+		{/* <Link to="/store">
 			<div>
 				<StyledHeading main>Store</StyledHeading>
 				<StyledHeading>Store</StyledHeading>
 			</div>
-		</Link>
+		</Link> */}
 		<StyledArtworkContainer className="artwork-container">
 			<Link to="/imisssummer">
 				<img alt="imisssummer" className="album-art" src={iMissSummer} />
